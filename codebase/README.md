@@ -9,7 +9,7 @@
 
 - Pick version 3.9.0. Download link: https://github.com/apache/kafka/releases/tag/3.9.0
 
-  ![kafka 3.9.0 release page and download link](images/image.png)
+  ![Kafka 3.9.0 release page and download link](images/image.png)
 
 - Extract it locally:
 
@@ -29,9 +29,9 @@ Wait for the run to finish and check the result.
 
 ![With the index off, the model spawns an explore SubAgent to read project files](images/image-3.png)
 
-As the screenshot shows, it starts a subagent to read the project's files.
+As the screenshot shows, it starts a SubAgent to read the project's files.
 
-The run finished in 10 min 46 s:
+Recorded run time: 10 min 46 s:
 
 ![Answer with the index off; the UI shows Completed 10min 46s](images/image-4.png)
 
@@ -39,9 +39,9 @@ The run finished in 10 min 46 s:
 
 ![Cloud Index build at 100% in CodeArts Agent](images/image-5.png)
 
-![kafka-3.9.0 being parsed under Repository Index in the CodeArts console](images/image-6.png)
+![The kafka-3.9.0 repo being parsed under Repository Index in the CodeArts console](images/image-6.png)
 
-## 5. Once the index is ready, ask the same question again and compare
+## 5. Once the index is ready, ask again with the same prompt and watch the result
 
 ```
 Where is the authentication module of this project? Analyze it.
@@ -53,7 +53,7 @@ Note: a plain question does not always trigger an index lookup. When that happen
 Where is the authentication module of this project? Analyze it. Use CodeSemanticSearch first.
 ```
 
-Normally you will see CodeSemanticSearch fire at the very start of the thinking process, instead of an explore SubAgent reading project files:
+Normally you will see CodeSemanticSearch called at the very start of the thinking process, instead of an explore SubAgent reading project files:
 
 ![CodeBase: CodeSemanticSearch called at the start of thinking (Thinking 22s), instead of an explore SubAgent reading project files](images/image-7.png)
 
