@@ -1,0 +1,9 @@
+# 视频素材体积大，走 GitHub Release 附件，不进 git 历史
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+
+# 本地 agent 工作数据（memory、临时脚本等），不入公开仓库
+.workbuddy/
