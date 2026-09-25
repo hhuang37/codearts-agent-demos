@@ -1,0 +1,17 @@
+<view class="page-sky">
+  <view class="page-sky__title">{{COPY.sky_title}}</view>
+  <view class="page-sky__subtitle">今晚大家在想的事</view>
+
+  <view class="page-sky__list" wx:if="{{items.length > 0}}">
+    <view
+      wx:for="{{items}}"
+      wx:key="castAt"
+      class="page-sky__item"
+    >
+      <view class="page-sky__text">{{item.text}}</view>
+      <view class="page-sky__ago">{{item.ago}}</view>
+    </view>
+  </view>
+
+  <view wx:else class="page-sky__empty">{{COPY.sky_empty}}</view>
+</view>

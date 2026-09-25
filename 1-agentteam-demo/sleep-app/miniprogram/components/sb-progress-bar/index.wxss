@@ -1,0 +1,25 @@
+.sb-progress {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  width: 100%;
+}
+
+.sb-progress__track {
+  flex: 1;
+  border-radius: 999rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.sb-progress__bar {
+  border-radius: 999rpx;
+  transition: width 0.3s ease;
+}
+
+.sb-progress__text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-sub);
+  min-width: 60rpx;
+  text-align: right;
+}

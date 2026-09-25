@@ -1,0 +1,108 @@
+.page-noon {
+  padding: var(--space-3);
+}
+
+.page-noon__title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.page-noon__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-aux);
+  margin-bottom: var(--space-3);
+}
+
+.page-noon__duration-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+}
+
+.page-noon__duration-opt {
+  padding: var(--space-2);
+  text-align: center;
+  background-color: rgba(26, 27, 58, 0.04);
+  border-radius: var(--radius-input);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+}
+
+.page-noon__duration-opt--active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.page-noon__countdown {
+  background: linear-gradient(180deg, #1a1b3a, #2a2c5e);
+  border-radius: var(--radius-card);
+  padding: var(--space-5) var(--space-3);
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: var(--space-3);
+}
+
+.page-noon__countdown-label {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+}
+
+.page-noon__countdown-time {
+  font-size: 96rpx;
+  font-weight: 600;
+  margin: var(--space-2) 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.page-noon__countdown-sub {
+  font-size: var(--font-size-xs);
+  opacity: 0.7;
+}
+
+.page-noon__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+}
+
+.page-noon__row.col {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.page-noon__label {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+}
+
+.page-noon__picker {
+  font-size: var(--font-size-base);
+  color: var(--color-primary);
+  font-weight: 500;
+  padding: var(--space-1) var(--space-2);
+  background-color: rgba(26, 27, 58, 0.04);
+  border-radius: var(--radius-input);
+}
+
+.page-noon__opts {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.page-noon__opt {
+  flex: 1;
+  padding: var(--space-2);
+  text-align: center;
+  background-color: rgba(26, 27, 58, 0.04);
+  border-radius: var(--radius-input);
+  font-size: var(--font-size-sm);
+}
+
+.page-noon__opt--active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

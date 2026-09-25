@@ -1,0 +1,10 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "用户登录云函数（接口骨架）",
+  "main": "index.js",
+  "dependencies": {},
+  "engines": {
+    "node": "14.x"
+  }
+}

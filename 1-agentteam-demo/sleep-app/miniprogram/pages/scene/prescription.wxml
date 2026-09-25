@@ -1,0 +1,52 @@
+<view class="page-prescription">
+  <view class="page-prescription__title" wx:if="{{scene}}">{{scene.name}} · {{COPY.prescription_title}}</view>
+  <view class="page-prescription__subtitle" wx:if="{{scene}}">{{scene.description}}</view>
+
+  <sb-card title="{{COPY.schedule_label}}" wx:if="{{prescription}}">
+    <view
+      wx:for="{{prescription.schedule}}"
+      wx:key="day"
+      class="page-prescription__schedule"
+    >
+      <view class="page-prescription__day">第 {{item.day}} 天</view>
+      <view class="page-prescription__schedule-row">
+        <text>入睡 {{item.bedtime}}</text>
+        <text>起床 {{item.wakeupTime}}</text>
+        <text wx:if="{{item.napDuration > 0}}">午睡 {{item.napDuration}} 分钟</text>
+        <text wx:else class="page-prescription__skip">不午睡</text>
+      </view>
+      <view wx:if="{{item.note}}" class="page-prescription__note">{{item.note}}</view>
+    </view>
+  </sb-card>
+
+  <sb-card title="{{COPY.soundscape_label}}" wx:if="{{prescription}}">
+    <view class="page-prescription__tags">
+      <sb-tag
+        wx:for="{{prescription.soundscapeIds}}"
+        wx:key="*this"
+        text="{{item}}"
+      />
+    </view>
+  </sb-card>
+
+  <sb-card title="{{COPY.actions_label}}" wx:if="{{prescription}}">
+    <view
+      wx:for="{{prescription.actions}}"
+      wx:key="*this"
+      class="page-prescription__action"
+    >· {{item}}</view>
+  </sb-card>
+
+  <sb-card title="{{COPY.notice_label}}" wx:if="{{prescription && prescription.notice}}">
+    <view class="page-prescription__notice">{{prescription.notice}}</view>
+  </sb-card>
+
+  <sb-subscribe-bar
+    content="{{COPY.scene.subscribe_reminder}}"
+    bind:result="onSubscribeResult"
+  />
+
+  <view class="page-prescription__actions">
+    <sb-button text="{{COPY.scene.start_now}}" type="primary" block="{{true}}" bind:tap="onDone" />
+  </view>
+</view>

@@ -1,0 +1,23 @@
+.sb-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.78);
+  color: var(--color-white);
+  padding: 16rpx 32rpx;
+  border-radius: var(--radius-input);
+  font-size: var(--font-size-sm);
+  z-index: 99999;
+  max-width: 560rpx;
+}
+
+.sb-toast--success {
+  background-color: var(--color-success);
+}
+.sb-toast--warning {
+  background-color: var(--color-warning);
+}
+.sb-toast--error {
+  background-color: var(--color-error);
+}

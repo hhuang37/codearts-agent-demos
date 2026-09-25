@@ -1,0 +1,27 @@
+<!-- 睡眠数据中枢页（pages/datahub/index.wxml） -->
+<view class="datahub-page">
+  <view class="hero">
+    <view class="hero-title">睡眠数据中枢</view>
+    <view class="hero-desc">支持从小米手环、Apple Health、华为健康等平台导入睡眠 CSV</view>
+  </view>
+
+  <view class="stat-card">
+    <view class="stat-num">{{importedCount}}</view>
+    <view class="stat-label">累计导入条数</view>
+  </view>
+
+  <view class="import-btn" bindtap="onPaste">从剪贴板导入 CSV</view>
+
+  <view class="history-section">
+    <view class="section-title">导入历史</view>
+    <view wx:if="{{history.length === 0}}" class="empty">暂无导入记录</view>
+    <view wx:else class="history-list">
+      <view wx:for="{{history}}" wx:key="importedAt" class="history-item">
+        <text class="history-name">{{item.filename}}</text>
+        <text class="history-count">{{item.count}} 条</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="clear-btn" bindtap="onClear">清空导入历史</view>
+</view>

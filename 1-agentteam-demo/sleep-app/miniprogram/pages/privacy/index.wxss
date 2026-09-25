@@ -1,0 +1,111 @@
+/* 隐私保险箱页样式（pages/privacy/index.wxss） */
+
+.privacy-page {
+  min-height: 100vh;
+  background: var(--color-bg, #F4F6FA);
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+
+.promise-card {
+  background: var(--color-primary, #1A1B3A);
+  color: #fff;
+  border-radius: 32rpx;
+  padding: 40rpx 32rpx;
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+  margin-bottom: 32rpx;
+  box-shadow: 0 8rpx 24rpx rgba(26, 27, 58, 0.25);
+}
+
+.promise-icon {
+  font-size: 56rpx;
+  flex-shrink: 0;
+}
+
+.promise-text {
+  font-size: 28rpx;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 2rpx 8rpx rgba(26, 27, 58, 0.04);
+}
+
+.card.danger {
+  border-left: 6rpx solid #E55B5B;
+}
+
+.card-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--color-text, #1A1B3A);
+  margin-bottom: 12rpx;
+}
+
+.card-desc {
+  font-size: 26rpx;
+  color: var(--color-muted, #6B6F8A);
+  line-height: 1.6;
+  margin-bottom: 24rpx;
+}
+
+.action-btn {
+  height: 80rpx;
+  border-radius: 48rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.action-btn.primary {
+  background: var(--color-primary, #1A1B3A);
+  color: #fff;
+}
+
+.action-btn.danger {
+  background: #E55B5B;
+  color: #fff;
+}
+
+.action-btn.warning {
+  background: rgba(229, 91, 91, 0.1);
+  color: #E55B5B;
+  border: 2rpx solid #E55B5B;
+  line-height: 76rpx;
+}
+
+.row-with-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rpx 0;
+}
+
+.row-text {
+  font-size: 28rpx;
+  color: var(--color-text, #1A1B3A);
+}
+
+.pending-info {
+  background: rgba(255, 214, 107, 0.15);
+  color: #B07A00;
+  padding: 16rpx 20rpx;
+  border-radius: 16rpx;
+  font-size: 24rpx;
+  margin-bottom: 24rpx;
+}
+
+.policy-link {
+  text-align: center;
+  padding: 32rpx 0;
+  font-size: 26rpx;
+  color: var(--color-muted, #6B6F8A);
+}

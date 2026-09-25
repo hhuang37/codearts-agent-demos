@@ -1,0 +1,10 @@
+{
+  "name": "sceneMatch",
+  "version": "1.0.0",
+  "description": "场景匹配云函数（接口骨架）",
+  "main": "index.js",
+  "dependencies": {},
+  "engines": {
+    "node": "14.x"
+  }
+}

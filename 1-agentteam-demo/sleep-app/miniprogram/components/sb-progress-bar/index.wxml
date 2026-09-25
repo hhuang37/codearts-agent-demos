@@ -1,0 +1,9 @@
+<view class="sb-progress">
+  <view class="sb-progress__track" style="background-color: {{bgColor}}; height: {{height}}rpx;">
+    <view
+      class="sb-progress__bar"
+      style="width: {{value}}%; background-color: {{color}}; height: {{height}}rpx;"
+    ></view>
+  </view>
+  <view class="sb-progress__text" wx:if="{{showText}}">{{value}}%</view>
+</view>

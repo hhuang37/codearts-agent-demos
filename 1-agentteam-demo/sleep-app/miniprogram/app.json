@@ -1,0 +1,81 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/record/night/index",
+    "pages/record/noon/index",
+    "pages/report/index",
+    "pages/scene/index",
+    "pages/scene/questionnaire",
+    "pages/scene/prescription",
+    "pages/evening/index",
+    "pages/evening/sky",
+    "pages/alarm/index",
+    "pages/soundscape/index",
+    "pages/profile/index",
+    "pages/privacy/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#F4F6FA",
+    "navigationBarTitleText": "陪你睡个好觉",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F4F6FA",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#8A8DA8",
+    "selectedColor": "#1A1B3A",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home_active.png"
+      },
+      {
+        "pagePath": "pages/soundscape/index",
+        "text": "白噪音",
+        "iconPath": "assets/icons/sound.png",
+        "selectedIconPath": "assets/icons/sound_active.png"
+      },
+      {
+        "pagePath": "pages/scene/index",
+        "text": "处方",
+        "iconPath": "assets/icons/scene.png",
+        "selectedIconPath": "assets/icons/scene_active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "assets/icons/profile.png",
+        "selectedIconPath": "assets/icons/profile_active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "sb-card": "components/sb-card/index",
+    "sb-button": "components/sb-button/index",
+    "sb-tag": "components/sb-tag/index",
+    "sb-rating": "components/sb-rating/index",
+    "sb-time-picker": "components/sb-time-picker/index",
+    "sb-progress-bar": "components/sb-progress-bar/index",
+    "sb-list-item": "components/sb-list-item/index",
+    "sb-modal": "components/sb-modal/index",
+    "sb-skeleton": "components/sb-skeleton/index",
+    "sb-toast": "components/sb-toast/index",
+    "sb-subscribe-bar": "components/sb-subscribe-bar/index"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于判断时区以适配出差场景"
+    }
+  },
+  "requiredBackgroundModes": ["audio"],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

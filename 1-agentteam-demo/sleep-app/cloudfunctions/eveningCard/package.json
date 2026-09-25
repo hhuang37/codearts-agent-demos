@@ -1,0 +1,10 @@
+{
+  "name": "eveningCard",
+  "version": "1.0.0",
+  "description": "晚安电台云函数（接口骨架）",
+  "main": "index.js",
+  "dependencies": {},
+  "engines": {
+    "node": "14.x"
+  }
+}

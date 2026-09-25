@@ -1,0 +1,89 @@
+<!-- 智能闹钟页（pages/alarm/index.wxml） -->
+<view class="alarm-page">
+  <!-- 顶部说明 -->
+  <view class="header">
+    <view class="title">{{COPY.title}}</view>
+    <view class="subtitle">{{COPY.subtitle}}</view>
+    <view wx:if="{{holidayToday}}" class="holiday-tip">{{COPY.holiday_tip}}{{todayKey}}</view>
+  </view>
+
+  <!-- 空状态 -->
+  <view wx:if="{{alarms.length === 0}}" class="empty">
+    <view class="empty-icon">⏰</view>
+    <view class="empty-text">{{COPY.empty}}</view>
+    <view class="empty-hint">{{COPY.empty_hint}}</view>
+  </view>
+
+  <!-- 闹钟列表 -->
+  <view wx:else class="alarm-list">
+    <view wx:for="{{alarms}}" wx:key="id" class="alarm-item">
+      <view class="alarm-main">
+        <view class="alarm-time">{{item.targetTime}}</view>
+        <view class="alarm-meta">
+          <text class="meta-tag">{{COPY.window_label}}{{item.wakeWindowMin}}min</text>
+          <text wx:if="{{item.skipHoliday}}" class="meta-tag">{{COPY.skip_holiday}}</text>
+          <text wx:if="{{item.vibrate}}" class="meta-tag">{{COPY.vibrate}}</text>
+        </view>
+        <view class="alarm-repeat">
+          <text wx:for="{{weekdays}}" wx:for-item="wd" wx:key="value"
+                class="day-dot {{item.repeatDays.includes(wd.value) ? 'active' : ''}}">
+            {{wd.label}}
+          </text>
+        </view>
+      </view>
+      <view class="alarm-actions">
+        <switch checked="{{item.enabled}}"
+                data-id="{{item.id}}"
+                bindchange="onToggle"
+                color="#FFD66B" />
+        <view class="row-buttons">
+          <view class="text-btn" data-id="{{item.id}}" bindtap="onEdit">{{COPY.edit}}</view>
+          <view class="text-btn danger" data-id="{{item.id}}" bindtap="onDelete">{{COPY.delete}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 浮动新建按钮 -->
+  <view class="fab" bindtap="onCreate">
+    <text class="fab-plus">+</text>
+    <text class="fab-label">{{COPY.create}}</text>
+  </view>
+
+  <!-- 编辑弹窗 -->
+  <view wx:if="{{showEditor}}" class="modal-mask" bindtap="onCancel">
+    <view class="modal-card" catchtap="noop">
+      <view class="modal-title">{{draft.id ? COPY.edit_title : COPY.create_title}}</view>
+
+      <view class="form-label">{{COPY.time_label}}</view>
+      <picker mode="time" value="{{draft.targetTime}}" bindchange="onTimeChange">
+        <view class="time-pick">{{draft.targetTime}}</view>
+      </picker>
+
+      <view class="form-label">{{COPY.repeat_label}}</view>
+      <view class="day-row">
+        <view wx:for="{{weekdays}}" wx:for-item="wd" wx:key="value"
+              class="day-btn {{draft.repeatDays.includes(wd.value) ? 'active' : ''}}"
+              data-day="{{wd.value}}"
+              bindtap="onDayToggle">
+          {{wd.label}}
+        </view>
+      </view>
+
+      <view class="form-row">
+        <text class="form-label-inline">{{COPY.skip_holiday}}</text>
+        <switch checked="{{draft.skipHoliday}}" bindchange="onSkipHolidayToggle" color="#FFD66B" />
+      </view>
+
+      <view class="form-row">
+        <text class="form-label-inline">{{COPY.vibrate}}</text>
+        <switch checked="{{draft.vibrate}}" bindchange="onVibrateToggle" color="#FFD66B" />
+      </view>
+
+      <view class="modal-buttons">
+        <view class="btn-secondary" bindtap="onCancel">{{COPY.cancel}}</view>
+        <view class="btn-primary" bindtap="onSave">{{COPY.save}}</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="page-scene">
+  <view class="page-scene__title">{{COPY.title}}</view>
+  <view class="page-scene__subtitle">{{COPY.select_tag_title}}</view>
+
+  <view class="page-scene__list">
+    <sb-card
+      wx:for="{{scenes}}"
+      wx:key="_id"
+      title="{{item.name}}"
+      subtitle="{{item.description}}"
+      showArrow="{{true}}"
+      data-code="{{item.code}}"
+      bind:tap="onPick"
+    >
+      <view wx:if="{{item.isPremium}}" class="page-scene__premium">
+        <sb-tag text="会员专属" type="accent" />
+      </view>
+    </sb-card>
+  </view>
+</view>

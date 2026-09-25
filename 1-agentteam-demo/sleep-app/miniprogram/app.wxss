@@ -1,0 +1,159 @@
+/**
+ * 全局样式（app.wxss）
+ *
+ * 视觉规范：
+ * - 颜色：见 design.md §9.1.1
+ * - 字号：见 design.md §9.1.2
+ * - 间距：见 design.md §9.1.3
+ * - 圆角：见 design.md §9.1.4
+ */
+
+page {
+  /* 主色调 */
+  --color-primary: #1a1b3a;
+  --color-bg: #f4f6fa;
+  --color-accent: #ffd66b;
+  --color-text: #1a1b3a;
+  --color-text-sub: #4a4d6a;
+  --color-text-aux: #8a8da8;
+  --color-divider: #e5e8f0;
+  --color-success: #6fcf97;
+  --color-warning: #f2994a;
+  --color-error: #eb5757;
+  --color-white: #ffffff;
+
+  /* 字号 */
+  --font-size-xl: 48rpx;   /* 24sp 大标题 */
+  --font-size-lg: 40rpx;   /* 20sp 中标题 */
+  --font-size-md: 34rpx;   /* 17sp 小标题 */
+  --font-size-base: 32rpx; /* 16sp 正文 */
+  --font-size-sm: 28rpx;   /* 14sp 辅助 */
+  --font-size-xs: 24rpx;   /* 12sp 说明 */
+
+  /* 间距 */
+  --space-1: 8rpx;
+  --space-2: 16rpx;
+  --space-3: 24rpx;
+  --space-4: 32rpx;
+  --space-5: 48rpx;
+  --space-6: 64rpx;
+  --space-7: 96rpx;
+
+  /* 圆角 */
+  --radius-card: 32rpx;   /* 16px */
+  --radius-btn: 48rpx;    /* 24px 胶囊 */
+  --radius-input: 24rpx;  /* 12px */
+  --radius-tag: 16rpx;    /* 8px */
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', sans-serif;
+}
+
+/* 通用容器 */
+.container {
+  padding: 0 var(--space-3);
+}
+
+/* 文本辅助类 */
+.text-primary {
+  color: var(--color-primary);
+}
+.text-sub {
+  color: var(--color-text-sub);
+}
+.text-aux {
+  color: var(--color-text-aux);
+}
+.text-success {
+  color: var(--color-success);
+}
+.text-warning {
+  color: var(--color-warning);
+}
+.text-error {
+  color: var(--color-error);
+}
+
+.text-xl {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 1.4;
+}
+.text-lg {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 1.4;
+}
+.text-md {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  line-height: 1.5;
+}
+.text-base {
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  line-height: 1.6;
+}
+.text-sm {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.text-xs {
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* 通用卡片容器（页面级） */
+.page-card {
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  padding: var(--space-3);
+  margin-bottom: var(--space-2);
+  box-shadow: 0 4rpx 16rpx rgba(26, 27, 58, 0.04);
+}
+
+/* 通用分隔线 */
+.divider {
+  width: 100%;
+  height: 1rpx;
+  background: var(--color-divider);
+  margin: var(--space-2) 0;
+}
+
+/* flex 工具类 */
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.between {
+  justify-content: space-between;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-1 {
+  flex: 1;
+}
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+
+/* 安全区域 */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}

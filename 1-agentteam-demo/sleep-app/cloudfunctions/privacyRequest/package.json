@@ -1,0 +1,10 @@
+{
+  "name": "privacyRequest",
+  "version": "1.0.0",
+  "description": "隐私请求云函数（接口骨架）",
+  "main": "index.js",
+  "dependencies": {},
+  "engines": {
+    "node": "14.x"
+  }
+}

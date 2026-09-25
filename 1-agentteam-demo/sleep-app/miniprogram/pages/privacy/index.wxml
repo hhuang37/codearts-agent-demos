@@ -1,0 +1,44 @@
+<!-- 隐私保险箱页（pages/privacy/index.wxml） -->
+<view class="privacy-page">
+  <!-- 顶部承诺 -->
+  <view class="promise-card">
+    <view class="promise-icon">🔒</view>
+    <view class="promise-text">{{promise}}</view>
+  </view>
+
+  <!-- 数据导出 -->
+  <view class="card">
+    <view class="card-title">数据主权</view>
+    <view class="card-desc">导出你近 30 天的睡眠记录，随时带走。</view>
+    <view class="action-btn primary" bindtap="onExport">{{COPY.export_btn}}</view>
+  </view>
+
+  <!-- 云端备份 -->
+  <view class="card">
+    <view class="card-title">云端备份</view>
+    <view class="card-desc">开启后，睡眠记录将加密同步到云端，换设备也能找回。</view>
+    <view class="row-with-switch">
+      <text class="row-text">{{cloudBackupEnabled ? COPY.disable_cloud : COPY.enable_cloud}}</text>
+      <switch checked="{{cloudBackupEnabled}}"
+              bindchange="onToggleCloudBackup"
+              color="#FFD66B" />
+    </view>
+  </view>
+
+  <!-- 账户注销 -->
+  <view class="card danger">
+    <view class="card-title">账户注销</view>
+    <view class="card-desc">{{COPY.delete_warning}}</view>
+    <view wx:if="{{deletionPending}}" class="pending-info">
+      注销申请已生效，预计 {{effectiveAtText}} 完成
+    </view>
+    <view class="action-btn {{deletionPending ? 'warning' : 'danger'}}" bindtap="onRequestDelete">
+      {{deletionPending ? '撤销注销' : COPY.delete_account}}
+    </view>
+  </view>
+
+  <!-- 隐私政策 -->
+  <view class="policy-link" bindtap="onViewPolicy">
+    {{COPY.policy_btn}} ›
+  </view>
+</view>

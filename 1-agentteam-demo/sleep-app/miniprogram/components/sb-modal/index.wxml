@@ -1,0 +1,14 @@
+<view class="sb-modal__mask" wx:if="{{visible}}" bindtap="onMaskTap">
+  <view class="sb-modal" catchtap="">
+    <view class="sb-modal__title" wx:if="{{title}}">{{title}}</view>
+    <view class="sb-modal__content">{{content}}</view>
+    <view class="sb-modal__actions">
+      <view
+        wx:if="{{showCancel}}"
+        class="sb-modal__btn sb-modal__btn--cancel"
+        bindtap="onCancel"
+      >{{cancelText}}</view>
+      <view class="sb-modal__btn sb-modal__btn--confirm" bindtap="onConfirm">{{confirmText}}</view>
+    </view>
+  </view>
+</view>

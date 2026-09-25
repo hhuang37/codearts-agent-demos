@@ -1,0 +1,22 @@
+<!-- 睡眠搭子页（pages/buddy/index.wxml） -->
+<view class="buddy-page">
+  <view class="hero">
+    <view class="hero-icon">🌌</view>
+    <view class="hero-title">今夜不只有你醒着</view>
+    <view class="hero-subtitle">
+      <text wx:if="{{matchable}}">现在是匹配开放时段（00:00-06:00）</text>
+      <text wx:else>匹配窗口 00:00 - 06:00</text>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">已陪你入眠</view>
+    <view class="counter">{{matched}}</view>
+    <view class="card-desc">位匿名同行者</view>
+  </view>
+
+  <view wx:if="{{matchable}}" class="match-btn" bindtap="onMatch">开始匹配</view>
+  <view wx:else class="match-btn disabled">当前不在匹配窗口</view>
+
+  <view class="tip">所有匹配均为匿名，不收集身份信息</view>
+</view>

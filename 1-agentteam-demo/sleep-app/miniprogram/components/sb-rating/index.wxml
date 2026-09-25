@@ -1,0 +1,10 @@
+<view class="sb-rating">
+  <view
+    class="sb-rating__star {{value >= item ? 'sb-rating__star--active' : ''}}"
+    wx:for="{{stars}}"
+    wx:key="*this"
+    data-idx="{{item}}"
+    bindtap="onTapStar"
+    style="font-size: {{size}}rpx;"
+  >★</view>
+</view>

@@ -1,0 +1,27 @@
+.sb-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgba(255, 214, 107, 0.18), rgba(255, 214, 107, 0.08));
+  border: 1rpx solid rgba(255, 214, 107, 0.4);
+  border-radius: var(--radius-card);
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.sb-subscribe__text {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.sb-subscribe__btn {
+  margin-left: var(--space-2);
+  background-color: var(--color-accent);
+  color: #7a5d11;
+  padding: 12rpx 24rpx;
+  border-radius: var(--radius-btn);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}

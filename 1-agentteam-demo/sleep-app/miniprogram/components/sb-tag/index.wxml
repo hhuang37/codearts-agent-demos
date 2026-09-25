@@ -1,0 +1,4 @@
+<view class="sb-tag sb-tag--{{type}}" bindtap="onTap">
+  <text class="sb-tag__text">{{text}}</text>
+  <text wx:if="{{closable}}" class="sb-tag__close" catchtap="onClose">×</text>
+</view>

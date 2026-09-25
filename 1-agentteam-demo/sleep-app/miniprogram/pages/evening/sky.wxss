@@ -1,0 +1,51 @@
+.page-sky {
+  padding: var(--space-3);
+  background: linear-gradient(180deg, #0a0b1e 0%, #1a1b3a 100%);
+  min-height: 100vh;
+  color: var(--color-white);
+}
+
+.page-sky__title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--space-1);
+}
+
+.page-sky__subtitle {
+  font-size: var(--font-size-sm);
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: var(--space-5);
+}
+
+.page-sky__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.page-sky__item {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-card);
+  padding: var(--space-3);
+}
+
+.page-sky__text {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  margin-bottom: var(--space-1);
+}
+
+.page-sky__ago {
+  font-size: var(--font-size-xs);
+  opacity: 0.6;
+  text-align: right;
+}
+
+.page-sky__empty {
+  text-align: center;
+  padding: var(--space-5) 0;
+  font-size: var(--font-size-sm);
+  opacity: 0.7;
+}

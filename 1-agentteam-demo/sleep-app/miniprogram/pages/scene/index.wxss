@@ -1,0 +1,26 @@
+.page-scene {
+  padding: var(--space-3);
+}
+
+.page-scene__title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.page-scene__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-aux);
+  margin-bottom: var(--space-3);
+}
+
+.page-scene__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.page-scene__premium {
+  margin-top: var(--space-1);
+}

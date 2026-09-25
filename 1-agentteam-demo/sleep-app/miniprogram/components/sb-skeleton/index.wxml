@@ -1,0 +1,7 @@
+<view class="sb-skeleton sb-skeleton--{{type}}">
+  <view
+    class="sb-skeleton__row sb-skeleton__row--{{index === 0 ? 'title' : 'body'}}"
+    wx:for="{{rows}}"
+    wx:key="*this"
+  ></view>
+</view>

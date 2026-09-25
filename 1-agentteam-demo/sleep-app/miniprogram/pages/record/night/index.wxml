@@ -1,0 +1,52 @@
+<view class="page-record">
+  <view class="page-record__title">{{COPY.night_title}}</view>
+  <view class="page-record__subtitle">{{COPY.night_subtitle}}</view>
+
+  <sb-card>
+    <view class="page-record__editing" wx:if="{{editing}}">编辑中…</view>
+
+    <view class="page-record__row">
+      <text class="page-record__label">{{COPY.bedtime_label}}</text>
+      <picker mode="time" value="{{bedtime}}" bindchange="onBedtimeChange">
+        <view class="page-record__picker">{{bedtime}}</view>
+      </picker>
+    </view>
+
+    <view class="page-record__row">
+      <text class="page-record__label">{{COPY.waketime_label}}</text>
+      <picker mode="time" value="{{waketime}}" bindchange="onWaketimeChange">
+        <view class="page-record__picker">{{waketime}}</view>
+      </picker>
+    </view>
+
+    <view class="page-record__row">
+      <text class="page-record__label">{{COPY.duration_label}}</text>
+      <text class="page-record__duration">{{durationMin}} 分钟</text>
+    </view>
+  </sb-card>
+
+  <sb-card>
+    <view class="page-record__row col">
+      <text class="page-record__label">{{COPY.selfrating_label}}</text>
+      <view class="page-record__rating">
+        <sb-rating value="{{rating}}" bind:change="onRatingChange" size="60" />
+      </view>
+    </view>
+
+    <view class="page-record__row col">
+      <text class="page-record__label">{{COPY.notes_label}}</text>
+      <textarea
+        class="page-record__notes"
+        placeholder="{{COPY.notes_placeholder}}"
+        maxlength="100"
+        value="{{notes}}"
+        bindinput="onNotesInput"
+      />
+    </view>
+  </sb-card>
+
+  <view class="page-record__actions">
+    <sb-button text="{{COPY.save}}" type="primary" block="{{true}}" loading="{{saving}}" bind:tap="onSave" />
+    <sb-button text="{{COPY.common.cancel}}" type="text" bind:tap="onCancel" />
+  </view>
+</view>

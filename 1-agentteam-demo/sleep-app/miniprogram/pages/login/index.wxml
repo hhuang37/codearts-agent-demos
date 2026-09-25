@@ -1,0 +1,26 @@
+<!-- 登录页（pages/login/index.wxml） -->
+<view class="login-page">
+  <view class="logo">
+    <view class="logo-icon">🌙</view>
+    <view class="logo-title">{{COPY.name}}</view>
+    <view class="logo-slogan">{{COPY.slogan}}</view>
+  </view>
+
+  <view class="agreement">
+    <checkbox value="{{agreed}}" bindchange="onAgreeChange" color="#1A1B3A" />
+    <view class="agreement-text">
+      我已阅读并同意
+      <text class="link" bindtap="onViewPolicy">《用户协议》</text>
+      和
+      <text class="link" bindtap="onViewPolicy">《隐私政策》</text>
+    </view>
+  </view>
+
+  <view class="login-btn {{!agreed ? 'disabled' : ''}}"
+        bindtap="onLogin">
+    <text wx:if="{{!loading}}">微信一键登录</text>
+    <text wx:else>登录中…</text>
+  </view>
+
+  <view class="skip-btn" bindtap="onSkip">稍后再说</view>
+</view>

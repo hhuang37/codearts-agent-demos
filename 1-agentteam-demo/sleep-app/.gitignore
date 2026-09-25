@@ -1,0 +1,24 @@
+node_modules/
+miniprogram_npm/
+.DS_Store
+.idea/
+.vscode/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 微信开发者工具生成
+*.wxapkg
+*.map
+project.private.config.json
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+
+# 构建产物
+dist/
+build/
+out/

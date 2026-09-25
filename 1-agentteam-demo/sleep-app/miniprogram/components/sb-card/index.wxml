@@ -1,0 +1,19 @@
+<view
+  class="sb-card sb-card--padding-{{padding}}"
+  style="background-color: {{bgColor}};"
+  bindtap="onTap"
+>
+  <view class="sb-card__header" wx:if="{{title || subtitle}}">
+    <view class="sb-card__title" wx:if="{{title}}">{{title}}</view>
+    <view class="sb-card__subtitle" wx:if="{{subtitle}}">{{subtitle}}</view>
+  </view>
+
+  <view class="sb-card__body">
+    <slot></slot>
+  </view>
+
+  <view class="sb-card__footer" wx:if="{{footer || showArrow}}">
+    <text class="sb-card__footer-text" wx:if="{{footer}}">{{footer}}</text>
+    <text class="sb-card__arrow" wx:if="{{showArrow}}">›</text>
+  </view>
+</view>

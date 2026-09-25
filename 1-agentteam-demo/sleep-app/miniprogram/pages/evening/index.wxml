@@ -1,0 +1,59 @@
+<view class="page-evening">
+  <view class="page-evening__hero">
+    <view class="page-evening__title">{{COPY.title}}</view>
+    <view class="page-evening__subtitle">{{COPY.today_card_title}}</view>
+    <view class="page-evening__time">{{todayDate}} 21:00</view>
+  </view>
+
+  <!-- 推荐白噪音 -->
+  <sb-card title="今晚的声音" wx:if="{{card}}">
+    <view class="page-evening__sound" wx:if="{{card.recommendedSoundscapeId}}">
+      <view class="page-evening__sound-name">{{card.recommendedSoundscapeId}}</view>
+      <sb-button
+        text="{{playing ? '暂停' : '播放'}}"
+        type="{{playing ? 'secondary' : 'primary'}}"
+        size="small"
+        bind:tap="onPlayToggle"
+      />
+    </view>
+  </sb-card>
+
+  <!-- 订阅提醒 -->
+  <sb-subscribe-bar
+    content="{{COPY.subscribe_btn}}"
+    bind:result="onSubscribe"
+  />
+
+  <!-- 记忆 -->
+  <sb-card title="{{COPY.memory_label}}">
+    <textarea
+      class="page-evening__textarea"
+      placeholder="{{COPY.memory_placeholder}}"
+      maxlength="100"
+      value="{{memory}}"
+      bindinput="onMemoryInput"
+    />
+    <view class="page-evening__check">
+      <switch checked="{{anonymous}}" bindchange="onAnonymousChange" color="#1A1B3A" />
+      <text class="page-evening__check-text">{{COPY.anonymous_cast}}</text>
+    </view>
+    <sb-button text="保存记忆" type="secondary" size="small" bind:tap="onSaveMemory" />
+  </sb-card>
+
+  <!-- 任务 -->
+  <sb-card title="{{COPY.task_label}}">
+    <textarea
+      class="page-evening__textarea"
+      placeholder="{{COPY.task_placeholder}}"
+      maxlength="100"
+      value="{{task}}"
+      bindinput="onTaskInput"
+    />
+    <sb-button text="打卡" type="primary" size="small" bind:tap="onSaveTask" />
+  </sb-card>
+
+  <!-- 星空 -->
+  <sb-card title="{{COPY.sky_title}}" showArrow="{{true}}" bind:tap="onGoSky">
+    <view class="page-evening__sky-hint">看看今晚大家都在想什么</view>
+  </sb-card>
+</view>

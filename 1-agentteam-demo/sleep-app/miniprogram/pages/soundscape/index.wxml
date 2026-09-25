@@ -1,0 +1,84 @@
+<!-- 白噪音页（pages/soundscape/index.wxml） -->
+<view class="ss-page">
+  <!-- 顶部标题 + 搜索 -->
+  <view class="header">
+    <view class="title">{{COPY.title}}</view>
+    <view class="search-bar">
+      <input class="search-input"
+             placeholder="{{COPY.search_placeholder}}"
+             value="{{keyword}}"
+             bindinput="onSearchInput"
+             confirm-type="search" />
+    </view>
+  </view>
+
+  <!-- 分类 tabs -->
+  <scroll-view class="tabs" scroll-x enable-flex>
+    <view wx:for="{{tabs}}" wx:key="value"
+          class="tab {{activeTab === item.value ? 'active' : ''}}"
+          data-tab="{{item.value}}"
+          bindtap="onTabTap">
+      {{item.label}}
+    </view>
+  </scroll-view>
+
+  <!-- 加载态 -->
+  <view wx:if="{{loading}}" class="loading">{{COPY.loading}}</view>
+
+  <!-- 空状态 -->
+  <view wx:elif="{{list.length === 0}}" class="empty">
+    <view class="empty-icon">🔇</view>
+    <view class="empty-text">{{COPY.timer_off}}</view>
+  </view>
+
+  <!-- 列表 -->
+  <view wx:else class="ss-list">
+    <view wx:for="{{list}}" wx:key="_id"
+          class="ss-item {{currentId === item._id ? 'current' : ''}}"
+          data-id="{{item._id}}"
+          bindtap="onItemTap">
+      <view class="ss-cover">
+        <view class="ss-cover-text">{{item.name[0]}}</view>
+      </view>
+      <view class="ss-info">
+        <view class="ss-name">{{item.name}}</view>
+        <view class="ss-tags">
+          <text wx:for="{{item.tags}}" wx:for-item="t" wx:key="*this" class="tag-mini">{{t}}</text>
+        </view>
+      </view>
+      <view wx:if="{{!item.isFree && !isPremium}}" class="badge-premium">会员</view>
+      <view wx:elif="{{currentId === item._id && playing}}" class="play-icon">♫</view>
+      <view wx:else class="play-icon muted">♪</view>
+    </view>
+  </view>
+
+  <!-- 底部播放控制条 -->
+  <view wx:if="{{currentId}}" class="player-bar">
+    <view class="player-info">
+      <view class="player-title">{{playing ? '播放中' : '已暂停'}}</view>
+      <view class="player-subtitle" wx:if="{{timerRemainMin > 0}}">{{timerRemainMin}} 分钟后停止</view>
+      <view class="player-subtitle" wx:else>无限循环</view>
+    </view>
+    <view class="player-controls">
+      <view class="ctrl-btn" bindtap="onOpenTimer">⏰</view>
+      <view class="ctrl-btn primary" bindtap="onTogglePlay">
+        {{playing ? '⏸' : '▶'}}
+      </view>
+      <view class="ctrl-btn" bindtap="onStop">⏹</view>
+    </view>
+  </view>
+
+  <!-- 定时选择面板 -->
+  <view wx:if="{{showTimerSheet}}" class="modal-mask" bindtap="onCloseTimer">
+    <view class="timer-sheet" catchtap="noop">
+      <view class="sheet-title">{{COPY.timer_label}}</view>
+      <view wx:for="{{timerOptions}}" wx:key="value"
+            class="timer-item"
+            data-min="{{item.value}}"
+            bindtap="onPickTimer">
+        {{item.label}}
+      </view>
+      <view class="sheet-cancel" bindtap="onCloseTimer">{{COPY.title}}</view>
+    </view>
+  </view>
+</view>

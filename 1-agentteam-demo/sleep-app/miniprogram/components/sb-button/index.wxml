@@ -1,0 +1,8 @@
+<view
+  class="sb-btn sb-btn--{{type}} sb-btn--{{size}} {{block ? 'sb-btn--block' : ''}} {{disabled ? 'sb-btn--disabled' : ''}} {{loading ? 'sb-btn--loading' : ''}}"
+  bindtap="onTap"
+  hover-class="sb-btn--hover"
+>
+  <view class="sb-btn__loading" wx:if="{{loading}}">…</view>
+  <text class="sb-btn__text">{{text}}</text>
+</view>

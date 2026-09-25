@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "sb-card": "/components/sb-card/index",
+    "sb-button": "/components/sb-button/index",
+    "sb-tag": "/components/sb-tag/index",
+    "sb-rating": "/components/sb-rating/index",
+    "sb-time-picker": "/components/sb-time-picker/index",
+    "sb-progress-bar": "/components/sb-progress-bar/index",
+    "sb-list-item": "/components/sb-list-item/index",
+    "sb-modal": "/components/sb-modal/index",
+    "sb-skeleton": "/components/sb-skeleton/index",
+    "sb-toast": "/components/sb-toast/index",
+    "sb-subscribe-bar": "/components/sb-subscribe-bar/index"
+  }
+}

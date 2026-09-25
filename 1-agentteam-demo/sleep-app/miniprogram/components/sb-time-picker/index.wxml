@@ -1,0 +1,15 @@
+<view class="sb-time-picker">
+  <view class="sb-time-picker__label" wx:if="{{label}}">{{label}}</view>
+  <picker-view
+    class="sb-time-picker__picker"
+    value="{{[hourIdx, minuteIdx]}}"
+    bindchange="onChange"
+  >
+    <picker-view-column>
+      <view wx:for="{{hours}}" wx:key="*this" class="sb-time-picker__cell">{{item}}时</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{minutes}}" wx:key="*this" class="sb-time-picker__cell">{{item}}分</view>
+    </picker-view-column>
+  </picker-view>
+</view>

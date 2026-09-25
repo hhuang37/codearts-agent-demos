@@ -1,0 +1,89 @@
+<view class="page-report">
+  <view class="page-report__header">
+    <view class="page-report__title">{{COPY.title}}</view>
+    <view class="page-report__date" wx:if="{{record}}">{{fmtDate(record.startAt)}}</view>
+  </view>
+
+  <sb-card wx:if="{{loading}}">
+    <sb-skeleton rows="3" type="card" />
+  </sb-card>
+
+  <!-- 主体报告卡片（FR-3.5 占位、FR-3.2 三段式） -->
+  <block wx:elif="{{report && record}}">
+    <sb-card
+      bind:longtap="onReportLongPress"
+      padding="medium"
+    >
+      <view class="page-report__meta">
+        <text>{{record.type === 'night' ? '夜间睡眠' : '午睡'}} · {{fmtDuration(record.durationMin)}}</text>
+        <text class="page-report__selfrating" wx:if="{{record.selfRating}}">自评 {{record.selfRating}} 星</text>
+      </view>
+
+      <view class="page-report__section">
+        <view class="page-report__section-label">{{COPY.current_label}}</view>
+        <view class="page-report__section-text">{{report.currentStatus}}</view>
+      </view>
+
+      <view class="page-report__divider"></view>
+
+      <view class="page-report__section">
+        <view class="page-report__section-label">{{COPY.cause_label}}</view>
+        <view class="page-report__section-text">{{report.cause}}</view>
+      </view>
+
+      <view class="page-report__divider"></view>
+
+      <view class="page-report__section">
+        <view class="page-report__section-label">{{COPY.suggestion_label}}</view>
+        <view class="page-report__section-text">{{report.suggestion}}</view>
+      </view>
+
+      <view class="page-report__hint">{{COPY.followup_entry}}</view>
+      <view class="page-report__tip">{{COPY.tip_ai}}</view>
+    </sb-card>
+
+    <!-- 配额 -->
+    <view class="page-report__quota">
+      <text>今日追问：{{quota.used}} / {{quota.total}}</text>
+    </view>
+
+    <!-- 追问历史 -->
+    <sb-card
+      title="追问记录"
+      wx:if="{{followups.length > 0}}"
+    >
+      <view
+        wx:for="{{followups}}"
+        wx:key="index"
+        class="page-report__followup"
+      >
+        <view class="page-report__followup-q">问：{{item.question}}</view>
+        <view class="page-report__followup-a">答：{{item.answer}}</view>
+      </view>
+    </sb-card>
+  </block>
+
+  <!-- 追问输入弹窗 -->
+  <sb-modal
+    visible="{{showFollowup}}"
+    title="AI 追问"
+    content="每天可追问 {{quota.total}} 次（已用 {{quota.used}}）"
+    showCancel="{{false}}"
+    confirmText="关闭"
+    bind:confirm="onCloseFollowup"
+  />
+
+  <view wx:if="{{showFollowup}}" class="page-report__followup-panel">
+    <textarea
+      class="page-report__followup-input"
+      placeholder="{{COPY.followup_input_placeholder}}"
+      value="{{followupInput}}"
+      bindinput="onFollowupInput"
+      maxlength="100"
+    />
+    <view class="page-report__followup-actions">
+      <sb-button text="取消" type="text" bind:tap="onCloseFollowup" />
+      <sb-button text="发送" type="primary" size="small" bind:tap="onSendFollowup" />
+    </view>
+  </view>
+</view>

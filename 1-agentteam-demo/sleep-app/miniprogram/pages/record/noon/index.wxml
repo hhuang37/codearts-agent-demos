@@ -1,0 +1,82 @@
+<view class="page-noon">
+  <view class="page-noon__title">{{COPY.noon_title}}</view>
+  <view class="page-noon__subtitle">{{COPY.noon_subtitle}}</view>
+
+  <!-- FR-2.6 兜底弹窗 -->
+  <sb-modal
+    visible="{{showAskPending}}"
+    title="{{COPY.nap_ended_ask}}"
+    content="如果已结束，系统会用上次的时间补全"
+    confirmText="已结束"
+    cancelText="还没结束"
+    bind:confirm="onPendingYes"
+    bind:cancel="onPendingNo"
+  />
+
+  <!-- 状态 1：选择时长（idle） -->
+  <block wx:if="{{status === 'idle'}}">
+    <sb-card title="{{COPY.nap_duration_label}}">
+      <view class="page-noon__duration-options">
+        <view
+          wx:for="{{[15, 20, 25, 30, 45, 60]}}"
+          wx:key="*this"
+          class="page-noon__duration-opt {{duration === item ? 'page-noon__duration-opt--active' : ''}}"
+          data-v="{{item}}"
+          bindtap="onPickDuration"
+        >{{item}} 分钟</view>
+      </view>
+    </sb-card>
+    <sb-button text="{{COPY.nap_start}}" type="primary" block="{{true}}" bind:tap="onStart" />
+  </block>
+
+  <!-- 状态 2：倒计时（running） -->
+  <block wx:elif="{{status === 'running'}}">
+    <view class="page-noon__countdown">
+      <view class="page-noon__countdown-label">午睡倒计时</view>
+      <view class="page-noon__countdown-time">{{fmtMMSS(remaining)}}</view>
+      <view class="page-noon__countdown-sub">预计 {{duration}} 分钟后</view>
+    </view>
+    <sb-button text="{{COPY.nap_end_early}}" type="secondary" block="{{true}}" bind:tap="onEndEarly" />
+  </block>
+
+  <!-- 状态 3：填写午睡卡（finished） -->
+  <block wx:elif="{{status === 'finished'}}">
+    <sb-card title="午睡卡">
+      <view class="page-noon__row">
+        <text class="page-noon__label">{{COPY.nap_location_label}}</text>
+        <picker mode="selector" range="{{locations}}" bindchange="onPickLocation">
+          <view class="page-noon__picker">{{location}}</view>
+        </picker>
+      </view>
+
+      <view class="page-noon__row col">
+        <text class="page-noon__label">{{COPY.nap_depth_label}}</text>
+        <view class="page-noon__opts">
+          <view
+            wx:for="{{[1, 2, 3]}}"
+            wx:key="*this"
+            class="page-noon__opt {{depth === item ? 'page-noon__opt--active' : ''}}"
+            data-v="{{item}}"
+            bindtap="onSetDepth"
+          >{{item === 1 ? '浅睡' : item === 2 ? '中度' : '深睡'}}</view>
+        </view>
+      </view>
+
+      <view class="page-noon__row col">
+        <text class="page-noon__label">{{COPY.nap_recovery_label}}</text>
+        <view class="page-noon__opts">
+          <view
+            wx:for="{{[1, 2, 3]}}"
+            wx:key="*this"
+            class="page-noon__opt {{recovery === item ? 'page-noon__opt--active' : ''}}"
+            data-v="{{item}}"
+            bindtap="onSetRecovery"
+          >{{item === 1 ? '一般' : item === 2 ? '还好' : '满血'}}</view>
+        </view>
+      </view>
+    </sb-card>
+
+    <sb-button text="生成午睡卡" type="primary" block="{{true}}" bind:tap="onSave" />
+    <sb-button text="重新开始" type="text" bind:tap="onReset" />
+  </block>
+</view>

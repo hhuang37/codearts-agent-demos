@@ -1,0 +1,14 @@
+.sb-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.sb-rating__star {
+  color: var(--color-divider);
+  transition: all 0.2s ease;
+}
+
+.sb-rating__star--active {
+  color: var(--color-accent);
+}

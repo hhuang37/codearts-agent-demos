@@ -1,0 +1,26 @@
+<view class="page-questionnaire">
+  <view class="page-questionnaire__progress">
+    <view class="page-questionnaire__bar" style="width: {{(currentIdx + 1) / questions.length * 100}}%"></view>
+  </view>
+  <view class="page-questionnaire__step">{{currentIdx + 1}} / {{questions.length}}</view>
+
+  <block wx:if="{{questions[currentIdx]}}">
+    <sb-card title="{{questions[currentIdx].question}}">
+      <view class="page-questionnaire__options">
+        <view
+          wx:for="{{questions[currentIdx].options || []}}"
+          wx:key="value"
+          class="page-questionnaire__opt {{answers[questions[currentIdx].id] === item.value ? 'page-questionnaire__opt--active' : ''}}"
+          data-qid="{{questions[currentIdx].id}}"
+          data-val="{{item.value}}"
+          bindtap="onPick"
+        >{{item.label}}</view>
+      </view>
+    </sb-card>
+
+    <view class="page-questionnaire__actions">
+      <sb-button wx:if="{{currentIdx > 0}}" text="上一题" type="secondary" size="small" bind:tap="onPrev" />
+      <sb-button text="{{currentIdx < questions.length - 1 ? '下一题' : '生成方案'}}" type="primary" bind:tap="onNext" />
+    </view>
+  </block>
+</view>

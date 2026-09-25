@@ -1,0 +1,104 @@
+/* 睡眠数据中枢页样式（pages/datahub/index.wxss） */
+
+.datahub-page {
+  min-height: 100vh;
+  background: var(--color-bg, #F4F6FA);
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+
+.hero {
+  margin-bottom: 32rpx;
+}
+
+.hero-title {
+  font-size: 44rpx;
+  font-weight: 600;
+  color: var(--color-text, #1A1B3A);
+  margin-bottom: 12rpx;
+}
+
+.hero-desc {
+  font-size: 26rpx;
+  color: var(--color-muted, #6B6F8A);
+  line-height: 1.6;
+}
+
+.stat-card {
+  background: var(--color-primary, #1A1B3A);
+  color: #fff;
+  border-radius: 32rpx;
+  padding: 48rpx 32rpx;
+  text-align: center;
+  margin-bottom: 32rpx;
+}
+
+.stat-num {
+  font-size: 80rpx;
+  font-weight: 600;
+  color: var(--color-accent, #FFD66B);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 12rpx;
+}
+
+.import-btn {
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+  background: var(--color-accent, #FFD66B);
+  color: var(--color-primary, #1A1B3A);
+  border-radius: 48rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  margin-bottom: 32rpx;
+}
+
+.history-section {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 24rpx 32rpx;
+  box-shadow: 0 2rpx 8rpx rgba(26, 27, 58, 0.04);
+}
+
+.section-title {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: var(--color-text, #1A1B3A);
+  margin-bottom: 16rpx;
+}
+
+.empty {
+  text-align: center;
+  padding: 32rpx 0;
+  color: var(--color-muted, #6B6F8A);
+  font-size: 26rpx;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16rpx 0;
+  border-bottom: 2rpx solid rgba(107, 111, 138, 0.06);
+  font-size: 26rpx;
+}
+
+.history-name {
+  color: var(--color-text, #1A1B3A);
+}
+
+.history-count {
+  color: var(--color-muted, #6B6F8A);
+}
+
+.clear-btn {
+  margin-top: 48rpx;
+  text-align: center;
+  padding: 24rpx;
+  color: var(--color-muted, #6B6F8A);
+  font-size: 26rpx;
+}

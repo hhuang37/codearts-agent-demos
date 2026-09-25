@@ -1,0 +1,9 @@
+<view class="sb-list-item" bindtap="onTap">
+  <view class="sb-list-item__icon" wx:if="{{icon}}">{{icon}}</view>
+  <view class="sb-list-item__content">
+    <view class="sb-list-item__title">{{title}}</view>
+    <view class="sb-list-item__desc" wx:if="{{desc}}">{{desc}}</view>
+  </view>
+  <view class="sb-list-item__value" wx:if="{{value}}">{{value}}</view>
+  <view class="sb-list-item__arrow" wx:if="{{arrow}}">›</view>
+</view>

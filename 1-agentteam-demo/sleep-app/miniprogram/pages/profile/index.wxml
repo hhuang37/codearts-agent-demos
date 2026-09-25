@@ -1,0 +1,58 @@
+<!-- 我的页（pages/profile/index.wxml） -->
+<view class="profile-page">
+  <!-- 顶部用户卡片 -->
+  <view class="user-card">
+    <view class="avatar">
+      <view class="avatar-text">{{nickname[0]}}</view>
+    </view>
+    <view class="user-info">
+      <view class="nickname">{{nickname}}</view>
+      <view class="member-tag" style="background: {{memberColor}}">
+        <text wx:if="{{isPremium}}" class="member-icon">★</text>
+        <text>{{memberLabel}}</text>
+      </view>
+    </view>
+    <view wx:if="{{!isPremium}}" class="upgrade-btn" bindtap="onUpgrade">
+      {{COPY.upgrade}}
+    </view>
+  </view>
+
+  <!-- 数据概览 -->
+  <view class="stat-row">
+    <view class="stat-item">
+      <view class="stat-num">{{totalRecords}}</view>
+      <view class="stat-label">条睡眠记录</view>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <view class="stat-num">7</view>
+      <view class="stat-label">天连续</view>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <view class="stat-num">5</view>
+      <view class="stat-label">个白噪音</view>
+    </view>
+  </view>
+
+  <!-- 菜单列表 -->
+  <view wx:for="{{menuGroups}}" wx:key="title" class="menu-section">
+    <view class="section-title">{{item.title}}</view>
+    <view class="menu-list">
+      <view wx:for="{{item.items}}" wx:for-item="mi" wx:key="key"
+            class="menu-item"
+            data-url="{{mi.url}}"
+            data-key="{{mi.key}}"
+            bindtap="onMenuTap">
+        <view class="menu-icon">{{mi.icon}}</view>
+        <view class="menu-label">{{mi.label}}</view>
+        <view wx:if="{{mi.showArrow}}" class="menu-arrow">›</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 退出登录 -->
+  <view class="logout-btn" bindtap="onLogout">{{COPY.logout}}</view>
+
+  <view class="footer">{{COPY.title}} v1.0.0</view>
+</view>

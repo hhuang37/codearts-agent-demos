@@ -1,0 +1,7 @@
+<view class="sb-subscribe" bindtap="onTap">
+  <view class="sb-subscribe__text">{{content}}</view>
+  <view class="sb-subscribe__btn">
+    <text wx:if="{{requested}}">已订阅</text>
+    <text wx:else>立即订阅</text>
+  </view>
+</view>

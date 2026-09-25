@@ -1,0 +1,10 @@
+{
+  "name": "sleepRecord",
+  "version": "1.0.0",
+  "description": "睡眠记录云函数（接口骨架）",
+  "main": "index.js",
+  "dependencies": {},
+  "engines": {
+    "node": "14.x"
+  }
+}

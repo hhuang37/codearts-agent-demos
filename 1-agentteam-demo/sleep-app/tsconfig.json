@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2017", "DOM"],
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["miniprogram/*"],
+      "@utils/*": ["miniprogram/utils/*"],
+      "@models/*": ["miniprogram/models/*"],
+      "@services/*": ["miniprogram/services/*"],
+      "@stores/*": ["miniprogram/stores/*"],
+      "@components/*": ["miniprogram/components/*"]
+    },
+    "types": ["miniprogram-api-typings", "node"]
+  },
+  "include": [
+    "miniprogram/**/*.ts",
+    "miniprogram/**/*.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "miniprogram_npm",
+    "cloudfunctions/**/node_modules"
+  ]
+}

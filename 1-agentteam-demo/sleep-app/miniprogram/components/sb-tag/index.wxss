@@ -1,0 +1,41 @@
+.sb-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6rpx 16rpx;
+  border-radius: var(--radius-tag);
+  font-size: var(--font-size-xs);
+  line-height: 1.2;
+  background-color: rgba(26, 27, 58, 0.06);
+  color: var(--color-text-sub);
+}
+
+.sb-tag--default {
+  background-color: rgba(26, 27, 58, 0.06);
+  color: var(--color-text-sub);
+}
+
+.sb-tag--primary {
+  background-color: rgba(26, 27, 58, 0.85);
+  color: var(--color-white);
+}
+
+.sb-tag--accent {
+  background-color: rgba(255, 214, 107, 0.3);
+  color: #b28827;
+}
+
+.sb-tag--warning {
+  background-color: rgba(242, 153, 74, 0.15);
+  color: var(--color-warning);
+}
+
+.sb-tag__text {
+  margin-right: 4rpx;
+}
+
+.sb-tag__close {
+  margin-left: 4rpx;
+  font-size: 28rpx;
+  line-height: 1;
+  padding: 0 4rpx;
+}

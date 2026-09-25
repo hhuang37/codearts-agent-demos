@@ -1,0 +1,91 @@
+<view class="page-home">
+  <!-- 顶部问候区 -->
+  <view class="page-home__hero">
+    <view class="page-home__date">{{todayDate}} · {{weekday}}</view>
+    <view class="page-home__greeting">{{greeting}}</view>
+  </view>
+
+  <!-- 今日卡片 / 最近记录 -->
+  <sb-card
+    title="{{latest ? '最近一觉' : COPY.home.empty_recent}}"
+    subtitle="{{latest ? fmtDuration(latest.durationMin) + ' · 自评 ' + (latest.selfRating || '未评') + ' 星' : ''}}"
+    wx:if="{{latest}}"
+    bind:tap="onRecordTap"
+    data-id="{{latest._id}}"
+  >
+    <view class="page-home__latest" wx:if="{{latest}}">
+      <view class="page-home__latest-row">
+        <text class="page-home__latest-label">入睡</text>
+        <text class="page-home__latest-value">{{fmtTime(latest.startAt)}}</text>
+      </view>
+      <view class="page-home__latest-row">
+        <text class="page-home__latest-label">起床</text>
+        <text class="page-home__latest-value">{{fmtTime(latest.endAt)}}</text>
+      </view>
+      <view class="page-home__latest-notes" wx:if="{{latest.notes}}">
+        {{latest.notes}}
+      </view>
+    </view>
+  </sb-card>
+
+  <!-- 时间轴（最近 7 天） -->
+  <sb-card title="{{COPY.home.recent_title}}" wx:if="{{records.length > 1}}">
+    <view class="page-home__timeline">
+      <view
+        wx:for="{{records}}"
+        wx:key="_id"
+        class="page-home__timeline-item"
+        data-id="{{item._id}}"
+        bindtap="onRecordTap"
+      >
+        <view class="page-home__timeline-dot page-home__timeline-item--{{item.type}}"></view>
+        <view class="page-home__timeline-content">
+          <view class="page-home__timeline-date">{{fmtDate(item.startAt)}}</view>
+          <view class="page-home__timeline-meta">
+            {{item.type === 'night' ? '夜间' : '午睡'}} · {{fmtDuration(item.durationMin)}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </sb-card>
+
+  <!-- 6 个快捷入口 -->
+  <view class="page-home__entries">
+    <view class="page-home__entry" bindtap="onGoRecord">
+      <view class="page-home__entry-icon">📝</view>
+      <text class="page-home__entry-text">{{COPY.home.quick_action_record}}</text>
+    </view>
+    <view class="page-home__entry" bindtap="onGoNap">
+      <view class="page-home__entry-icon">💤</view>
+      <text class="page-home__entry-text">{{COPY.home.quick_action_nap}}</text>
+    </view>
+    <view class="page-home__entry" bindtap="onGoScene">
+      <view class="page-home__entry-icon">🌿</view>
+      <text class="page-home__entry-text">{{COPY.home.quick_action_scene}}</text>
+    </view>
+    <view class="page-home__entry" bindtap="onGoSoundscape">
+      <view class="page-home__entry-icon">🎵</view>
+      <text class="page-home__entry-text">{{COPY.home.quick_action_soundscape}}</text>
+    </view>
+    <view class="page-home__entry" bindtap="onGoAlarm">
+      <view class="page-home__entry-icon">⏰</view>
+      <text class="page-home__entry-text">{{COPY.home.quick_action_alarm}}</text>
+    </view>
+    <view class="page-home__entry" bindtap="onGoEvening">
+      <view class="page-home__entry-icon">🌙</view>
+      <text class="page-home__entry-text">{{COPY.home.quick_action_evening}}</text>
+    </view>
+  </view>
+
+  <!-- 浮动 + 按钮 -->
+  <view class="page-home__plus {{showMenu ? 'page-home__plus--active' : ''}}" bindtap="onPlusTap">+</view>
+
+  <!-- 菜单遮罩 -->
+  <view class="page-home__menu-mask" wx:if="{{showMenu}}" bindtap="onMenuMaskTap">
+    <view class="page-home__menu">
+      <view class="page-home__menu-item" bindtap="onGoRecord">{{COPY.home.menu_start}}</view>
+      <view class="page-home__menu-item" bindtap="onGoNap">{{COPY.home.menu_nap}}</view>
+      <view class="page-home__menu-cancel" bindtap="onMenuMaskTap">{{COPY.home.menu_cancel}}</view>
+    </view>
+  </view>
+</view>

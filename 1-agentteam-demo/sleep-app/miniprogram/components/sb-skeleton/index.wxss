@@ -1,0 +1,34 @@
+.sb-skeleton {
+  background-color: var(--color-white);
+  border-radius: var(--radius-card);
+  padding: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.sb-skeleton__row {
+  height: 24rpx;
+  background: linear-gradient(90deg, rgba(26, 27, 58, 0.04) 25%, rgba(26, 27, 58, 0.08) 50%, rgba(26, 27, 58, 0.04) 75%);
+  background-size: 200% 100%;
+  animation: sb-skeleton-shimmer 1.4s infinite;
+  border-radius: 8rpx;
+  margin-bottom: var(--space-2);
+}
+
+.sb-skeleton__row--title {
+  width: 50%;
+  height: 32rpx;
+}
+
+.sb-skeleton__row--body {
+  width: 100%;
+}
+
+.sb-skeleton__row:last-child {
+  margin-bottom: 0;
+  width: 70%;
+}
+
+@keyframes sb-skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
