@@ -1,6 +1,6 @@
 # CodeArts Agent Team 多智能体协作实操
 
-> 语言：**简体中文** ｜ [English](README.md)
+> 语言：**简体中文** ｜ [English](agentteam_readme.md)
 >
 > 状态：进行中。准备清单、指令和记录表先落好，截图和数字跑完补。
 

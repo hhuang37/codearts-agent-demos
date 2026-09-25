@@ -1,6 +1,6 @@
 # CodeArts 代码索引对照实验（Kafka 3.9.0 手动实操）
 
-> 语言：**中文** ｜ [English](README.md)
+> 语言：**中文** ｜ [English](codebase_readme.md)
 >
 > 视频版（7 分 13 秒，1920×1200，约 104 MB，点击为下载）：
 > [codebases_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.1.0/codebases_demo.mp4)

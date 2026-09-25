@@ -1,6 +1,6 @@
 # CodeArts Code Index Comparison (Kafka 3.9.0, manual walkthrough)
 
-> Language: **English** ｜ [简体中文](README.zh-CN.md)
+> Language: **English** ｜ [简体中文](codebase_readme.zh-CN.md)
 >
 > Video (7 min 13 s, 1920×1200, ~104 MB, click to download):
 > [codebases_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.1.0/codebases_demo.mp4)

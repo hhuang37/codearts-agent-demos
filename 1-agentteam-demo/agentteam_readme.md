@@ -1,6 +1,6 @@
 # CodeArts Agent Team: multi-agent collaboration walkthrough
 
-> Language: **English** | [简体中文](README.zh-CN.md)
+> Language: **English** | [简体中文](agentteam_readme.zh-CN.md)
 >
 > Status: in progress. Prep checklist, prompts, and record tables are in place; screenshots and numbers will be filled in after the run.
 
