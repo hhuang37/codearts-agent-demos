@@ -26,7 +26,7 @@ Spec-driven development has three main benefits:
 
 Whether you are starting a project from scratch or introducing SDD into a project that has been running for years, specs can help prevent drift and improve productivity. Think of a compiler: it converts human-readable source code into machine code. SDD guides a coding agent, using prompts, to turn a specification into source code. And unlike a programming language designed for a compiler, a spec is written in natural language, so people can read and understand it directly.
 
-![SDD explained](sdd解释图-5.png)
+![SDD explained](sdd解释图-en-1.png)
 
 ---
 
