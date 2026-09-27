@@ -1,6 +1,6 @@
 # 从 vibe coding 到 SDD：让智能编程更可控
 
-> 视频版（11 分 09 秒，1728×1080，约 267 MB，点击为下载）：
+> 视频版（11 分 09 秒，1152×720，约 170 MB，点击为下载）：
 > [sdd_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.2.0/sdd_demo.mp4)
 
 当我们提到智能编程（agentic coding），很多人首先想到的可能是 vibe coding。本文将对比 vibe coding 和 SDD（spec driven developments），看看 SDD 如何通过引入工程化方法，让编程结果更可控。
