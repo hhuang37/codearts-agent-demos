@@ -1,5 +1,8 @@
 # 从 vibe coding 到 SDD：让智能编程更可控
 
+> 视频版（11 分 09 秒，1728×1080，约 267 MB，点击为下载）：
+> [sdd_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.2.0/sdd_demo.mp4)
+
 当我们提到智能编程（agentic coding），很多人首先想到的可能是 vibe coding。本文将对比 vibe coding 和 SDD（spec driven developments），看看 SDD 如何通过引入工程化方法，让编程结果更可控。
 
 vibe coding 能快速给我们结果，你可能通过写一个prompt来描述你想做一个什么功能， 比如： 给我做一个前端界面按钮。 但是有的时候你觉得这个按钮太大了， 颜色不是我想要的...  然后你给 coding agent指出它的问题，让它更改，直到你对最后的结果满意为止。 这时你会发现，你跟coding agent做了一个很长的多轮对话， 对话的历史没有被保留。  这样的开发方式对一个按钮来说是够用的。 但是在面对大型企业级大的开发工程来说是不够的。
@@ -8,7 +11,7 @@ vibe coding 能快速给我们结果，你可能通过写一个prompt来描述�
 
 所以我们需要工程化的方式， 用一个维护好的规范（specification）来指导coding agent进行开发。 SDD （Spec-driven developments） 就是这样一个开发的方法论，它会把这个项目要做什么（what），为什么这么做（why） 写进规范（specification）中，并把如何做（how）写进design, task设计文档中， 实现解耦。  有了这个规范，我们不仅在开发人员之间对齐开发思路，约定共同语言。 同时不同的 coding agent之间， 不同的 LLM 之间也能够同样做到。 现在我们就有了一个有力的"方法论"，可以将我们的意图转化为清晰的开发规范。
 
-> **作者感受:** 常言道好马配好鞍， LLM是马， coding agent是鞍。 在常见的代码开发场景下，我们有不同的人 -> 用不同Coding Agent（鞍） -> 使用不同的LLM（马） -> 在不同的对话 来完成我们的开发任务。 因此，使用SDD开发方式，对齐开发思路，约定共同语言是大型项目开发的必备。
+> **作者感受：** 常言道好马配好鞍， LLM是马， coding agent是鞍。 在常见的代码开发场景下，我们有不同的人 -> 用不同Coding Agent（鞍） -> 使用不同的LLM（马） -> 在不同的会话  来完成我们"共同"的开发任务。 因此，使用SDD开发方式，对齐开发思路，约定共同语言是大型项目开发的必备。
 
 ## 从 vibe coding 到 SDD
 
@@ -18,9 +21,9 @@ vibe coding 能快速给我们结果，你可能通过写一个prompt来描述�
 
 1. 首先，你能够通过对规范（specification）的小幅度修改来控制大规模的代码更改，规范中几句需求描述的话，就会转化成数百行的代码。 这种"规范驱动" 的方法能够降低coding agent之间协作所需要的认知负担。
 
-2. 其次规范（specification）能够消减coding agent开发中，因为多轮对话造成上下文衰减的问题。 当你与coding agent协作时，它的上下文窗口会逐渐被填满，上下文窗口的增加，往往会导致更多的幻觉，更多的错误。规范可以在会话之间、甚至在不同智能体之间持久保存，将智能体框定在代码库中遵循规范工作，让coding agent能更专注工程原始功能的开发。
+2. 其次规范（specification）能够消减coding agent开发中，因为多轮对话造成上下文衰减的问题。 当你与coding agent协作时，它的上下文窗口会逐渐被填满，上下文的增加，往往会导致更多的幻觉，更多的错误。规范（specification）可以在会话之间、甚至在不同智能体之间持久保存，将Coding Agent智能体框定在代码库中遵循规范工作，能更专注原始功能的开发。
 
-3. 第三，规范（specification）提升了你的意图保真度（intention fidelity），也就是说，coding agent更有可能生成与你的目标相匹配的代码。这是因为规范迫使你在智能体开始生成代码之前，就明确定义问题、成功标准、约束条件、用户流程等。规范（specification）是"氛围编程（vibe coding）"（随性凑合）与工程化打造一个可行软件产品之间的关键区别。
+3. 第三，规范（specification）提升了你的意图保真度（intention fidelity），也就是说，Coding Agent更有可能生成与你的目标相匹配的代码。这是因为规范（specification）迫使你在Coding Agent智能体开始生成代码之前，就明确定义问题、成功标准、约束条件、用户流程等。规范（specification）是"氛围编程（vibe coding）"（随性凑合）与工程化打造一个可行软件产品之间的关键区别。
 
 无论你是从零开始一个新项目，还是想将SDD（规范驱动开发）方法引入一个已经运行多年的项目，规范（specification）都有助于解决偏离和生产力问题。打个比方，想想编译器(compiler)——它将可理解的源代码转换为机器码。SDD则引导智能体(coding agent)和提示词（prompt），将规范转换为源代码。 更妙的是，相比编译器（compiler）语言,规范（specification）就是人类通过自然语言编写的，天然就能够被人类理解!
 
