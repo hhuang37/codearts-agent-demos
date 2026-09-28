@@ -1,6 +1,9 @@
 # Agent Team Collaboration Demo
 
-> English | [简体中文](agentteam_readme.zh-CN.md)
+> Language: **English** ｜ [简体中文](agentteam_readme.zh-CN.md)
+>
+> Video (4 min 17 s, 1152×720, ~58 MB, click to download):
+> [agentteams-demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.3.0/agentteams-demo.mp4)
 
 ## Steps
 

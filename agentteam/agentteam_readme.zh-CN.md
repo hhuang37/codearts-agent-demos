@@ -1,6 +1,9 @@
 # Agent Team 多智能体协作演示
 
-> 简体中文 ｜ [English](agentteam_readme.md)
+> 语言：**中文** ｜ [English](agentteam_readme.md)
+>
+> 视频版（4 分 17 秒，1152×720，约 58 MB，点击为下载）：
+> [agentteams-demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.3.0/agentteams-demo.mp4)
 
 ## 操作步骤
 
