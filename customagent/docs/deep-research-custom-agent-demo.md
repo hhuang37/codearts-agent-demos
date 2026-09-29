@@ -9,6 +9,7 @@ This guide walks you through creating a team of custom agents in CodeArts that w
 
 ## What This Demo Shows
 
+- **Plan first:** The primary agent breaks down the topic into a research plan before dispatching the sub-agents.
 - **Clear division of work:** The researcher gathers evidence, the fact checker verifies key claims, and the writer drafts a report using only verified material.
 - **Tools matched to each role:** The researcher and fact checker can browse the web; the writer has no web access.
 - **A traceable workflow:** The primary agent passes the research plan, evidence, and verification results from one step to the next. The run history shows what each agent did.
