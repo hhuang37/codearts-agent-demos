@@ -7,3 +7,14 @@
 
 # 本地 agent 工作数据（memory、临时脚本等），不入公开仓库
 .workbuddy/
+
+# customagent/.codeartsdoer 只入库 agents/ 智能体定义，其余为本地运行数据
+customagent/.codeartsdoer/.gitignore
+customagent/.codeartsdoer/.codebase/
+customagent/.codeartsdoer/mcp/
+customagent/.codeartsdoer/skills/
+customagent/.codeartsdoer/mem-exp-config.json
+customagent/.codeartsdoer/package.json
+
+# DeepLearning.AI 课程 notebook 属第三方材料，仅本地参考
+customagent/*.ipynb
