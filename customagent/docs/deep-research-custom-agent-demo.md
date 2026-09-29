@@ -1,6 +1,9 @@
 # CodeArts Custom Agents: Deep Research Crew Demo
 
 > Language: **English** | [Chinese](deep-research-custom-agent-demo.zh-CN.md)
+>
+> Video (2 min 37 s, 1152×736, ~30 MB, click to download):
+> [customagent-demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.4.0/customagent-demo.mp4)
 
 This guide walks you through creating a team of custom agents in CodeArts that work in sequence: Research Planner → InternetResearcher → FactChecker → ReportWriter.
 

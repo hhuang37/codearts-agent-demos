@@ -1,6 +1,9 @@
 # CodeArts 自定义智能体：Deep Research Crew 操作演示
 
 > 语言：**中文** | [English](deep-research-custom-agent-demo.md)
+>
+> 视频版（2 分 37 秒，1152×736，约 30 MB，点击为下载）：
+> [customagent-demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.4.0/customagent-demo.mp4)
 
 > 本文演示如何在 CodeArts IDE 中创建一组按顺序协作的智能体：Research Planner → Internet Researcher → Fact Checker → Report Writer。
 
