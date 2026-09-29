@@ -13,6 +13,10 @@ This guide walks you through creating a team of custom agents in CodeArts that w
 - **Tools matched to each role:** The researcher and fact checker can browse the web; the writer has no web access.
 - **A traceable workflow:** The primary agent passes the research plan, evidence, and verification results from one step to the next. The run history shows what each agent did.
 
+The architecture of the research agent team:
+
+![Research agent team architecture](architecture.png)
+
 ## 1. Create Three Sub-Agents
 
 In CodeArts IDE, go to **Settings → Agents → Create Agent**. Create the three sub-agents below first, then create the primary agent. For each agent, set the scope to **Personal** and enter the description and prompt exactly as shown. You can also create cloud agents in CodeArts Agent Console.
