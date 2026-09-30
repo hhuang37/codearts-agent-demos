@@ -42,7 +42,7 @@ cd D:\work\codearts-agent-demos\serve
 codearts
 ```
 
-CLI 分析的是演示目录下的 `app.log`。如果没有现成日志，先把样例 [app.log](./app.log)（一次 JDBC 连接超时故障）复制到演示目录。
+CLI 分析的是演示目录下的 `app.log`。先把样例 [app.log](./app.log)（一次 JDBC 连接超时故障）下载并保存到该路径（`D:\work\codearts-agent-demos\serve\app.log`），再输入下面的提问。
 
 进入 CLI 交互界面后，输入：
 

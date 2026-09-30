@@ -40,7 +40,7 @@ cd D:\work\codearts-agent-demos\serve
 codearts
 ```
 
-The CLI analyzes `app.log` in the demo directory. If you don't have a log file yet, copy the sample [app.log](./app.log) (a JDBC connect-timeout incident) into the demo directory first.
+The CLI analyzes `app.log` in the demo directory. Download the sample [app.log](./app.log) — a JDBC connect-timeout incident — and save it to that path (`D:\work\codearts-agent-demos\serve\app.log`) before entering the prompt below.
 
 When the interactive CLI opens, enter this prompt:
 
