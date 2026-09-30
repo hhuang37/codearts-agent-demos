@@ -22,3 +22,6 @@ serveattach/*
 !serveattach/cli_serve_attach.zh-CN.md
 !serveattach/*.png
 !serveattach/app.log
+
+# sleep-app 源码已从仓库移除（本地保留），防止误加回
+agentteam/sleep-app/

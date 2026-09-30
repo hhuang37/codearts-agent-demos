@@ -1,1 +1,0 @@
-<view class="sb-toast sb-toast--{{type}}" wx:if="{{visible}}">{{text}}</view>
