@@ -1,0 +1,7 @@
+2026-09-30 09:12:01 INFO  OrderService - order 8842 created
+2026-09-30 09:12:03 WARN  HikariPool-1 - Connection timeout, retrying (attempt 1/3)
+2026-09-30 09:12:06 ERROR HikariPool-1 - JDBC connection failed: Communications link failure
+2026-09-30 09:12:06 ERROR OrderService - Failed to save order 8842
+java.net.SocketTimeoutException: connect timed out
+    at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+2026-09-30 09:12:09 INFO  OrderService - retry succeeded, order 8842 saved (took 8.2s)

@@ -15,3 +15,10 @@ customagent/docs/*
 !customagent/docs/deep-research-custom-agent-demo.md
 !customagent/docs/deep-research-custom-agent-demo.zh-CN.md
 !customagent/docs/*.png
+
+# serveattach 只保留 CLI serve/attach demo 的两份指南、截图与样例日志，其余仅本地
+serveattach/*
+!serveattach/cli_serve_attach.en-US.md
+!serveattach/cli_serve_attach.zh-CN.md
+!serveattach/*.png
+!serveattach/app.log
