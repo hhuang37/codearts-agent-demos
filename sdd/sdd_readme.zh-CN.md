@@ -1,5 +1,7 @@
 # 从 vibe coding 到 SDD：让智能编程更可控
 
+> 语言：**中文** ｜ [English](sdd_readme.en.md)
+>
 > 视频版（11 分 09 秒，1152×720，约 170 MB，点击为下载）：
 > [sdd_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.2.0/sdd_demo.mp4)
 

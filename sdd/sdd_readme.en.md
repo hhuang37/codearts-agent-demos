@@ -1,5 +1,10 @@
 # From Vibe Coding to SDD: Making AI-Assisted Coding More Predictable
 
+> Language: **English** ｜ [简体中文](sdd_readme.zh-CN.md)
+>
+> Video (11 min 9 s, 1152×720, ~170 MB, click to download):
+> [sdd_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.2.0/sdd_demo.mp4)
+
 When you hear *agentic coding*, you might think of *vibe coding*. Let’s compare the two and see how spec-driven development brings engineering back into the process—and helps produce more reliable results.
 
 Vibe coding gives you quick results. You describe what you want in a prompt, such as “Create me a button,” and hope for the best. Then you look at the result: “That’s a big button. It’s kind of close, but a few important things are off.” You point out the problems to the coding agent, it tries again, and the cycle continues until you’re satisfied. Before long, you have a long dialogue with the agent—and that conversation history may not be saved. This approach works well enough for a button, but it does not scale to a large, ongoing project. High-level prompts are fast, but they can lead to disposable code and mounting technical debt.
