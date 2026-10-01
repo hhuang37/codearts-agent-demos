@@ -25,3 +25,6 @@ serveattach/*
 
 # sleep-app 源码已从仓库移除（本地保留），防止误加回
 agentteam/sleep-app/
+
+# 本地 agent 工作数据（.codeartsdoer：技能缓存、索引等），不入公开仓库
+.codeartsdoer/
