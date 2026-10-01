@@ -1,6 +1,9 @@
 # 码道 CLI `serve` / `attach` 远程开发演示
 
 > 语言：**中文** ｜ [English](cli_serve_attach.en-US.md)
+>
+> 视频版（3 分 52 秒，1152×720，约 22 MB，点击为下载）：
+> [cli_serve_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.5.0/cli_serve_demo.mp4)
 
 ## 这个 Demo 做什么
 

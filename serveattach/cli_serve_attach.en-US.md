@@ -1,6 +1,9 @@
 # CodeArts CLI `serve` / `attach`: Remote Development Demo
 
 > Language: **English** ｜ [简体中文](cli_serve_attach.zh-CN.md)
+>
+> Video (3 min 52 s, 1152×720, ~22 MB, click to download):
+> [cli_serve_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.5.0/cli_serve_demo.mp4)
 
 ## What This Demo Does
 
