@@ -87,7 +87,7 @@ codearts serve --hostname 127.0.0.1 --port 4096
 
 ![serve 已在 127.0.0.1:4096 启动](./image-3.png)
 
-## 主机2：在第二个终端接续会话
+## 主机2：在后续终端接续会话
 
 ### 步骤 6：配置第二个 PowerShell 窗口
 

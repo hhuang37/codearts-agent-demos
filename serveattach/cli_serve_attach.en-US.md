@@ -85,7 +85,7 @@ When the server reports that it is listening on `127.0.0.1:4096`, leave this win
 
 ![CodeArts server listening on 127.0.0.1:4096](./image-3.png)
 
-## Host 2: Resume the session from a second terminal
+## Host 2: Resume the session from the following terminal
 
 ### Step 6: Configure the second PowerShell window
 
