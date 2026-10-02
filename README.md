@@ -15,7 +15,6 @@ Hands-on demos of CodeArts Agent features — step-by-step guides and screen rec
 | Custom Agent | Custom primary/sub-agent crew: a primary agent plans, then dispatches researcher, fact-checker, and report-writer sub-agents in sequence | A factual question runs the four-agent pipeline; the short report has Summary/Findings/Insights/Citations with source URLs | [English](customagent/docs/deep-research-custom-agent-demo.md) | [2 min 37 s](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.4.0/customagent-demo.mp4) | Done |
 | CLI Serve | Remote session relay with `codearts serve` / `codearts attach`: Host 1 runs a log-analysis task and exposes the session on a local port; Host 2 resumes the same session from another terminal | The following terminal continues the original session context and delivers a follow-up summary | [English](serveattach/cli_serve_attach.en-US.md) | [3 min 52 s](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.5.0/cli_serve_demo.mp4) | Done |
 | Skill Marketplace | Install an official skill (skill-reviewer) from the CodeArts Skill Marketplace and verify it by having it review another skill | 15-item review: 9 passed, 5 warnings, 1 failed — overall 85/100 (pass_with_warnings) | [English](huaweiskill/huaweiskill.md) | [2 min 33 s](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.6.0/huaweiskill_demo.mp4) | Done |
-| Huawei Cloud E2E | End-to-end best practices for building on Huawei Cloud products | pending | pending | pending | Planned |
 
 ## Notes
 
