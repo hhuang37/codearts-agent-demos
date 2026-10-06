@@ -16,6 +16,20 @@ GITHUB_TOKEN=$(gh auth token) python .github/scripts/collect_traffic.py
 
 ![仓库流量趋势图](chart.svg)
 
+<!-- STATS:START -->
+## 当前统计（每日自动刷新）
+
+| 指标 | 数值 | 口径 |
+| --- | ---: | --- |
+| 浏览（近 14 天） | 494 | 截至今天往前 14 天滚动窗口的页面浏览合计 |
+| 浏览访客（近 14 天） | 37 | 按 IP/设备 24 小时去重 |
+| 克隆（近 14 天） | 370 | 只统计完整 `git clone`；fetch/pull、Download ZIP 不算 |
+| 独立克隆者（近 14 天） | 213 | 克隆人数，24 小时去重 |
+| 视频下载（累计） | 33 | release 附件发布以来的累计下载次数，无 14 天限制 |
+
+数据截至 **2026-10-06**（GitHub 流量数据本身滞后 1~2 天）。每日明细与图表见 [report.zh-CN.md](report.zh-CN.md)。
+<!-- STATS:END -->
+
 📊 **完整表格报告**（每日明细、文件夹热度、release 下载量）：[中文](report.zh-CN.md) ｜ [English](report.md)
 
 ## 文件说明

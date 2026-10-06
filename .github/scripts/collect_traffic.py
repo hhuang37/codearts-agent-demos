@@ -305,6 +305,52 @@ def render_report(history, summary):
             f.write("\n".join(lines) + "\n")
 
 
+STATS_I18N = {
+    "README.md": """<!-- STATS:START -->
+## Current numbers (auto-refreshed daily)
+
+| Metric | Value | Meaning |
+| --- | ---: | --- |
+| Views (last 14 days) | {views_14d} | page views over the rolling 14-day window ending today |
+| View uniques (last 14 days) | {view_uniques_14d} | deduplicated by IP/device over 24 h |
+| Clones (last 14 days) | {clones_14d} | full `git clone` only; fetch/pull and Download ZIP excluded |
+| Unique cloners (last 14 days) | {clone_uniques_14d} | cloner count, 24 h dedup |
+| Video downloads (all-time) | {downloads_total} | cumulative release-asset downloads since publishing |
+
+As of **{updated}** (GitHub's own traffic data lags 1–2 days). Daily breakdown & charts: [report.md](report.md).
+<!-- STATS:END -->""",
+    "README.zh-CN.md": """<!-- STATS:START -->
+## 当前统计（每日自动刷新）
+
+| 指标 | 数值 | 口径 |
+| --- | ---: | --- |
+| 浏览（近 14 天） | {views_14d} | 截至今天往前 14 天滚动窗口的页面浏览合计 |
+| 浏览访客（近 14 天） | {view_uniques_14d} | 按 IP/设备 24 小时去重 |
+| 克隆（近 14 天） | {clones_14d} | 只统计完整 `git clone`；fetch/pull、Download ZIP 不算 |
+| 独立克隆者（近 14 天） | {clone_uniques_14d} | 克隆人数，24 小时去重 |
+| 视频下载（累计） | {downloads_total} | release 附件发布以来的累计下载次数，无 14 天限制 |
+
+数据截至 **{updated}**（GitHub 流量数据本身滞后 1~2 天）。每日明细与图表见 [report.zh-CN.md](report.zh-CN.md)。
+<!-- STATS:END -->""",
+}
+
+
+def update_readme_stats(summary):
+    for name, block in STATS_I18N.items():
+        path = os.path.join(TRAFFIC_DIR, name)
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+        start = text.find("<!-- STATS:START -->")
+        end = text.find("<!-- STATS:END -->")
+        if start == -1 or end == -1:
+            continue
+        end += len("<!-- STATS:END -->")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(text[:start] + block.format(**summary) + text[end:])
+
+
 def main():
     os.makedirs(TRAFFIC_DIR, exist_ok=True)
     date = today()
@@ -377,6 +423,7 @@ def main():
         f.write("\n")
 
     render_report(history, summary)
+    update_readme_stats(summary)
 
     print("[traffic] " + json.dumps(summary))
 
