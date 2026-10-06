@@ -35,5 +35,5 @@ __pycache__/
 # serve/ 是 serve/attach demo 的本地工作目录（成果已入库到 serveattach/，app.log 与其完全相同），仅本地保留
 serve/
 
-# CLI 用户手册 PDF 走 Release 附件分发（v0.8.0），本地保留不入库
+# CLI 用户手册 PDF 仅本地保留，不上传 git（2026-10-06 用户要求撤下已发的 release）
 codeartsagent-usermanual-cli-pdf.pdf
