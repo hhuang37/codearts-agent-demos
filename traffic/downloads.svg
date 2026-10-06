@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11">
+<text x="16" y="20" fill="#24292f" font-size="13" font-weight="600">Release downloads (cumulative)</text>
+<text x="206" y="59" text-anchor="end" fill="#57606a">codebases_demo.mp4 (v0.1.0)</text>
+<rect x="214" y="49" width="498.0" height="16" rx="2" fill="#DD7815"/>
+<text x="718.0" y="60" fill="#24292f">13</text>
+<text x="206" y="87" text-anchor="end" fill="#57606a">customagent-demo.mp4 (v0.4.0)</text>
+<rect x="214" y="77" width="268.2" height="16" rx="2" fill="#DD7815"/>
+<text x="488.2" y="88" fill="#24292f">7</text>
+<text x="206" y="115" text-anchor="end" fill="#57606a">agentteams-demo.mp4 (v0.3.0)</text>
+<rect x="214" y="105" width="153.2" height="16" rx="2" fill="#DD7815"/>
+<text x="373.2" y="116" fill="#24292f">4</text>
+<text x="206" y="143" text-anchor="end" fill="#57606a">sdd_demo.mp4 (v0.2.0)</text>
+<rect x="214" y="133" width="114.9" height="16" rx="2" fill="#DD7815"/>
+<text x="334.9" y="144" fill="#24292f">3</text>
+<text x="206" y="171" text-anchor="end" fill="#57606a">frontend-demo.mp4 (v0.7.0)</text>
+<rect x="214" y="161" width="76.6" height="16" rx="2" fill="#DD7815"/>
+<text x="296.6" y="172" fill="#24292f">2</text>
+<text x="206" y="199" text-anchor="end" fill="#57606a">huaweiskill_demo.mp4 (v0.6.0)</text>
+<rect x="214" y="189" width="76.6" height="16" rx="2" fill="#DD7815"/>
+<text x="296.6" y="200" fill="#24292f">2</text>
+<text x="206" y="227" text-anchor="end" fill="#57606a">cli_serve_demo.mp4 (v0.5.0)</text>
+<rect x="214" y="217" width="76.6" height="16" rx="2" fill="#DD7815"/>
+<text x="296.6" y="228" fill="#24292f">2</text>
+</svg>

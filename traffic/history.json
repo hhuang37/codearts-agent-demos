@@ -1,0 +1,305 @@
+{
+  "daily": {
+    "2026-09-15": {
+      "clone_uniques": 0,
+      "clones": 0,
+      "view_uniques": 0,
+      "views": 0
+    },
+    "2026-09-16": {
+      "clone_uniques": 0,
+      "clones": 0,
+      "view_uniques": 0,
+      "views": 0
+    },
+    "2026-09-17": {
+      "clone_uniques": 0,
+      "clones": 0,
+      "view_uniques": 0,
+      "views": 0
+    },
+    "2026-09-18": {
+      "clone_uniques": 0,
+      "clones": 0,
+      "view_uniques": 0,
+      "views": 0
+    },
+    "2026-09-19": {
+      "clone_uniques": 0,
+      "clones": 0,
+      "view_uniques": 0,
+      "views": 0
+    },
+    "2026-09-20": {
+      "clone_uniques": 0,
+      "clones": 0,
+      "view_uniques": 0,
+      "views": 0
+    },
+    "2026-09-21": {
+      "clone_uniques": 31,
+      "clones": 50,
+      "view_uniques": 5,
+      "views": 47
+    },
+    "2026-09-22": {
+      "clone_uniques": 0,
+      "clones": 0,
+      "view_uniques": 7,
+      "views": 12
+    },
+    "2026-09-23": {
+      "clone_uniques": 2,
+      "clones": 2,
+      "view_uniques": 4,
+      "views": 23
+    },
+    "2026-09-24": {
+      "clone_uniques": 1,
+      "clones": 1,
+      "view_uniques": 2,
+      "views": 4
+    },
+    "2026-09-25": {
+      "clone_uniques": 64,
+      "clones": 98,
+      "view_uniques": 10,
+      "views": 98
+    },
+    "2026-09-26": {
+      "clone_uniques": 2,
+      "clones": 2,
+      "view_uniques": 1,
+      "views": 4
+    },
+    "2026-09-27": {
+      "clone_uniques": 31,
+      "clones": 52,
+      "view_uniques": 2,
+      "views": 13
+    },
+    "2026-09-28": {
+      "clone_uniques": 24,
+      "clones": 38,
+      "view_uniques": 3,
+      "views": 49
+    },
+    "2026-09-29": {
+      "clone_uniques": 18,
+      "clones": 30,
+      "view_uniques": 5,
+      "views": 41
+    },
+    "2026-09-30": {
+      "clone_uniques": 8,
+      "clones": 12,
+      "view_uniques": 3,
+      "views": 75
+    },
+    "2026-10-01": {
+      "clone_uniques": 34,
+      "clones": 59,
+      "view_uniques": 2,
+      "views": 81
+    },
+    "2026-10-02": {
+      "clone_uniques": 13,
+      "clones": 21,
+      "view_uniques": 5,
+      "views": 45
+    },
+    "2026-10-03": {
+      "clone_uniques": 5,
+      "clones": 5,
+      "view_uniques": 0,
+      "views": 0
+    },
+    "2026-10-04": {
+      "clone_uniques": 0,
+      "clones": 0,
+      "view_uniques": 2,
+      "views": 2
+    }
+  },
+  "popular_paths": [
+    {
+      "date": "2026-09-30",
+      "items": [
+        {
+          "path": "/hhuang37/codearts-agent-demos",
+          "uniques": 17,
+          "views": 60
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/sdd/sdd_readme.zh-CN.md",
+          "uniques": 9,
+          "views": 38
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/tree/main",
+          "uniques": 5,
+          "views": 26
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/codebase/README.md",
+          "uniques": 7,
+          "views": 18
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/README.zh-CN.md",
+          "uniques": 5,
+          "views": 14
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/README.md",
+          "uniques": 2,
+          "views": 9
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/codebase/README.zh-CN.md",
+          "uniques": 4,
+          "views": 7
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/tree/main/codebase",
+          "uniques": 2,
+          "views": 7
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/tree/main/sdd",
+          "uniques": 1,
+          "views": 6
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/sdd/sdd\u89e3\u91ca\u56fe-2.png",
+          "uniques": 2,
+          "views": 5
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "items": [
+        {
+          "path": "/hhuang37/codearts-agent-demos/tree/main",
+          "uniques": 11,
+          "views": 96
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos",
+          "uniques": 20,
+          "views": 92
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/sdd/sdd_readme.zh-CN.md",
+          "uniques": 10,
+          "views": 46
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/README.zh-CN.md",
+          "uniques": 12,
+          "views": 41
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/codebase/README.md",
+          "uniques": 7,
+          "views": 18
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/README.md",
+          "uniques": 5,
+          "views": 15
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md",
+          "uniques": 4,
+          "views": 14
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/sdd/sdd_readme.en.md",
+          "uniques": 3,
+          "views": 12
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/agentteam/agentteam_readme.md",
+          "uniques": 1,
+          "views": 11
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/tree/main/codebase",
+          "uniques": 2,
+          "views": 10
+        }
+      ]
+    }
+  ],
+  "release_downloads": [
+    {
+      "assets": [
+        {
+          "downloads": 7,
+          "name": "customagent-demo.mp4",
+          "tag": "v0.4.0"
+        },
+        {
+          "downloads": 4,
+          "name": "agentteams-demo.mp4",
+          "tag": "v0.3.0"
+        },
+        {
+          "downloads": 3,
+          "name": "sdd_demo.mp4",
+          "tag": "v0.2.0"
+        },
+        {
+          "downloads": 13,
+          "name": "codebases_demo.mp4",
+          "tag": "v0.1.0"
+        }
+      ],
+      "date": "2026-09-30",
+      "total": 27
+    },
+    {
+      "assets": [
+        {
+          "downloads": 2,
+          "name": "frontend-demo.mp4",
+          "tag": "v0.7.0"
+        },
+        {
+          "downloads": 2,
+          "name": "huaweiskill_demo.mp4",
+          "tag": "v0.6.0"
+        },
+        {
+          "downloads": 2,
+          "name": "cli_serve_demo.mp4",
+          "tag": "v0.5.0"
+        },
+        {
+          "downloads": 7,
+          "name": "customagent-demo.mp4",
+          "tag": "v0.4.0"
+        },
+        {
+          "downloads": 4,
+          "name": "agentteams-demo.mp4",
+          "tag": "v0.3.0"
+        },
+        {
+          "downloads": 3,
+          "name": "sdd_demo.mp4",
+          "tag": "v0.2.0"
+        },
+        {
+          "downloads": 13,
+          "name": "codebases_demo.mp4",
+          "tag": "v0.1.0"
+        }
+      ],
+      "date": "2026-10-06",
+      "total": 33
+    }
+  ]
+}

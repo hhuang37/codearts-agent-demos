@@ -28,3 +28,6 @@ agentteam/sleep-app/
 
 # 本地 agent 工作数据（.codeartsdoer：技能缓存、索引等），不入公开仓库
 .codeartsdoer/
+
+# Python 编译缓存
+__pycache__/

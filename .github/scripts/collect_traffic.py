@@ -1,0 +1,385 @@
+#!/usr/bin/env python3
+"""Daily collector for GitHub repository traffic.
+
+GitHub only keeps the last 14 days of traffic data, so this runs daily in
+GitHub Actions and accumulates the data in traffic/ for long-term history.
+Each run backfills any days missing from history within the 14-day window.
+
+Fetches: views, clones, top-10 popular paths, release asset download counts.
+Writes:  traffic/history.json, traffic/summary.json (badge source),
+         traffic/chart.svg (14-day trend chart),
+         traffic/folders.svg + traffic/downloads.svg (bar charts),
+         traffic/report.md + traffic/report.zh-CN.md (tables report).
+
+Locally: GITHUB_TOKEN=$(gh auth token) python .github/scripts/collect_traffic.py
+"""
+
+import datetime as dt
+import json
+import math
+import os
+import urllib.request
+
+OWNER_REPO = os.environ.get("GITHUB_REPOSITORY", "hhuang37/codearts-agent-demos")
+TOKEN = os.environ.get("GITHUB_TOKEN")
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+TRAFFIC_DIR = os.path.join(REPO_ROOT, "traffic")
+
+MAX_SNAPSHOTS = 180  # keep ~6 months of dated snapshots
+
+
+def api(path):
+    if not TOKEN:
+        raise SystemExit("GITHUB_TOKEN is required (e.g. GITHUB_TOKEN=$(gh auth token))")
+    req = urllib.request.Request(
+        "https://api.github.com" + path,
+        headers={
+            "Accept": "application/vnd.github+json",
+            "Authorization": "Bearer " + TOKEN,
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": OWNER_REPO + " traffic-collector",
+        },
+    )
+    with urllib.request.urlopen(req) as resp:
+        return json.load(resp)
+
+
+def today():
+    return dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
+
+
+def load_history():
+    path = os.path.join(TRAFFIC_DIR, "history.json")
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    return {"daily": {}, "popular_paths": [], "release_downloads": []}
+
+
+def upsert_snapshot(items, snapshot):
+    items[:] = [x for x in items if x["date"] != snapshot["date"]]
+    items.append(snapshot)
+
+
+def save_history(history):
+    for key in ("popular_paths", "release_downloads"):
+        history[key] = history[key][-MAX_SNAPSHOTS:]
+    path = os.path.join(TRAFFIC_DIR, "history.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2, sort_keys=True)
+        f.write("\n")
+
+
+def nice_max(v):
+    if v <= 0:
+        return 10
+    step = 10 ** max(0, len(str(v)) - 2)
+    return int(math.ceil(v / step) * step)
+
+
+def render_chart(daily, out_path):
+    days = sorted(daily)[-14:]
+    if not days:
+        return
+    width, height, pad_l, pad_b, pad_t = 760, 210, 44, 30, 36
+    plot_w, plot_h = width - pad_l - 16, height - pad_b - pad_t
+    series = [("views", "#4C8DFF"), ("clones", "#3FB950")]
+    vmax = nice_max(max(daily[d].get(key, 0) for d in days for key, _ in series))
+    baseline = height - pad_b
+    group = plot_w / len(days)
+    bar_w = group * 0.32
+
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11">'
+    ]
+    parts.append(
+        f'<text x="{pad_l}" y="20" fill="#24292f" font-size="13" font-weight="600">'
+        f"Repository traffic — last {len(days)} days</text>"
+    )
+    lx = width - 190
+    for label, color in series:
+        parts.append(f'<rect x="{lx}" y="13" width="10" height="10" rx="2" fill="{color}"/>')
+        parts.append(f'<text x="{lx + 14}" y="22" fill="#57606a">{label}</text>')
+        lx += 14 + len(label) * 6.5 + 14
+    for frac in (0, 0.5, 1):
+        y = baseline - plot_h * frac
+        parts.append(
+            f'<line x1="{pad_l}" y1="{y:.1f}" x2="{width - 16}" y2="{y:.1f}" stroke="#d0d7de"/>'
+        )
+        parts.append(
+            f'<text x="{pad_l - 6}" y="{y + 4:.1f}" text-anchor="end" fill="#57606a">{int(vmax * frac)}</text>'
+        )
+    for i, d in enumerate(days):
+        entry = daily[d]
+        gx = pad_l + i * group + (group - 2 * bar_w - 4) / 2
+        for j, (key, color) in enumerate(series):
+            v = entry.get(key, 0)
+            if v > 0:
+                h = plot_h * v / vmax
+                x = gx + j * (bar_w + 4)
+                parts.append(
+                    f'<rect x="{x:.1f}" y="{baseline - h:.1f}" width="{bar_w:.1f}" '
+                    f'height="{h:.1f}" fill="{color}" rx="2"/>'
+                )
+        parts.append(
+            f'<text x="{pad_l + i * group + group / 2:.1f}" y="{height - 10}" '
+            f'text-anchor="middle" fill="#57606a">{d[5:]}</text>'
+        )
+    parts.append("</svg>")
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(parts) + "\n")
+
+
+I18N = {
+    "en": {
+        "report_title": "Traffic Report",
+        "lang_line": "> Language: **English** ｜ [简体中文](report.zh-CN.md)",
+        "auto_note": "Auto-generated by `.github/scripts/collect_traffic.py` on {date} — do not edit by hand. Raw data: [history.json](history.json).",
+        "totals_h": "## Last 14 days",
+        "totals_cols": ["Views", "View uniques", "Clones", "Clone uniques", "Video downloads"],
+        "chart_alt": "Daily views & clones",
+        "daily_h": "## Daily detail",
+        "daily_cols": ["Date (UTC)", "Views", "View uniques", "Clones", "Clone uniques", "Video downloads*"],
+        "daily_note": "\\* cumulative video downloads as of that day's snapshot; – = no snapshot collected that day.",
+        "pop_h": "## Popular folders & pages",
+        "pop_note": "Aggregated from GitHub's Top-10 pages snapshot of {date} (a 14-day aggregate), so folder totals are lower bounds.",
+        "folders_alt": "Views by folder",
+        "folder_cols": ["Folder", "Views", "Uniques"],
+        "pages_h": "### Top pages",
+        "pages_cols": ["Path", "Views", "Uniques"],
+        "dl_h": "## Release downloads",
+        "dl_note": "Cumulative per-asset download counts as of {date}.",
+        "downloads_alt": "Downloads by release asset",
+        "dl_cols": ["Tag", "Asset", "Downloads"],
+        "root_label": "(repo root)",
+    },
+    "zh": {
+        "report_title": "流量统计报告",
+        "lang_line": "> 语言：**中文** ｜ [English](report.md)",
+        "auto_note": "由 `.github/scripts/collect_traffic.py` 于 {date} 自动生成——请勿手改。原始数据：[history.json](history.json)。",
+        "totals_h": "## 近 14 天汇总",
+        "totals_cols": ["浏览", "浏览访客", "克隆", "独立克隆者", "视频下载"],
+        "chart_alt": "每日浏览与克隆",
+        "daily_h": "## 每日明细",
+        "daily_cols": ["日期（UTC）", "浏览", "浏览访客", "克隆", "独立克隆者", "视频下载*"],
+        "daily_note": "\\* 视频下载为当日快照的累计值；– 表示当日无快照。",
+        "pop_h": "## 热门文件夹与页面",
+        "pop_note": "由 GitHub Top10 页面快照（{date}，近 14 天聚合）归并而来，文件夹合计为下限。",
+        "folders_alt": "各文件夹浏览量",
+        "folder_cols": ["文件夹", "浏览", "访客"],
+        "pages_h": "### 热门页面 Top10",
+        "pages_cols": ["路径", "浏览", "访客"],
+        "dl_h": "## Release 下载量",
+        "dl_note": "截至 {date} 各资产的累计下载次数。",
+        "downloads_alt": "各 release 资产下载量",
+        "dl_cols": ["Tag", "资产", "下载次数"],
+        "root_label": "（仓库根目录）",
+    },
+}
+
+
+def folder_of(path):
+    rest = path[len("/" + OWNER_REPO):]
+    if rest.startswith("/tree/main"):
+        tail = rest[len("/tree/main"):].strip("/")
+        return tail.split("/", 1)[0] if tail else "(root)"
+    if rest.startswith("/blob/main/"):
+        tail = rest[len("/blob/main/"):]
+        return tail.split("/", 1)[0] if "/" in tail else "(root)"
+    return "(root)"
+
+
+def aggregate_folders(items):
+    folders = {}
+    for item in items:
+        f = folder_of(item["path"])
+        views, uniques = folders.get(f, (0, 0))
+        folders[f] = (views + item["views"], uniques + item["uniques"])
+    return sorted(folders.items(), key=lambda kv: -kv[1][0])
+
+
+def render_hbars(items, title, color, out_path):
+    items = [(l, v) for l, v in items if v > 0]
+    if not items:
+        return
+    row_h, pad_l, pad_r, width = 28, 214, 48, 760
+    height = 44 + row_h * len(items)
+    vmax = max(v for _, v in items) or 1
+    bar_max = width - pad_l - pad_r
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11">'
+    ]
+    parts.append(
+        f'<text x="16" y="20" fill="#24292f" font-size="13" font-weight="600">{title}</text>'
+    )
+    for i, (label, v) in enumerate(items):
+        text = label if len(label) <= 30 else label[:29] + "…"
+        y = 44 + i * row_h
+        w = max(2.0, bar_max * v / vmax)
+        parts.append(f'<text x="{pad_l - 8}" y="{y + 15}" text-anchor="end" fill="#57606a">{text}</text>')
+        parts.append(f'<rect x="{pad_l}" y="{y + 5}" width="{w:.1f}" height="16" rx="2" fill="{color}"/>')
+        parts.append(f'<text x="{pad_l + w + 6:.1f}" y="{y + 16}" fill="#24292f">{v}</text>')
+    parts.append("</svg>")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(parts) + "\n")
+
+
+def render_report(history, summary):
+    date = summary["updated"]
+    latest_pop = max(history["popular_paths"], key=lambda s: s["date"], default=None)
+    latest_dl = max(history["release_downloads"], key=lambda s: s["date"], default=None)
+    dl_by_day = {s["date"]: s.get("total", 0) for s in history["release_downloads"]}
+    days = sorted(history["daily"])[-60:]
+
+    folder_rows = aggregate_folders(latest_pop["items"]) if latest_pop else []
+    asset_rows = sorted(
+        (a for a in (latest_dl or {}).get("assets", [])), key=lambda a: -a["downloads"]
+    )
+    owner_prefix = "/" + OWNER_REPO
+
+    for lang, out_name in (("en", "report.md"), ("zh", "report.zh-CN.md")):
+        t = I18N[lang]
+        root = t["root_label"]
+        lines = [
+            f"# {t['report_title']}",
+            "",
+            t["lang_line"],
+            "",
+            t["auto_note"].format(date=date),
+            "",
+            t["totals_h"],
+            "",
+        ]
+        lines.append("| " + " | ".join(t["totals_cols"]) + " |")
+        lines.append("|" + " ---: |" * len(t["totals_cols"]))
+        values = [
+            summary["views_14d"], summary["view_uniques_14d"],
+            summary["clones_14d"], summary["clone_uniques_14d"],
+            summary["downloads_total"],
+        ]
+        lines.append("| " + " | ".join(str(v) for v in values) + " |")
+        lines += ["", f"![{t['chart_alt']}](chart.svg)", "", t["daily_h"], ""]
+        lines.append("| " + " | ".join(t["daily_cols"]) + " |")
+        lines.append("|" + " ---: |" * (len(t["daily_cols"]) - 1) + " --- |")
+        for d in reversed(days):
+            e = history["daily"][d]
+            lines.append(
+                f"| {d} | {e.get('views', 0)} | {e.get('view_uniques', 0)} | "
+                f"{e.get('clones', 0)} | {e.get('clone_uniques', 0)} | "
+                f"{dl_by_day.get(d, '–')} |"
+            )
+        lines += ["", t["daily_note"], ""]
+
+        if latest_pop:
+            lines += [
+                t["pop_h"], "", t["pop_note"].format(date=latest_pop["date"]), "",
+                f"![{t['folders_alt']}](folders.svg)", "",
+            ]
+            lines.append("| " + " | ".join(t["folder_cols"]) + " |")
+            lines.append("| --- | ---: | ---: |")
+            for f, (views, uniques) in folder_rows:
+                lines.append(f"| {root if f == '(root)' else f} | {views} | {uniques} |")
+            lines += ["", t["pages_h"], ""]
+            lines.append("| " + " | ".join(t["pages_cols"]) + " |")
+            lines.append("| --- | ---: | ---: |")
+            for item in latest_pop["items"]:
+                p = item["path"].replace(owner_prefix, "", 1) or "/"
+                lines.append(f"| `{p}` | {item['views']} | {item['uniques']} |")
+            lines.append("")
+
+        if latest_dl:
+            lines += [
+                t["dl_h"], "", t["dl_note"].format(date=latest_dl["date"]), "",
+                f"![{t['downloads_alt']}](downloads.svg)", "",
+            ]
+            lines.append("| " + " | ".join(t["dl_cols"]) + " |")
+            lines.append("| --- | --- | ---: |")
+            for a in asset_rows:
+                lines.append(f"| {a['tag']} | `{a['name']}` | {a['downloads']} |")
+            lines += ["", f"**Total: {latest_dl.get('total', 0)}**", ""]
+
+        with open(os.path.join(TRAFFIC_DIR, out_name), "w", encoding="utf-8") as f:
+            f.write("\n".join(lines) + "\n")
+
+
+def main():
+    os.makedirs(TRAFFIC_DIR, exist_ok=True)
+    date = today()
+
+    views = api(f"/repos/{OWNER_REPO}/traffic/views")
+    clones = api(f"/repos/{OWNER_REPO}/traffic/clones")
+    popular = api(f"/repos/{OWNER_REPO}/traffic/popular/paths")
+    releases = api(f"/repos/{OWNER_REPO}/releases?per_page=100")
+
+    history = load_history()
+
+    # Merge without clobbering: views and clones arrive as separate per-day buckets.
+    for bucket in views["views"]:
+        entry = history["daily"].setdefault(bucket["timestamp"][:10], {})
+        entry["views"], entry["view_uniques"] = bucket["count"], bucket["uniques"]
+    for bucket in clones["clones"]:
+        entry = history["daily"].setdefault(bucket["timestamp"][:10], {})
+        entry["clones"], entry["clone_uniques"] = bucket["count"], bucket["uniques"]
+
+    upsert_snapshot(history["popular_paths"], {
+        "date": date,
+        "items": [
+            {"path": p["path"], "views": p["count"], "uniques": p["uniques"]}
+            for p in popular
+        ],
+    })
+
+    assets = [
+        {"tag": r["tag_name"], "name": a["name"], "downloads": a["download_count"]}
+        for r in releases
+        for a in r.get("assets", [])
+    ]
+    upsert_snapshot(history["release_downloads"], {
+        "date": date,
+        "total": sum(a["downloads"] for a in assets),
+        "assets": assets,
+    })
+
+    save_history(history)
+    render_chart(history["daily"], os.path.join(TRAFFIC_DIR, "chart.svg"))
+
+    latest_pop = max(history["popular_paths"], key=lambda s: s["date"], default=None)
+    latest_dl = max(history["release_downloads"], key=lambda s: s["date"], default=None)
+    folder_rows = aggregate_folders(latest_pop["items"]) if latest_pop else []
+    if folder_rows:
+        render_hbars(
+            [(f, v[0]) for f, v in folder_rows],
+            "Views by folder (14-day Top-10 aggregate)",
+            "#4C8DFF", os.path.join(TRAFFIC_DIR, "folders.svg"),
+        )
+    if latest_dl:
+        render_hbars(
+            [(f"{a['name']} ({a['tag']})", a["downloads"])
+             for a in sorted(latest_dl["assets"], key=lambda a: -a["downloads"])],
+            "Release downloads (cumulative)",
+            "#DD7815", os.path.join(TRAFFIC_DIR, "downloads.svg"),
+        )
+
+    summary = {
+        "updated": date,
+        "views_14d": views["count"],
+        "view_uniques_14d": views["uniques"],
+        "clones_14d": clones["count"],
+        "clone_uniques_14d": clones["uniques"],
+        "downloads_total": sum(a["downloads"] for a in assets),
+        "days_recorded": len(history["daily"]),
+    }
+    with open(os.path.join(TRAFFIC_DIR, "summary.json"), "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2)
+        f.write("\n")
+
+    render_report(history, summary)
+
+    print("[traffic] " + json.dumps(summary))
+
+
+if __name__ == "__main__":
+    main()
