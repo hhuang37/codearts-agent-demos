@@ -31,3 +31,6 @@ agentteam/sleep-app/
 
 # Python 编译缓存
 __pycache__/
+
+# serve/ 是 serve/attach demo 的本地工作目录（成果已入库到 serveattach/，app.log 与其完全相同），仅本地保留
+serve/
