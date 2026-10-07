@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-06 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-10-07 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 494 | 37 | 370 | 213 | 33 |
+| 453 | 35 | 324 | 189 | 33 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-05 | 6 | 1 | 4 | 2 | – |
 | 2026-10-04 | 2 | 2 | 0 | 0 | – |
 | 2026-10-03 | 0 | 0 | 5 | 5 | – |
 | 2026-10-02 | 45 | 5 | 21 | 13 | – |
@@ -41,36 +42,35 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-06，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-10-07，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 244 | 48 |
-| sdd | 58 | 13 |
-| codebase | 28 | 9 |
-| customagent | 14 | 4 |
+| （仓库根目录） | 223 | 46 |
+| sdd | 68 | 15 |
+| customagent | 24 | 5 |
 | agentteam | 11 | 1 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/tree/main` | 96 | 11 |
-| `/` | 92 | 20 |
+| `/tree/main` | 91 | 11 |
+| `/` | 79 | 18 |
 | `/blob/main/sdd/sdd_readme.zh-CN.md` | 46 | 10 |
-| `/blob/main/README.zh-CN.md` | 41 | 12 |
-| `/blob/main/codebase/README.md` | 18 | 7 |
-| `/blob/main/README.md` | 15 | 5 |
+| `/blob/main/README.zh-CN.md` | 42 | 12 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 14 | 4 |
 | `/blob/main/sdd/sdd_readme.en.md` | 12 | 3 |
+| `/blob/main/README.md` | 11 | 5 |
 | `/blob/main/agentteam/agentteam_readme.md` | 11 | 1 |
-| `/tree/main/codebase` | 10 | 2 |
+| `/tree/main/sdd` | 10 | 2 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 10 | 1 |
 
 ## Release 下载量
 
-截至 2026-10-06 各资产的累计下载次数。
+截至 2026-10-07 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
