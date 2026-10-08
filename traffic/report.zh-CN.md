@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-07 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-10-08 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 453 | 35 | 324 | 189 | 33 |
+| 486 | 31 | 356 | 202 | 33 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-06 | 45 | 3 | 32 | 18 | 33 |
 | 2026-10-05 | 6 | 1 | 4 | 2 | – |
 | 2026-10-04 | 2 | 2 | 0 | 0 | – |
 | 2026-10-03 | 0 | 0 | 5 | 5 | – |
@@ -42,35 +43,36 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-07，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-10-08，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 223 | 46 |
-| sdd | 68 | 15 |
-| customagent | 24 | 5 |
-| agentteam | 11 | 1 |
+| （仓库根目录） | 228 | 41 |
+| sdd | 74 | 15 |
+| customagent | 14 | 4 |
+| agentteam | 12 | 1 |
+| codebase | 10 | 3 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/tree/main` | 91 | 11 |
-| `/` | 79 | 18 |
-| `/blob/main/sdd/sdd_readme.zh-CN.md` | 46 | 10 |
-| `/blob/main/README.zh-CN.md` | 42 | 12 |
+| `/tree/main` | 99 | 13 |
+| `/` | 78 | 12 |
+| `/blob/main/sdd/sdd_readme.zh-CN.md` | 48 | 10 |
+| `/blob/main/README.zh-CN.md` | 40 | 11 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 14 | 4 |
-| `/blob/main/sdd/sdd_readme.en.md` | 12 | 3 |
+| `/blob/main/sdd/sdd_readme.en.md` | 14 | 3 |
+| `/tree/main/sdd` | 12 | 2 |
+| `/blob/main/agentteam/agentteam_readme.md` | 12 | 1 |
 | `/blob/main/README.md` | 11 | 5 |
-| `/blob/main/agentteam/agentteam_readme.md` | 11 | 1 |
-| `/tree/main/sdd` | 10 | 2 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 10 | 1 |
+| `/blob/main/codebase/codebase_readme.md` | 10 | 3 |
 
 ## Release 下载量
 
-截至 2026-10-07 各资产的累计下载次数。
+截至 2026-10-08 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 

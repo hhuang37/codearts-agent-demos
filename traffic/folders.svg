@@ -1,15 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="156" viewBox="0 0 760 156" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="184" viewBox="0 0 760 184" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11">
 <text x="16" y="20" fill="#24292f" font-size="13" font-weight="600">Views by folder (14-day Top-10 aggregate)</text>
 <text x="206" y="59" text-anchor="end" fill="#57606a">(root)</text>
 <rect x="214" y="49" width="498.0" height="16" rx="2" fill="#4C8DFF"/>
-<text x="718.0" y="60" fill="#24292f">223</text>
+<text x="718.0" y="60" fill="#24292f">228</text>
 <text x="206" y="87" text-anchor="end" fill="#57606a">sdd</text>
-<rect x="214" y="77" width="151.9" height="16" rx="2" fill="#4C8DFF"/>
-<text x="371.9" y="88" fill="#24292f">68</text>
+<rect x="214" y="77" width="161.6" height="16" rx="2" fill="#4C8DFF"/>
+<text x="381.6" y="88" fill="#24292f">74</text>
 <text x="206" y="115" text-anchor="end" fill="#57606a">customagent</text>
-<rect x="214" y="105" width="53.6" height="16" rx="2" fill="#4C8DFF"/>
-<text x="273.6" y="116" fill="#24292f">24</text>
+<rect x="214" y="105" width="30.6" height="16" rx="2" fill="#4C8DFF"/>
+<text x="250.6" y="116" fill="#24292f">14</text>
 <text x="206" y="143" text-anchor="end" fill="#57606a">agentteam</text>
-<rect x="214" y="133" width="24.6" height="16" rx="2" fill="#4C8DFF"/>
-<text x="244.6" y="144" fill="#24292f">11</text>
+<rect x="214" y="133" width="26.2" height="16" rx="2" fill="#4C8DFF"/>
+<text x="246.2" y="144" fill="#24292f">12</text>
+<text x="206" y="171" text-anchor="end" fill="#57606a">codebase</text>
+<rect x="214" y="161" width="21.8" height="16" rx="2" fill="#4C8DFF"/>
+<text x="241.8" y="172" fill="#24292f">10</text>
 </svg>
