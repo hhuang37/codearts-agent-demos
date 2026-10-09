@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-08 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-10-09 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 486 | 31 | 356 | 202 | 33 |
+| 468 | 30 | 359 | 202 | 39 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-07 | 5 | 2 | 5 | 4 | 33 |
 | 2026-10-06 | 45 | 3 | 32 | 18 | 33 |
 | 2026-10-05 | 6 | 1 | 4 | 2 | – |
 | 2026-10-04 | 2 | 2 | 0 | 0 | – |
@@ -43,15 +44,15 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-08，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-10-09，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 228 | 41 |
+| （仓库根目录） | 210 | 32 |
 | sdd | 74 | 15 |
-| customagent | 14 | 4 |
+| customagent | 24 | 5 |
 | agentteam | 12 | 1 |
 | codebase | 10 | 3 |
 
@@ -59,32 +60,32 @@
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/tree/main` | 99 | 13 |
-| `/` | 78 | 12 |
+| `/tree/main` | 98 | 12 |
+| `/` | 75 | 10 |
 | `/blob/main/sdd/sdd_readme.zh-CN.md` | 48 | 10 |
-| `/blob/main/README.zh-CN.md` | 40 | 11 |
+| `/blob/main/README.zh-CN.md` | 37 | 10 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 14 | 4 |
 | `/blob/main/sdd/sdd_readme.en.md` | 14 | 3 |
 | `/tree/main/sdd` | 12 | 2 |
 | `/blob/main/agentteam/agentteam_readme.md` | 12 | 1 |
-| `/blob/main/README.md` | 11 | 5 |
 | `/blob/main/codebase/codebase_readme.md` | 10 | 3 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 10 | 1 |
 
 ## Release 下载量
 
-截至 2026-10-08 各资产的累计下载次数。
+截至 2026-10-09 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
 | Tag | 资产 | 下载次数 |
 | --- | --- | ---: |
 | v0.1.0 | `codebases_demo.mp4` | 13 |
-| v0.4.0 | `customagent-demo.mp4` | 7 |
-| v0.3.0 | `agentteams-demo.mp4` | 4 |
-| v0.2.0 | `sdd_demo.mp4` | 3 |
-| v0.7.0 | `frontend-demo.mp4` | 2 |
-| v0.6.0 | `huaweiskill_demo.mp4` | 2 |
-| v0.5.0 | `cli_serve_demo.mp4` | 2 |
+| v0.4.0 | `customagent-demo.mp4` | 8 |
+| v0.3.0 | `agentteams-demo.mp4` | 5 |
+| v0.2.0 | `sdd_demo.mp4` | 4 |
+| v0.7.0 | `frontend-demo.mp4` | 3 |
+| v0.6.0 | `huaweiskill_demo.mp4` | 3 |
+| v0.5.0 | `cli_serve_demo.mp4` | 3 |
 
-**Total: 33**
+**Total: 39**
 
