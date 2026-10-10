@@ -18,6 +18,18 @@ Research Agent Team 的整体架构：
 
 ![Research Agent Team 架构图](architecture.png)
 
+## Subagent 开发范式的优势
+
+![聚焦的小任务有助于提升大语言模型表现的稳定性](小任务更适合大语言模型.png)
+
+将复杂开发拆分为目标明确、范围聚焦的小任务，再交由独立的 subagent 分别处理，有助于模型更专注地完成各项工作，让结果更稳定、可预期。这正是 AgentTeam 采用 subagent 协作方式的价值之一。
+
+> “在我看来，构建 AI 产品时最神奇的时刻，往往发生在真正接近模型能力边界的时候。”
+>
+> —— Usama Bin Shafqat，NotebookLM AI 工程师，[访谈片段（01:10:07）](https://www.youtube.com/watch?v=v1mOIdH9q7k&t=4207s)
+
+每个 subagent 专注于目标清晰的小任务，让 AgentTeam 能够持续尝试，进一步探索模型能力的边界。
+
 ## 1. 创建三个子智能体
 
 在 CodeArts IDE 中打开 设置 → 智能体 → 创建智能体。先创建下面三个子智能体，再创建主智能体。作用域选择 **个人级**，描述和提示词按英文原样填写。也可以**登录 CodeArts Agent Console，在云端创建智能体**，如下图所示。

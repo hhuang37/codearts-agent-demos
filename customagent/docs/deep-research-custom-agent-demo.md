@@ -18,6 +18,18 @@ The architecture of the research agent team:
 
 ![Research agent team architecture](architecture.png)
 
+## Benefits of the Subagent Development Approach
+
+![Small, focused tasks can produce more consistent LLM performance](小任务更适合大语言模型.png)
+
+Breaking complex development into small, clearly scoped tasks lets each subagent focus on one job, which can help make results more consistent and predictable. This is one of the benefits of using the subagent approach in AgentTeam.
+
+> “The most magical moments out of AI building come about ... close to the edge of the model capability.”
+>
+> — Usama Bin Shafqat, NotebookLM AI Engineer, [interview clip (01:10:07)](https://www.youtube.com/watch?v=v1mOIdH9q7k&t=4207s)
+
+By focusing each subagent on a clearly defined task, AgentTeam can keep experimenting and explore the model’s capabilities further.
+
 ## 1. Create Three Sub-Agents
 
 In CodeArts IDE, go to **Settings → Agents → Create Agent**. Create the three sub-agents below first, then create the primary agent. For each agent, set the scope to **Personal** and enter the description and prompt exactly as shown. You can also create cloud agents in CodeArts Agent Console.
