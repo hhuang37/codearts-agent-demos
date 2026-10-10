@@ -5,6 +5,12 @@
 > 视频版（7 分 13 秒，1920×1200，约 104 MB，点击为下载）：
 > [codebases_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.1.0/codebases_demo.mp4)
 
+## 这个 Demo 要展示什么
+
+- **对照测试**：使用 Kafka 3.9.0，分别在代码索引关闭和开启时提出同一个问题。
+- **检索路径不同**：索引关闭时，explore SubAgent 会逐个读取项目文件；索引开启后，运行过程可以使用 CodeSemanticSearch 进行语义检索。
+- **实测耗时差异**：本次演示中，索引开启后耗时 1 分 41 秒，关闭时耗时 10 分 46 秒，约为关闭时的 1/6.4。
+
 ## 1. 下载合适的project，本次案例下载开源的apache kafka开源项目
 
 - 选择kafka 3.9.0版本，下载链接： https://github.com/apache/kafka/releases/tag/3.9.0

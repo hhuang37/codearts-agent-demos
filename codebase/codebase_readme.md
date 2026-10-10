@@ -5,6 +5,12 @@
 > Video (7 min 13 s, 1920×1200, ~104 MB, click to download):
 > [codebases_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.1.0/codebases_demo.mp4)
 
+## What This Demo Shows
+
+- **A controlled comparison:** Ask the same question about Kafka 3.9.0 with the code index off and on.
+- **Different retrieval paths:** With the index off, an explore SubAgent reads project files; with it on, the run can use CodeSemanticSearch for semantic retrieval.
+- **The observed time difference:** In this walkthrough, the indexed run took 1 min 41 s, compared with 10 min 46 s without the index—about 1/6.4 as long.
+
 ## 1. Download a suitable project — in this case the open-source Apache Kafka repository
 
 - Pick version 3.9.0. Download link: https://github.com/apache/kafka/releases/tag/3.9.0
