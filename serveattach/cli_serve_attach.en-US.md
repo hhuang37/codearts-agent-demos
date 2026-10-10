@@ -5,7 +5,7 @@
 > Video (3 min 52 s, 1152×720, ~22 MB, click to download):
 > [cli_serve_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.5.0/cli_serve_demo.mp4)
 
-## What This Demo Does
+## What This Demo Shows
 
 Host 1 runs CodeArts CLI from the project directory to create a task session, then starts a local listening service with `codearts serve`. Host 2 connects to that service with `codearts attach`, specifies the session ID from Host 1, and continues the conversation with the original session context.
 

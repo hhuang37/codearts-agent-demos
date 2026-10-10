@@ -5,7 +5,7 @@
 > 视频版（2 分 33 秒，1152×720，约 21 MB，点击为下载）：
 > [huaweiskill_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.6.0/huaweiskill_demo.mp4)
 
-## 这个 Demo 做什么
+## 这个 Demo 要展示什么
 
 本文以官方 **Skill Reviewer** 为例，演示如何从 CodeArts Skill 市场安装 Skill，并通过调用它检查另一个 Skill，确认安装和调用流程正常。
 

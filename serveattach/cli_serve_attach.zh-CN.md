@@ -5,7 +5,7 @@
 > 视频版（3 分 52 秒，1152×720，约 22 MB，点击为下载）：
 > [cli_serve_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.5.0/cli_serve_demo.mp4)
 
-## 这个 Demo 做什么
+## 这个 Demo 要展示什么
 
 主机1在项目目录中运行 CodeArts CLI，创建已有任务会话，再用 `codearts serve` 启动本机监听服务。主机2通过 `codearts attach` 连接该服务，指定主机1的会话 ID，接着沿用原会话上下文继续提问。
 

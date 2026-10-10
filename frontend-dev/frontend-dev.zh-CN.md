@@ -5,7 +5,7 @@
 > 视频版（1 分 10 秒，1152×720，约 7 MB，点击为下载）：
 > [frontend-demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.7.0/frontend-demo.mp4)
 
-## 这个 Demo 做什么
+## 这个 Demo 要展示什么
 
 演示 CodeArts Agent 的前端开发工作流：在 IDE 内预览网页、框选页面元素，再用自然语言描述改动，由 Agent 定位并修改代码。本文以修改页面标题颜色为例。
 

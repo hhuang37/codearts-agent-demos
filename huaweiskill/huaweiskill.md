@@ -5,7 +5,7 @@
 > Video (2 min 33 s, 1152×720, ~21 MB, click to download):
 > [huaweiskill_demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.6.0/huaweiskill_demo.mp4)
 
-## Demo Overview
+## What This Demo Shows
 
 This demo uses the official **Skill Reviewer** to show how to install a Skill from the CodeArts Skill Marketplace and verify it by asking it to review another Skill.
 

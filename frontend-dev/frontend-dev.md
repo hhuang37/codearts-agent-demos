@@ -5,7 +5,7 @@
 > Video (1 min 10 s, 1152×720, ~7 MB, click to download):
 > [frontend-demo.mp4](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.7.0/frontend-demo.mp4)
 
-## Demo Overview
+## What This Demo Shows
 
 This demo shows the CodeArts Agent frontend workflow: preview a web page inside the IDE, select an element on it, then describe the change in natural language and let the Agent locate and modify the code. The example changes the color of a page heading.
 

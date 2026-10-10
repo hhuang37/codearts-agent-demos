@@ -7,7 +7,7 @@
 
 > 本文演示如何在 CodeArts IDE 中创建一组按顺序协作的智能体：Research Planner → Internet Researcher → Fact Checker → Report Writer。
 
-## Demo 要展示什么
+## 这个 Demo 要展示什么
 
 - **规划先行**：主智能体把研究主题拆解成研究计划，再按计划调度子智能体。
 - **分工明确**：研究员负责找证据，核查员检查关键事实，撰写员只根据已核验的材料写报告。
