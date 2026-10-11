@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-10 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-10-11 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 473 | 30 | 375 | 208 | 40 |
+| 420 | 32 | 298 | 159 | 40 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-09 | 45 | 12 | 21 | 13 | 39 |
 | 2026-10-08 | 9 | 4 | 17 | 10 | 33 |
 | 2026-10-07 | 5 | 2 | 5 | 4 | 33 |
 | 2026-10-06 | 45 | 3 | 32 | 18 | 33 |
@@ -45,36 +46,36 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-10，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-10-11，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 217 | 33 |
-| sdd | 74 | 15 |
-| customagent | 24 | 5 |
+| （仓库根目录） | 222 | 43 |
+| customagent | 32 | 9 |
+| sdd | 27 | 6 |
 | agentteam | 12 | 1 |
-| codebase | 10 | 3 |
+| serveattach | 9 | 5 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/tree/main` | 98 | 12 |
-| `/` | 82 | 12 |
-| `/blob/main/sdd/sdd_readme.zh-CN.md` | 48 | 10 |
-| `/blob/main/README.zh-CN.md` | 37 | 9 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 14 | 4 |
-| `/blob/main/sdd/sdd_readme.en.md` | 14 | 3 |
-| `/tree/main/sdd` | 12 | 2 |
+| `/tree/main` | 95 | 15 |
+| `/` | 78 | 13 |
+| `/blob/main/README.zh-CN.md` | 40 | 11 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 20 | 6 |
+| `/blob/main/sdd/sdd_readme.zh-CN.md` | 15 | 3 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 12 | 3 |
+| `/blob/main/sdd/sdd_readme.en.md` | 12 | 3 |
 | `/blob/main/agentteam/agentteam_readme.md` | 12 | 1 |
-| `/blob/main/codebase/codebase_readme.md` | 10 | 3 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 10 | 1 |
+| `/blob/main/serveattach/cli_serve_attach.zh-CN.md` | 9 | 5 |
+| `/blob/main/README.md` | 9 | 4 |
 
 ## Release 下载量
 
-截至 2026-10-10 各资产的累计下载次数。
+截至 2026-10-11 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 

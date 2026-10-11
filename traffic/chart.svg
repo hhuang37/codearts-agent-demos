@@ -7,47 +7,47 @@
 <line x1="44" y1="180.0" x2="744" y2="180.0" stroke="#d0d7de"/>
 <text x="38" y="184.0" text-anchor="end" fill="#57606a">0</text>
 <line x1="44" y1="108.0" x2="744" y2="108.0" stroke="#d0d7de"/>
-<text x="38" y="112.0" text-anchor="end" fill="#57606a">49</text>
+<text x="38" y="112.0" text-anchor="end" fill="#57606a">40</text>
 <line x1="44" y1="36.0" x2="744" y2="36.0" stroke="#d0d7de"/>
-<text x="38" y="40.0" text-anchor="end" fill="#57606a">98</text>
-<rect x="51.0" y="36.0" width="16.0" height="144.0" fill="#4C8DFF" rx="2"/>
-<rect x="71.0" y="36.0" width="16.0" height="144.0" fill="#3FB950" rx="2"/>
-<text x="69.0" y="200" text-anchor="middle" fill="#57606a">09-25</text>
-<rect x="101.0" y="174.1" width="16.0" height="5.9" fill="#4C8DFF" rx="2"/>
-<rect x="121.0" y="177.1" width="16.0" height="2.9" fill="#3FB950" rx="2"/>
-<text x="119.0" y="200" text-anchor="middle" fill="#57606a">09-26</text>
-<rect x="151.0" y="160.9" width="16.0" height="19.1" fill="#4C8DFF" rx="2"/>
-<rect x="171.0" y="103.6" width="16.0" height="76.4" fill="#3FB950" rx="2"/>
-<text x="169.0" y="200" text-anchor="middle" fill="#57606a">09-27</text>
-<rect x="201.0" y="108.0" width="16.0" height="72.0" fill="#4C8DFF" rx="2"/>
-<rect x="221.0" y="124.2" width="16.0" height="55.8" fill="#3FB950" rx="2"/>
-<text x="219.0" y="200" text-anchor="middle" fill="#57606a">09-28</text>
-<rect x="251.0" y="119.8" width="16.0" height="60.2" fill="#4C8DFF" rx="2"/>
-<rect x="271.0" y="135.9" width="16.0" height="44.1" fill="#3FB950" rx="2"/>
-<text x="269.0" y="200" text-anchor="middle" fill="#57606a">09-29</text>
-<rect x="301.0" y="69.8" width="16.0" height="110.2" fill="#4C8DFF" rx="2"/>
-<rect x="321.0" y="162.4" width="16.0" height="17.6" fill="#3FB950" rx="2"/>
-<text x="319.0" y="200" text-anchor="middle" fill="#57606a">09-30</text>
-<rect x="351.0" y="61.0" width="16.0" height="119.0" fill="#4C8DFF" rx="2"/>
-<rect x="371.0" y="93.3" width="16.0" height="86.7" fill="#3FB950" rx="2"/>
-<text x="369.0" y="200" text-anchor="middle" fill="#57606a">10-01</text>
-<rect x="401.0" y="113.9" width="16.0" height="66.1" fill="#4C8DFF" rx="2"/>
-<rect x="421.0" y="149.1" width="16.0" height="30.9" fill="#3FB950" rx="2"/>
-<text x="419.0" y="200" text-anchor="middle" fill="#57606a">10-02</text>
-<rect x="471.0" y="172.7" width="16.0" height="7.3" fill="#3FB950" rx="2"/>
-<text x="469.0" y="200" text-anchor="middle" fill="#57606a">10-03</text>
-<rect x="501.0" y="177.1" width="16.0" height="2.9" fill="#4C8DFF" rx="2"/>
-<text x="519.0" y="200" text-anchor="middle" fill="#57606a">10-04</text>
-<rect x="551.0" y="171.2" width="16.0" height="8.8" fill="#4C8DFF" rx="2"/>
-<rect x="571.0" y="174.1" width="16.0" height="5.9" fill="#3FB950" rx="2"/>
-<text x="569.0" y="200" text-anchor="middle" fill="#57606a">10-05</text>
-<rect x="601.0" y="113.9" width="16.0" height="66.1" fill="#4C8DFF" rx="2"/>
-<rect x="621.0" y="133.0" width="16.0" height="47.0" fill="#3FB950" rx="2"/>
-<text x="619.0" y="200" text-anchor="middle" fill="#57606a">10-06</text>
-<rect x="651.0" y="172.7" width="16.0" height="7.3" fill="#4C8DFF" rx="2"/>
-<rect x="671.0" y="172.7" width="16.0" height="7.3" fill="#3FB950" rx="2"/>
-<text x="669.0" y="200" text-anchor="middle" fill="#57606a">10-07</text>
-<rect x="701.0" y="166.8" width="16.0" height="13.2" fill="#4C8DFF" rx="2"/>
-<rect x="721.0" y="155.0" width="16.0" height="25.0" fill="#3FB950" rx="2"/>
-<text x="719.0" y="200" text-anchor="middle" fill="#57606a">10-08</text>
+<text x="38" y="40.0" text-anchor="end" fill="#57606a">81</text>
+<rect x="51.0" y="172.9" width="16.0" height="7.1" fill="#4C8DFF" rx="2"/>
+<rect x="71.0" y="176.4" width="16.0" height="3.6" fill="#3FB950" rx="2"/>
+<text x="69.0" y="200" text-anchor="middle" fill="#57606a">09-26</text>
+<rect x="101.0" y="156.9" width="16.0" height="23.1" fill="#4C8DFF" rx="2"/>
+<rect x="121.0" y="87.6" width="16.0" height="92.4" fill="#3FB950" rx="2"/>
+<text x="119.0" y="200" text-anchor="middle" fill="#57606a">09-27</text>
+<rect x="151.0" y="92.9" width="16.0" height="87.1" fill="#4C8DFF" rx="2"/>
+<rect x="171.0" y="112.4" width="16.0" height="67.6" fill="#3FB950" rx="2"/>
+<text x="169.0" y="200" text-anchor="middle" fill="#57606a">09-28</text>
+<rect x="201.0" y="107.1" width="16.0" height="72.9" fill="#4C8DFF" rx="2"/>
+<rect x="221.0" y="126.7" width="16.0" height="53.3" fill="#3FB950" rx="2"/>
+<text x="219.0" y="200" text-anchor="middle" fill="#57606a">09-29</text>
+<rect x="251.0" y="46.7" width="16.0" height="133.3" fill="#4C8DFF" rx="2"/>
+<rect x="271.0" y="158.7" width="16.0" height="21.3" fill="#3FB950" rx="2"/>
+<text x="269.0" y="200" text-anchor="middle" fill="#57606a">09-30</text>
+<rect x="301.0" y="36.0" width="16.0" height="144.0" fill="#4C8DFF" rx="2"/>
+<rect x="321.0" y="75.1" width="16.0" height="104.9" fill="#3FB950" rx="2"/>
+<text x="319.0" y="200" text-anchor="middle" fill="#57606a">10-01</text>
+<rect x="351.0" y="100.0" width="16.0" height="80.0" fill="#4C8DFF" rx="2"/>
+<rect x="371.0" y="142.7" width="16.0" height="37.3" fill="#3FB950" rx="2"/>
+<text x="369.0" y="200" text-anchor="middle" fill="#57606a">10-02</text>
+<rect x="421.0" y="171.1" width="16.0" height="8.9" fill="#3FB950" rx="2"/>
+<text x="419.0" y="200" text-anchor="middle" fill="#57606a">10-03</text>
+<rect x="451.0" y="176.4" width="16.0" height="3.6" fill="#4C8DFF" rx="2"/>
+<text x="469.0" y="200" text-anchor="middle" fill="#57606a">10-04</text>
+<rect x="501.0" y="169.3" width="16.0" height="10.7" fill="#4C8DFF" rx="2"/>
+<rect x="521.0" y="172.9" width="16.0" height="7.1" fill="#3FB950" rx="2"/>
+<text x="519.0" y="200" text-anchor="middle" fill="#57606a">10-05</text>
+<rect x="551.0" y="100.0" width="16.0" height="80.0" fill="#4C8DFF" rx="2"/>
+<rect x="571.0" y="123.1" width="16.0" height="56.9" fill="#3FB950" rx="2"/>
+<text x="569.0" y="200" text-anchor="middle" fill="#57606a">10-06</text>
+<rect x="601.0" y="171.1" width="16.0" height="8.9" fill="#4C8DFF" rx="2"/>
+<rect x="621.0" y="171.1" width="16.0" height="8.9" fill="#3FB950" rx="2"/>
+<text x="619.0" y="200" text-anchor="middle" fill="#57606a">10-07</text>
+<rect x="651.0" y="164.0" width="16.0" height="16.0" fill="#4C8DFF" rx="2"/>
+<rect x="671.0" y="149.8" width="16.0" height="30.2" fill="#3FB950" rx="2"/>
+<text x="669.0" y="200" text-anchor="middle" fill="#57606a">10-08</text>
+<rect x="701.0" y="100.0" width="16.0" height="80.0" fill="#4C8DFF" rx="2"/>
+<rect x="721.0" y="142.7" width="16.0" height="37.3" fill="#3FB950" rx="2"/>
+<text x="719.0" y="200" text-anchor="middle" fill="#57606a">10-09</text>
 </svg>
