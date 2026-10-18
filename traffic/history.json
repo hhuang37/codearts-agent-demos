@@ -185,6 +185,12 @@
       "clones": 15,
       "view_uniques": 4,
       "views": 5
+    },
+    "2026-10-16": {
+      "clone_uniques": 5,
+      "clones": 6,
+      "view_uniques": 6,
+      "views": 17
     }
   },
   "popular_paths": [
@@ -902,6 +908,61 @@
           "views": 6
         }
       ]
+    },
+    {
+      "date": "2026-10-18",
+      "items": [
+        {
+          "path": "/hhuang37/codearts-agent-demos",
+          "uniques": 15,
+          "views": 45
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/tree/main",
+          "uniques": 13,
+          "views": 34
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md",
+          "uniques": 5,
+          "views": 16
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/customagent/docs/deep-research-custom-agent-demo.md",
+          "uniques": 7,
+          "views": 15
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/README.zh-CN.md",
+          "uniques": 4,
+          "views": 13
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/agentteam/agentteam_readme.md",
+          "uniques": 2,
+          "views": 11
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/agentteam/agentteam_readme.zh-CN.md",
+          "uniques": 3,
+          "views": 8
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/tree/main/traffic",
+          "uniques": 1,
+          "views": 8
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/codebase/codebase_readme.md",
+          "uniques": 2,
+          "views": 7
+        },
+        {
+          "path": "/hhuang37/codearts-agent-demos/blob/main/sdd/sdd_readme.en.md",
+          "uniques": 1,
+          "views": 6
+        }
+      ]
     }
   ],
   "release_downloads": [
@@ -1421,6 +1482,47 @@
         }
       ],
       "date": "2026-10-17",
+      "total": 40
+    },
+    {
+      "assets": [
+        {
+          "downloads": 3,
+          "name": "frontend-demo.mp4",
+          "tag": "v0.7.0"
+        },
+        {
+          "downloads": 3,
+          "name": "huaweiskill_demo.mp4",
+          "tag": "v0.6.0"
+        },
+        {
+          "downloads": 3,
+          "name": "cli_serve_demo.mp4",
+          "tag": "v0.5.0"
+        },
+        {
+          "downloads": 8,
+          "name": "customagent-demo.mp4",
+          "tag": "v0.4.0"
+        },
+        {
+          "downloads": 6,
+          "name": "agentteams-demo.mp4",
+          "tag": "v0.3.0"
+        },
+        {
+          "downloads": 4,
+          "name": "sdd_demo.mp4",
+          "tag": "v0.2.0"
+        },
+        {
+          "downloads": 13,
+          "name": "codebases_demo.mp4",
+          "tag": "v0.1.0"
+        }
+      ],
+      "date": "2026-10-18",
       "total": 40
     }
   ]
