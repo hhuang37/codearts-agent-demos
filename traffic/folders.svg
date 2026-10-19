@@ -4,17 +4,17 @@
 <rect x="214" y="49" width="498.0" height="16" rx="2" fill="#4C8DFF"/>
 <text x="718.0" y="60" fill="#24292f">92</text>
 <text x="206" y="87" text-anchor="end" fill="#57606a">customagent</text>
-<rect x="214" y="77" width="167.8" height="16" rx="2" fill="#4C8DFF"/>
-<text x="387.8" y="88" fill="#24292f">31</text>
+<rect x="214" y="77" width="173.2" height="16" rx="2" fill="#4C8DFF"/>
+<text x="393.2" y="88" fill="#24292f">32</text>
 <text x="206" y="115" text-anchor="end" fill="#57606a">agentteam</text>
-<rect x="214" y="105" width="102.8" height="16" rx="2" fill="#4C8DFF"/>
-<text x="322.8" y="116" fill="#24292f">19</text>
-<text x="206" y="143" text-anchor="end" fill="#57606a">traffic</text>
+<rect x="214" y="105" width="108.3" height="16" rx="2" fill="#4C8DFF"/>
+<text x="328.3" y="116" fill="#24292f">20</text>
+<text x="206" y="143" text-anchor="end" fill="#57606a">codebase</text>
 <rect x="214" y="133" width="43.3" height="16" rx="2" fill="#4C8DFF"/>
 <text x="263.3" y="144" fill="#24292f">8</text>
-<text x="206" y="171" text-anchor="end" fill="#57606a">codebase</text>
-<rect x="214" y="161" width="37.9" height="16" rx="2" fill="#4C8DFF"/>
-<text x="257.9" y="172" fill="#24292f">7</text>
+<text x="206" y="171" text-anchor="end" fill="#57606a">traffic</text>
+<rect x="214" y="161" width="43.3" height="16" rx="2" fill="#4C8DFF"/>
+<text x="263.3" y="172" fill="#24292f">8</text>
 <text x="206" y="199" text-anchor="end" fill="#57606a">sdd</text>
 <rect x="214" y="189" width="32.5" height="16" rx="2" fill="#4C8DFF"/>
 <text x="252.5" y="200" fill="#24292f">6</text>
