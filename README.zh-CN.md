@@ -17,6 +17,7 @@ CodeArts Agent 各特性的实操 demo 合集：分步图文指南 + 录屏。
 | AI 前端开发 | AI 辅助前端开发：浏览器里直接预览页面效果，按所见迭代修改代码 | 框选页面标题加一句自然语言提示即完成改色，重新预览验证生效 | [中文](frontend-dev/frontend-dev.zh-CN.md) | [1 分 10 秒](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.7.0/frontend-demo.mp4) | 已完成 |
 | CLI Serve | `codearts serve` / `codearts attach` 远程会话接力：主机1跑日志分析任务并把会话暴露在本机端口，主机2在另一终端接续同一会话 | 后续终端沿用原会话上下文，完成后续追问并产出整理结果 | [中文](serveattach/cli_serve_attach.zh-CN.md) | [3 分 52 秒](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.5.0/cli_serve_demo.mp4) | 已完成 |
 | 技能市场 | 从官方技能市场安装 Skill（skill-reviewer），再调用它审查另一个 Skill，验证安装与调用流程 | 15 项检查：9 通过、5 警告、1 未通过，综合 85/100（pass_with_warnings） | [中文](huaweiskill/huaweiskill.zh-CN.md) | [2 分 33 秒](https://github.com/hhuang37/codearts-agent-demos/releases/download/v0.6.0/huaweiskill_demo.mp4) | 已完成 |
+| 小语种语言切换 | 通过 Response Language 设为 Auto 加语言规则，让智能体切换到小语种回复；附回复语言不稳定时的项目级插件保底方案 | 无论用哪种语言提问，智能体始终以印尼语稳定回复 | [中文](minor_language_test/minor_language_test.zh-CN.md) | — | 已完成 |
 
 ## 说明
 

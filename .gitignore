@@ -37,3 +37,12 @@ serve/
 
 # CLI 用户手册 PDF 仅本地保留，不上传 git（2026-10-06 用户要求撤下已发的 release）
 codeartsagent-usermanual-cli-pdf.pdf
+
+# 本地 agent 工作数据（.opencode：插件、技能缓存等），不入公开仓库
+.opencode/
+
+# minor_language_test：未被文档引用的截图与编辑备份仅本地保留（内容已并入正式文档）
+minor_language_test/image-6.png
+minor_language_test/image-7.png
+minor_language_test/image-8.png
+minor_language_test/FAQ-未保存内容-备份1130.md
