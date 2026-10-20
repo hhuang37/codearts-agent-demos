@@ -73,9 +73,9 @@ Halo. Mulai sekarang, semua percakapan kita mohon dilakukan dalam Bahasa Indones
 
 If responses still switch languages after you complete the setup above, and the reasoning display contains statements similar to those shown below, try the workaround in the next section.
 
-![Example of inconsistent response language, part 1](image-9.png)
+![Example of inconsistent response language, part 1](image-14.png)
 
-![Example of inconsistent response language, part 2](image-10.png)
+![Example of inconsistent response language, part 2](image-15.png)
 
 ### 2.2 Workaround: Use a Project-Level Language Override Plugin
 
@@ -110,7 +110,7 @@ The following screenshot shows the contents of `.codeartsdoer/lang-override/`:
 #### Limitations
 
 - After a major CodeArts upgrade, the plugin may need to be adapted to changes in the internal hooks or payloads. If responses revert to Chinese or English, first check whether `debug.log` is still receiving new entries.
-- You can keep the basic setup in place while using the project-level plugin. The plugin does not explicitly check the **Response Language** setting, so its hooks can still run when **Auto** is selected.
+- You can keep the basic setup in place while using the project-level plugin; they do not conflict. The plugin does not check the **Response Language** setting: under **Auto**, the hooks still run as usual (writing to `debug.log` and appending the "follow the user's language" instruction), which does not change Auto's normal behavior.
 
 ## Appendix A: Complete plugin.js
 
@@ -223,7 +223,7 @@ export const LangOverride = async () => {
         return;
       }
       output.parts.push({
-        id: `lang-override-${Date.now()}`,
+        id: `prt_langoverride${Date.now()}`,
         sessionID: sid,
         messageID: mid,
         type: "text",

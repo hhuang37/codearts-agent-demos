@@ -73,9 +73,9 @@ Halo. Mulai sekarang, semua percakapan kita mohon dilakukan dalam Bahasa Indones
 
 如果按照上述方式配置后，回复语言仍然不稳定，且在思考过程中观察到下图所示的类似表述，可参考下一节的方法进行规避。
 
-![回复语言不稳定的现象示例一](image-9.png)
+![回复语言不稳定的现象示例一](image-14.png)
 
-![回复语言不稳定的现象示例二](image-10.png)
+![回复语言不稳定的现象示例二](image-15.png)
 
 ### 2.2 规避方法：使用项目级插件（保底方案，无视设置档位）
 
@@ -108,7 +108,7 @@ Halo. Mulai sekarang, semua percakapan kita mohon dilakukan dalam Bahasa Indones
 #### 已知边界
 
 - CodeArts 大版本升级后，如果插件突然失效、回复变回中文或英文，先检查 `debug.log` 是否仍有新增日志。若没有，说明内部结构发生了变化，需要适配新版本。
-- 基础配置与项目级插件可以同时使用，不冲突（**Auto（自动）**档位下插件不做任何事）。
+- 基础配置与项目级插件可以同时使用，不冲突。插件不检测回复语言档位，**Auto（自动）**档位下钩子照常运行（写入 debug.log、追加“跟随用户语言”的指令），不会改变 Auto 的正常行为。
 
 ## 附录 A：plugin.js 全文
 
@@ -200,7 +200,7 @@ export const LangOverride = async () => {
         return;
       }
       output.parts.push({
-        id: `lang-override-${Date.now()}`,
+        id: `prt_langoverride${Date.now()}`,
         sessionID: sid,
         messageID: mid,
         type: "text",
