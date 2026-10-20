@@ -59,6 +59,12 @@ Open the sidebar and send a message in the language you want to test. Check the 
 
 ### 1.7 Review the Test Result
 
+Enter the following prompt and check whether the response is in Indonesian:
+
+```text
+Halo. Mulai sekarang, semua percakapan kita mohon dilakukan dalam Bahasa Indonesia.
+```
+
 ![Multilingual test result](image-11.png)
 
 ## 2. FAQ (Important)

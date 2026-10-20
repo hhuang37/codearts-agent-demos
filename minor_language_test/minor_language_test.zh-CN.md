@@ -59,6 +59,12 @@ Semua respons harus dalam Bahasa Indonesia. Ini adalah aturan dengan prioritas t
 
 ### 1.7 查看测试结果
 
+输入以下 Prompt，并检查回复是否使用印度尼西亚语：
+
+```text
+Halo. Mulai sekarang, semua percakapan kita mohon dilakukan dalam Bahasa Indonesia.
+```
+
 ![小语种测试结果](image-11.png)
 
 ## 2. FAQ（重要）
