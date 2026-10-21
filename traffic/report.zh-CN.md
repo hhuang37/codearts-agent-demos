@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-20 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-10-21 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 239 | 33 | 222 | 107 | 40 |
+| 233 | 33 | 233 | 114 | 40 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-19 | 0 | 0 | 15 | 10 | 40 |
 | 2026-10-18 | 0 | 0 | 16 | 10 | 40 |
 | 2026-10-17 | 3 | 2 | 25 | 16 | 40 |
 | 2026-10-16 | 17 | 6 | 6 | 5 | 40 |
@@ -55,15 +56,15 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-20，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-10-21，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 92 | 32 |
+| （仓库根目录） | 88 | 32 |
 | customagent | 31 | 12 |
-| agentteam | 20 | 6 |
+| agentteam | 19 | 6 |
 | codebase | 8 | 3 |
 | traffic | 8 | 1 |
 | sdd | 6 | 1 |
@@ -73,19 +74,19 @@
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
 | `/` | 45 | 15 |
-| `/tree/main` | 34 | 13 |
+| `/tree/main` | 32 | 13 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 16 | 8 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 15 | 4 |
-| `/blob/main/README.zh-CN.md` | 13 | 4 |
 | `/blob/main/agentteam/agentteam_readme.md` | 12 | 3 |
-| `/blob/main/agentteam/agentteam_readme.zh-CN.md` | 8 | 3 |
+| `/blob/main/README.zh-CN.md` | 11 | 4 |
 | `/blob/main/codebase/codebase_readme.md` | 8 | 3 |
 | `/tree/main/traffic` | 8 | 1 |
+| `/blob/main/agentteam/agentteam_readme.zh-CN.md` | 7 | 3 |
 | `/blob/main/sdd/sdd_readme.en.md` | 6 | 1 |
 
 ## Release 下载量
 
-截至 2026-10-20 各资产的累计下载次数。
+截至 2026-10-21 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
