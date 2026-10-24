@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-23 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-10-24 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 189 | 31 | 235 | 115 | 45 |
+| 191 | 32 | 230 | 112 | 50 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-22 | 11 | 4 | 12 | 7 | 41 |
 | 2026-10-21 | 0 | 0 | 25 | 14 | 40 |
 | 2026-10-20 | 6 | 3 | 14 | 10 | 40 |
 | 2026-10-19 | 0 | 0 | 15 | 10 | 40 |
@@ -58,14 +59,14 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-23，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-10-24，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 73 | 29 |
-| customagent | 31 | 12 |
+| （仓库根目录） | 71 | 31 |
+| customagent | 34 | 14 |
 | agentteam | 19 | 7 |
 | codebase | 10 | 5 |
 | serveattach | 5 | 2 |
@@ -74,12 +75,12 @@
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 38 | 14 |
-| `/tree/main` | 24 | 11 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 16 | 8 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 15 | 4 |
+| `/` | 35 | 14 |
+| `/tree/main` | 25 | 12 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 18 | 9 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 16 | 5 |
 | `/blob/main/agentteam/agentteam_readme.md` | 12 | 4 |
-| `/blob/main/README.zh-CN.md` | 11 | 4 |
+| `/blob/main/README.zh-CN.md` | 11 | 5 |
 | `/blob/main/agentteam/agentteam_readme.zh-CN.md` | 7 | 3 |
 | `/blob/main/codebase/codebase_readme.md` | 6 | 3 |
 | `/blob/main/serveattach/cli_serve_attach.en-US.md` | 5 | 2 |
@@ -87,19 +88,19 @@
 
 ## Release 下载量
 
-截至 2026-10-23 各资产的累计下载次数。
+截至 2026-10-24 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
 | Tag | 资产 | 下载次数 |
 | --- | --- | ---: |
-| v0.1.0 | `codebases_demo.mp4` | 14 |
+| v0.1.0 | `codebases_demo.mp4` | 17 |
 | v0.4.0 | `customagent-demo.mp4` | 8 |
 | v0.3.0 | `agentteams-demo.mp4` | 8 |
+| v0.7.0 | `frontend-demo.mp4` | 6 |
 | v0.2.0 | `sdd_demo.mp4` | 5 |
-| v0.7.0 | `frontend-demo.mp4` | 4 |
 | v0.6.0 | `huaweiskill_demo.mp4` | 3 |
 | v0.5.0 | `cli_serve_demo.mp4` | 3 |
 
-**Total: 45**
+**Total: 50**
 

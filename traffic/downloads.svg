@@ -2,23 +2,23 @@
 <text x="16" y="20" fill="#24292f" font-size="13" font-weight="600">Release downloads (cumulative)</text>
 <text x="206" y="59" text-anchor="end" fill="#57606a">codebases_demo.mp4 (v0.1.0)</text>
 <rect x="214" y="49" width="498.0" height="16" rx="2" fill="#DD7815"/>
-<text x="718.0" y="60" fill="#24292f">14</text>
+<text x="718.0" y="60" fill="#24292f">17</text>
 <text x="206" y="87" text-anchor="end" fill="#57606a">customagent-demo.mp4 (v0.4.0)</text>
-<rect x="214" y="77" width="284.6" height="16" rx="2" fill="#DD7815"/>
-<text x="504.6" y="88" fill="#24292f">8</text>
+<rect x="214" y="77" width="234.4" height="16" rx="2" fill="#DD7815"/>
+<text x="454.4" y="88" fill="#24292f">8</text>
 <text x="206" y="115" text-anchor="end" fill="#57606a">agentteams-demo.mp4 (v0.3.0)</text>
-<rect x="214" y="105" width="284.6" height="16" rx="2" fill="#DD7815"/>
-<text x="504.6" y="116" fill="#24292f">8</text>
-<text x="206" y="143" text-anchor="end" fill="#57606a">sdd_demo.mp4 (v0.2.0)</text>
-<rect x="214" y="133" width="177.9" height="16" rx="2" fill="#DD7815"/>
-<text x="397.9" y="144" fill="#24292f">5</text>
-<text x="206" y="171" text-anchor="end" fill="#57606a">frontend-demo.mp4 (v0.7.0)</text>
-<rect x="214" y="161" width="142.3" height="16" rx="2" fill="#DD7815"/>
-<text x="362.3" y="172" fill="#24292f">4</text>
+<rect x="214" y="105" width="234.4" height="16" rx="2" fill="#DD7815"/>
+<text x="454.4" y="116" fill="#24292f">8</text>
+<text x="206" y="143" text-anchor="end" fill="#57606a">frontend-demo.mp4 (v0.7.0)</text>
+<rect x="214" y="133" width="175.8" height="16" rx="2" fill="#DD7815"/>
+<text x="395.8" y="144" fill="#24292f">6</text>
+<text x="206" y="171" text-anchor="end" fill="#57606a">sdd_demo.mp4 (v0.2.0)</text>
+<rect x="214" y="161" width="146.5" height="16" rx="2" fill="#DD7815"/>
+<text x="366.5" y="172" fill="#24292f">5</text>
 <text x="206" y="199" text-anchor="end" fill="#57606a">huaweiskill_demo.mp4 (v0.6.0)</text>
-<rect x="214" y="189" width="106.7" height="16" rx="2" fill="#DD7815"/>
-<text x="326.7" y="200" fill="#24292f">3</text>
+<rect x="214" y="189" width="87.9" height="16" rx="2" fill="#DD7815"/>
+<text x="307.9" y="200" fill="#24292f">3</text>
 <text x="206" y="227" text-anchor="end" fill="#57606a">cli_serve_demo.mp4 (v0.5.0)</text>
-<rect x="214" y="217" width="106.7" height="16" rx="2" fill="#DD7815"/>
-<text x="326.7" y="228" fill="#24292f">3</text>
+<rect x="214" y="217" width="87.9" height="16" rx="2" fill="#DD7815"/>
+<text x="307.9" y="228" fill="#24292f">3</text>
 </svg>
