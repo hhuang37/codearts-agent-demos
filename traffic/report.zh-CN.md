@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-24 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-10-25 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 191 | 32 | 230 | 112 | 50 |
+| 150 | 27 | 212 | 103 | 50 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-23 | 4 | 3 | 3 | 2 | 45 |
 | 2026-10-22 | 11 | 4 | 12 | 7 | 41 |
 | 2026-10-21 | 0 | 0 | 25 | 14 | 40 |
 | 2026-10-20 | 6 | 3 | 14 | 10 | 40 |
@@ -59,36 +60,36 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-24，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-10-25，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 71 | 31 |
-| customagent | 34 | 14 |
-| agentteam | 19 | 7 |
+| （仓库根目录） | 50 | 22 |
+| customagent | 26 | 10 |
+| agentteam | 18 | 6 |
 | codebase | 10 | 5 |
-| serveattach | 5 | 2 |
+| sdd | 4 | 2 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 35 | 14 |
-| `/tree/main` | 25 | 12 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 18 | 9 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 16 | 5 |
+| `/` | 31 | 14 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 16 | 7 |
+| `/tree/main` | 15 | 6 |
 | `/blob/main/agentteam/agentteam_readme.md` | 12 | 4 |
-| `/blob/main/README.zh-CN.md` | 11 | 5 |
-| `/blob/main/agentteam/agentteam_readme.zh-CN.md` | 7 | 3 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 10 | 3 |
 | `/blob/main/codebase/codebase_readme.md` | 6 | 3 |
-| `/blob/main/serveattach/cli_serve_attach.en-US.md` | 5 | 2 |
+| `/blob/main/agentteam/agentteam_readme.zh-CN.md` | 6 | 2 |
+| `/blob/main/README.zh-CN.md` | 4 | 2 |
 | `/blob/main/codebase/codebase_readme.zh-CN.md` | 4 | 2 |
+| `/blob/main/sdd/sdd_readme.zh-CN.md` | 4 | 2 |
 
 ## Release 下载量
 
-截至 2026-10-24 各资产的累计下载次数。
+截至 2026-10-25 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
