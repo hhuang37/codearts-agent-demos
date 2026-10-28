@@ -22,12 +22,12 @@ GITHUB_TOKEN=$(gh auth token) python .github/scripts/collect_traffic.py
 | 指标 | 数值 | 口径 |
 | --- | ---: | --- |
 | 浏览（近 14 天） | 94 | 截至今天往前 14 天滚动窗口的页面浏览合计 |
-| 浏览访客（近 14 天） | 32 | 按 IP/设备 24 小时去重 |
-| 克隆（近 14 天） | 191 | 只统计完整 `git clone`；fetch/pull、Download ZIP 不算 |
-| 独立克隆者（近 14 天） | 93 | 克隆人数，24 小时去重 |
-| 视频下载（累计） | 51 | release 附件发布以来的累计下载次数，无 14 天限制 |
+| 浏览访客（近 14 天） | 31 | 按 IP/设备 24 小时去重 |
+| 克隆（近 14 天） | 219 | 只统计完整 `git clone`；fetch/pull、Download ZIP 不算 |
+| 独立克隆者（近 14 天） | 104 | 克隆人数，24 小时去重 |
+| 视频下载（累计） | 53 | release 附件发布以来的累计下载次数，无 14 天限制 |
 
-数据截至 **2026-10-27**（GitHub 流量数据本身滞后 1~2 天）。每日明细与图表见 [report.zh-CN.md](report.zh-CN.md)。
+数据截至 **2026-10-28**（GitHub 流量数据本身滞后 1~2 天）。每日明细与图表见 [report.zh-CN.md](report.zh-CN.md)。
 <!-- STATS:END -->
 
 📊 **完整表格报告**（每日明细、文件夹热度、release 下载量）：[中文](report.zh-CN.md) ｜ [English](report.md)
