@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-28 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-10-29 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 94 | 31 | 219 | 104 | 53 |
+| 137 | 36 | 219 | 103 | 53 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-27 | 55 | 10 | 6 | 5 | 51 |
 | 2026-10-26 | 5 | 3 | 33 | 20 | 50 |
 | 2026-10-25 | 5 | 4 | 21 | 13 | 50 |
 | 2026-10-24 | 3 | 1 | 7 | 6 | 50 |
@@ -63,36 +64,35 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-28，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-10-29，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 42 | 28 |
-| customagent | 23 | 11 |
-| codebase | 6 | 5 |
-| agentteam | 4 | 4 |
-| sdd | 3 | 2 |
+| （仓库根目录） | 61 | 32 |
+| customagent | 26 | 14 |
+| codebase | 10 | 6 |
+| agentteam | 8 | 8 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 27 | 19 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 12 | 7 |
-| `/tree/main` | 10 | 5 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 8 | 3 |
-| `/blob/main/README.zh-CN.md` | 5 | 4 |
-| `/blob/main/agentteam/agentteam_readme.md` | 4 | 4 |
-| `/blob/main/codebase/codebase_readme.md` | 3 | 3 |
-| `/blob/main/codebase/codebase_readme.zh-CN.md` | 3 | 2 |
-| `/blob/main/sdd/sdd_readme.zh-CN.md` | 3 | 2 |
-| `/tree/main/customagent` | 3 | 1 |
+| `/` | 40 | 21 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 13 | 9 |
+| `/tree/main` | 13 | 6 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 9 | 3 |
+| `/blob/main/README.zh-CN.md` | 8 | 5 |
+| `/blob/main/codebase/codebase_readme.md` | 6 | 4 |
+| `/blob/main/agentteam/agentteam_readme.md` | 5 | 5 |
+| `/blob/main/codebase/codebase_readme.zh-CN.md` | 4 | 2 |
+| `/tree/main/customagent` | 4 | 2 |
+| `/blob/main/agentteam/agentteam_readme.zh-CN.md` | 3 | 3 |
 
 ## Release 下载量
 
-截至 2026-10-28 各资产的累计下载次数。
+截至 2026-10-29 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
