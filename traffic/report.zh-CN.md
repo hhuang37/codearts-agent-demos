@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-29 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-10-30 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 137 | 36 | 219 | 103 | 53 |
+| 148 | 39 | 220 | 106 | 54 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-28 | 34 | 7 | 22 | 13 | 53 |
 | 2026-10-27 | 55 | 10 | 6 | 5 | 51 |
 | 2026-10-26 | 5 | 3 | 33 | 20 | 50 |
 | 2026-10-25 | 5 | 4 | 21 | 13 | 50 |
@@ -64,35 +65,37 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-29，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-10-30，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 61 | 32 |
-| customagent | 26 | 14 |
-| codebase | 10 | 6 |
-| agentteam | 8 | 8 |
+| （仓库根目录） | 68 | 32 |
+| customagent | 18 | 13 |
+| minor_language_test | 10 | 4 |
+| codebase | 5 | 4 |
+| agentteam | 4 | 4 |
+| huaweiskill | 4 | 4 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 40 | 21 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 13 | 9 |
-| `/tree/main` | 13 | 6 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 9 | 3 |
-| `/blob/main/README.zh-CN.md` | 8 | 5 |
-| `/blob/main/codebase/codebase_readme.md` | 6 | 4 |
-| `/blob/main/agentteam/agentteam_readme.md` | 5 | 5 |
-| `/blob/main/codebase/codebase_readme.zh-CN.md` | 4 | 2 |
-| `/tree/main/customagent` | 4 | 2 |
-| `/blob/main/agentteam/agentteam_readme.zh-CN.md` | 3 | 3 |
+| `/` | 43 | 21 |
+| `/tree/main` | 14 | 6 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 11 | 9 |
+| `/blob/main/README.zh-CN.md` | 11 | 5 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 7 | 4 |
+| `/blob/main/codebase/codebase_readme.md` | 5 | 4 |
+| `/blob/main/minor_language_test/minor_language_test.zh-CN.md` | 5 | 2 |
+| `/tree/main/minor_language_test` | 5 | 2 |
+| `/blob/main/agentteam/agentteam_readme.md` | 4 | 4 |
+| `/tree/main/huaweiskill` | 4 | 4 |
 
 ## Release 下载量
 
-截至 2026-10-29 各资产的累计下载次数。
+截至 2026-10-30 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
@@ -101,10 +104,10 @@
 | v0.1.0 | `codebases_demo.mp4` | 17 |
 | v0.4.0 | `customagent-demo.mp4` | 10 |
 | v0.3.0 | `agentteams-demo.mp4` | 9 |
-| v0.7.0 | `frontend-demo.mp4` | 6 |
+| v0.7.0 | `frontend-demo.mp4` | 7 |
 | v0.2.0 | `sdd_demo.mp4` | 5 |
 | v0.6.0 | `huaweiskill_demo.mp4` | 3 |
 | v0.5.0 | `cli_serve_demo.mp4` | 3 |
 
-**Total: 53**
+**Total: 54**
 
