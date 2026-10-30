@@ -48,6 +48,10 @@
 
    ![Generated product catalog](image-5.png)
 
+## 生成的源码
+
+本次 Demo 运行的完整产出保存在 [`site/`](site/) 目录：生成的电商网站首页（`index.html`、`css/`、`js/`）以及产品文档和架构文档（`docs/`）。页面不加载任何外部资源，下载仓库后直接用浏览器打开 `site/index.html` 即可预览，无需启动服务或构建。
+
 ## 参考
 
 [多任务并行（Agent Team）用户指南](https://support.huaweicloud.com/usermanual-codeartsagent/codeartsagent_ug_0022.html)

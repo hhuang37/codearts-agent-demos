@@ -48,6 +48,10 @@ By focusing each subagent on a clearly defined task, AgentTeam can keep experime
 
    ![Generated product catalog](image-5.png)
 
+## Generated Source Code
+
+The complete output of this demo run is kept in [`site/`](site/): the generated e-commerce homepage (`index.html`, `css/`, `js/`) plus the product and architecture documentation (`docs/`). The page loads zero external resources, so after downloading the repository you can open `site/index.html` directly in a browser — no server or build step needed.
+
 ## Reference
 
 [Multi-task parallelism (Agent Team) user guide](https://support.huaweicloud.com/usermanual-codeartsagent/codeartsagent_ug_0022.html)

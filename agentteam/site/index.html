@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurelle is a premium online marketplace with twelve curated departments — electronics, fashion, home, beauty and more. Fully offline static demo.">
+  <meta name="color-scheme" content="light">
+  <!-- Offline policy: this page loads zero external resources. Fonts are system stacks,
+       visuals are emoji + inline SVG + CSS gradients. No CDN, no network calls. -->
+  <link rel="icon" href="data:,">
+  <title>Aurelle — Premium Marketplace for Everyday Living</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= 1. Sticky header ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Aurelle — back to top of page">
+        <svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+          <path d="M16 3 29 12.5 16 29 3 12.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M16 10.5 22 15 16 23 10 15Z" fill="currentColor" opacity="0.85"/>
+        </svg>
+        <span class="logo-text">Aurelle</span>
+      </a>
+
+      <form class="header-search" id="searchForm" role="search">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+          <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <label class="sr-only" for="searchInput">Search products</label>
+        <input class="search-input" id="searchInput" type="search" placeholder="Search products, brands, categories…" autocomplete="off">
+      </form>
+
+      <div class="header-actions">
+        <button class="cart-button" id="cartButton" type="button" aria-label="Shopping cart, 0 items">
+          <svg class="cart-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+            <path d="M5.5 8h13l-1.2 12.2a1.5 1.5 0 0 1-1.5 1.3H8.2a1.5 1.5 0 0 1-1.5-1.3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M9 10V6.5a3 3 0 0 1 6 0V10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span class="cart-count" id="cartCount" aria-hidden="true">0</span>
+        </button>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-link" href="#categories">Categories</a>
+          <a class="nav-link" href="#deals">Deals</a>
+          <a class="nav-link" href="#products">Trending</a>
+          <a class="nav-link" href="#newsletter">Newsletter</a>
+        </nav>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. Mobile menu (slide-down panel + overlay) ================= -->
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a class="mobile-menu-link" href="#categories">Categories</a>
+    <a class="mobile-menu-link" href="#deals">Deals</a>
+    <a class="mobile-menu-link" href="#products">Trending products</a>
+    <a class="mobile-menu-link" href="#brands">Brands</a>
+    <a class="mobile-menu-link" href="#newsletter">Newsletter</a>
+    <a class="mobile-menu-link mobile-menu-link--cta" href="#products">Shop trending picks</a>
+  </nav>
+
+  <main id="main">
+    <!-- ================= 3. Hero banner ================= -->
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="hero-eyebrow">New season · New arrivals</p>
+          <h1 class="hero-title" id="heroTitle" style="color: red;">Beautiful things for everyday living.</h1>
+          <p class="hero-subcopy">Discover 1,900+ curated pieces across twelve departments — from designer electronics to small-batch gourmet. Free delivery over $50 and 30-day easy returns.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-solid" href="#products">Shop trending picks</a>
+            <a class="btn btn-ghost" href="#categories">Explore categories</a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-art-glow"></div>
+          <svg class="hero-art-svg" viewBox="0 0 420 420" focusable="false">
+            <defs>
+              <linearGradient id="artGold" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#D8B25C"/>
+                <stop offset="1" stop-color="#B98A2F"/>
+              </linearGradient>
+            </defs>
+            <circle cx="210" cy="210" r="152" fill="none" stroke="url(#artGold)" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="210" cy="210" r="110" fill="none" stroke="#B98A2F" stroke-width="1" opacity="0.35" stroke-dasharray="4 9"/>
+            <circle cx="210" cy="210" r="66" fill="url(#artGold)" opacity="0.14"/>
+            <path d="M58 302 Q 210 118 362 302" fill="none" stroke="#B98A2F" stroke-width="1.5" opacity="0.5"/>
+            <path d="M96 150 a 150 150 0 0 1 228 0" fill="none" stroke="#B98A2F" stroke-width="1" opacity="0.35"/>
+            <circle cx="352" cy="112" r="6" fill="#B98A2F" opacity="0.85"/>
+            <circle cx="76" cy="120" r="4" fill="#B98A2F" opacity="0.6"/>
+            <circle cx="330" cy="318" r="3.5" fill="#B98A2F" opacity="0.5"/>
+          </svg>
+          <span class="hero-chip hero-chip--1">🎧</span>
+          <span class="hero-chip hero-chip--2">🕯️</span>
+          <span class="hero-chip hero-chip--3">👟</span>
+          <span class="hero-chip hero-chip--4">💎</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. Category grid (12 departments) ================= -->
+    <section class="section section-categories" id="categories" aria-labelledby="categoriesTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Departments</p>
+          <h2 class="section-title" id="categoriesTitle">Shop by category</h2>
+          <p class="section-subtitle">Twelve curated departments, one considered standard of quality. Select a category to filter the product grid below.</p>
+        </div>
+
+        <div class="category-grid" id="categoryGrid">
+          <button class="category-tile reveal" type="button" data-category="Electronics">
+            <span class="tile-emoji" aria-hidden="true">💻</span>
+            <span class="tile-name">Electronics</span>
+            <span class="tile-count">128 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Fashion &amp; Apparel">
+            <span class="tile-emoji" aria-hidden="true">👗</span>
+            <span class="tile-name">Fashion &amp; Apparel</span>
+            <span class="tile-count">342 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Home &amp; Living">
+            <span class="tile-emoji" aria-hidden="true">🕯️</span>
+            <span class="tile-name">Home &amp; Living</span>
+            <span class="tile-count">214 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Beauty &amp; Personal Care">
+            <span class="tile-emoji" aria-hidden="true">🧴</span>
+            <span class="tile-name">Beauty &amp; Personal Care</span>
+            <span class="tile-count">186 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Sports &amp; Outdoors">
+            <span class="tile-emoji" aria-hidden="true">🏕️</span>
+            <span class="tile-name">Sports &amp; Outdoors</span>
+            <span class="tile-count">157 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Books &amp; Stationery">
+            <span class="tile-emoji" aria-hidden="true">📚</span>
+            <span class="tile-name">Books &amp; Stationery</span>
+            <span class="tile-count">231 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Toys &amp; Kids">
+            <span class="tile-emoji" aria-hidden="true">🧸</span>
+            <span class="tile-name">Toys &amp; Kids</span>
+            <span class="tile-count">143 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Groceries &amp; Gourmet">
+            <span class="tile-emoji" aria-hidden="true">🧺</span>
+            <span class="tile-name">Groceries &amp; Gourmet</span>
+            <span class="tile-count">168 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Automotive">
+            <span class="tile-emoji" aria-hidden="true">🚗</span>
+            <span class="tile-name">Automotive</span>
+            <span class="tile-count">96 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Health &amp; Wellness">
+            <span class="tile-emoji" aria-hidden="true">🌿</span>
+            <span class="tile-name">Health &amp; Wellness</span>
+            <span class="tile-count">124 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Jewelry &amp; Watches">
+            <span class="tile-emoji" aria-hidden="true">💎</span>
+            <span class="tile-name">Jewelry &amp; Watches</span>
+            <span class="tile-count">87 items</span>
+          </button>
+          <button class="category-tile reveal" type="button" data-category="Pets">
+            <span class="tile-emoji" aria-hidden="true">🐾</span>
+            <span class="tile-name">Pets</span>
+            <span class="tile-count">112 items</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. Promotional split banners ================= -->
+    <section class="section section-promos" id="deals" aria-label="Current promotions">
+      <div class="container promo-grid">
+        <article class="promo-banner promo-banner--wide reveal">
+          <div class="promo-copy">
+            <p class="promo-eyebrow">Tech Week · Limited time</p>
+            <h2 class="promo-title">Up to 20% off audio &amp; wearables</h2>
+            <p class="promo-text">Studio-grade headphones, smart watches and everyday tech from independent makers.</p>
+            <a class="btn btn-outline-light" href="#products">Shop electronics</a>
+          </div>
+          <div class="promo-art promo-art--dark" aria-hidden="true">🎧</div>
+        </article>
+
+        <article class="promo-banner promo-banner--tall reveal">
+          <div class="promo-copy">
+            <p class="promo-eyebrow">Home Refresh Sale</p>
+            <h2 class="promo-title">Cozy pieces for every room</h2>
+            <p class="promo-text">Throws, candles and ceramics in this season's warm neutrals.</p>
+            <a class="btn btn-outline-dark" href="#products">Shop home &amp; living</a>
+          </div>
+          <div class="promo-art promo-art--light" aria-hidden="true">🕯️</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 6. Featured / trending products ================= -->
+    <section class="section section-products" id="products" aria-labelledby="productsTitle">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <p class="section-eyebrow">Trending now</p>
+            <h2 class="section-title" id="productsTitle">Featured products</h2>
+          </div>
+          <p class="section-subtitle">Hand-picked bestsellers across all twelve departments, refreshed weekly.</p>
+        </div>
+
+        <div class="tab-strip" id="productTabs" aria-label="Filter products by category">
+          <button class="tab-btn is-active" type="button" data-filter="All" aria-pressed="true">All</button>
+          <button class="tab-btn" type="button" data-filter="Electronics" aria-pressed="false">Electronics</button>
+          <button class="tab-btn" type="button" data-filter="Fashion &amp; Apparel" aria-pressed="false">Fashion &amp; Apparel</button>
+          <button class="tab-btn" type="button" data-filter="Home &amp; Living" aria-pressed="false">Home &amp; Living</button>
+          <button class="tab-btn" type="button" data-filter="Beauty &amp; Personal Care" aria-pressed="false">Beauty &amp; Personal Care</button>
+          <button class="tab-btn" type="button" data-filter="Sports &amp; Outdoors" aria-pressed="false">Sports &amp; Outdoors</button>
+          <button class="tab-btn" type="button" data-filter="Books &amp; Stationery" aria-pressed="false">Books &amp; Stationery</button>
+          <button class="tab-btn" type="button" data-filter="Toys &amp; Kids" aria-pressed="false">Toys &amp; Kids</button>
+          <button class="tab-btn" type="button" data-filter="Groceries &amp; Gourmet" aria-pressed="false">Groceries &amp; Gourmet</button>
+          <button class="tab-btn" type="button" data-filter="Automotive" aria-pressed="false">Automotive</button>
+          <button class="tab-btn" type="button" data-filter="Health &amp; Wellness" aria-pressed="false">Health &amp; Wellness</button>
+          <button class="tab-btn" type="button" data-filter="Jewelry &amp; Watches" aria-pressed="false">Jewelry &amp; Watches</button>
+          <button class="tab-btn" type="button" data-filter="Pets" aria-pressed="false">Pets</button>
+        </div>
+
+        <p class="sr-only" id="filterStatus" role="status" aria-live="polite"></p>
+
+        <noscript>
+          <p class="section-subtitle">Please enable JavaScript to browse our product catalogue.</p>
+        </noscript>
+
+        <div class="product-grid" id="productGrid">
+          <!-- Product cards are rendered at runtime by js/main.js from the PRODUCTS data array. -->
+        </div>
+
+        <div class="no-results" id="noResults" hidden>
+          <span class="no-results-emoji" aria-hidden="true">🔍</span>
+          <p class="no-results-title">No products found</p>
+          <p class="no-results-text">We could not match your search. Try a different keyword or browse all categories.</p>
+          <button class="btn btn-ghost" type="button" id="clearSearch">Clear search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. Brand strip ================= -->
+    <section class="section section-brands" id="brands" aria-label="Featured brands">
+      <div class="container">
+        <p class="brands-heading reveal">Trusted by 40+ independent brands</p>
+        <ul class="brand-strip reveal">
+          <li class="brand-mark brand-mark--caps">NORDBLIQ</li>
+          <li class="brand-mark brand-mark--serif">Maison Lune</li>
+          <li class="brand-mark brand-mark--wide">KAVANO</li>
+          <li class="brand-mark brand-mark--serif brand-mark--italic">Stratton &amp; Co.</li>
+          <li class="brand-mark brand-mark--caps">LUMIFERA</li>
+          <li class="brand-mark brand-mark--wide">OKTAV</li>
+          <li class="brand-mark brand-mark--serif">Brier &amp; Finch</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= 8. Newsletter signup ================= -->
+    <section class="section section-newsletter" id="newsletter" aria-labelledby="newsletterTitle">
+      <div class="container">
+        <div class="newsletter-card reveal">
+          <p class="section-eyebrow">Stay in the loop</p>
+          <h2 class="section-title" id="newsletterTitle">Join the Aurelle inner circle</h2>
+          <p class="section-subtitle">Early access to new drops, member-only offers, and 10% off your first order. No spam — unsubscribe anytime.</p>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <label class="sr-only" for="newsletterEmail">Email address</label>
+            <input class="newsletter-input" id="newsletterEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <button class="btn btn-solid newsletter-submit" type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-message" id="newsletterMessage" role="status" aria-live="polite" hidden></p>
+          <p class="newsletter-note">By subscribing you agree to our Privacy Policy.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= 9. Footer ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo footer-logo" href="#top" aria-label="Aurelle — back to top of page">Aurelle</a>
+          <p class="footer-tagline">A curated marketplace for beautiful, useful things — twelve departments, one standard of quality.</p>
+        </div>
+
+        <nav class="footer-column" aria-label="Shop links">
+          <h3 class="footer-heading">Shop</h3>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#products">New arrivals</a></li>
+            <li><a class="footer-link" href="#products">Best sellers</a></li>
+            <li><a class="footer-link" href="#deals">Deals</a></li>
+            <li><a class="footer-link" href="#categories">Gift cards</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column" aria-label="Support links">
+          <h3 class="footer-heading">Support</h3>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#newsletter">Help center</a></li>
+            <li><a class="footer-link" href="#newsletter">Shipping &amp; returns</a></li>
+            <li><a class="footer-link" href="#newsletter">Order tracking</a></li>
+            <li><a class="footer-link" href="#newsletter">Contact us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column" aria-label="Company links">
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#top">About us</a></li>
+            <li><a class="footer-link" href="#top">Careers</a></li>
+            <li><a class="footer-link" href="#top">Press</a></li>
+            <li><a class="footer-link" href="#top">Sustainability</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column" aria-label="Social media links">
+          <h3 class="footer-heading">Follow</h3>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#top">Instagram</a></li>
+            <li><a class="footer-link" href="#top">Pinterest</a></li>
+            <li><a class="footer-link" href="#top">X (Twitter)</a></li>
+            <li><a class="footer-link" href="#top">YouTube</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">© 2026 Aurelle Commerce Inc. All rights reserved.</p>
+        <ul class="footer-legal-links">
+          <li><a class="footer-link" href="#top">Privacy Policy</a></li>
+          <li><a class="footer-link" href="#top">Terms of Service</a></li>
+          <li><a class="footer-link" href="#top">Cookie settings</a></li>
+        </ul>
+        <p class="footer-payments">We accept&nbsp; Visa · Mastercard · American Express · PayPal</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= 10. Floating back-to-top ================= -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <path d="M12 19V5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="m5 12 7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
