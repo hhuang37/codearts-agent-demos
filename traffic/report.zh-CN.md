@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-10-31 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-11-01 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 235 | 44 | 209 | 100 | 61 |
+| 251 | 44 | 210 | 102 | 61 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-10-30 | 33 | 6 | 7 | 5 | 54 |
 | 2026-10-29 | 92 | 12 | 4 | 3 | 53 |
 | 2026-10-28 | 34 | 7 | 22 | 13 | 53 |
 | 2026-10-27 | 55 | 10 | 6 | 5 | 51 |
@@ -66,36 +67,37 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-10-31，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-11-01，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 104 | 44 |
-| customagent | 30 | 20 |
-| codebase | 21 | 17 |
+| （仓库根目录） | 116 | 46 |
+| customagent | 25 | 16 |
+| codebase | 15 | 14 |
 | minor_language_test | 9 | 2 |
-| huaweiskill | 6 | 6 |
+| agentteam | 8 | 5 |
+| sdd | 6 | 4 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 62 | 25 |
-| `/tree/main` | 22 | 9 |
+| `/` | 67 | 27 |
+| `/tree/main` | 29 | 9 |
 | `/blob/main/README.zh-CN.md` | 20 | 10 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 16 | 12 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 14 | 8 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 13 | 7 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 12 | 9 |
+| `/blob/main/codebase/codebase_readme.md` | 9 | 8 |
 | `/blob/main/minor_language_test/minor_language_test.zh-CN.md` | 9 | 2 |
-| `/blob/main/codebase/codebase_readme.md` | 8 | 7 |
-| `/blob/main/codebase/codebase_readme.zh-CN.md` | 7 | 4 |
+| `/blob/main/agentteam/agentteam_readme.md` | 8 | 5 |
 | `/tree/main/codebase` | 6 | 6 |
-| `/tree/main/huaweiskill` | 6 | 6 |
+| `/blob/main/sdd/sdd_readme.zh-CN.md` | 6 | 4 |
 
 ## Release 下载量
 
-截至 2026-10-31 各资产的累计下载次数。
+截至 2026-11-01 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
