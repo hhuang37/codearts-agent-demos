@@ -2,17 +2,17 @@
 <text x="16" y="20" fill="#24292f" font-size="13" font-weight="600">Views by folder (14-day Top-10 aggregate)</text>
 <text x="206" y="59" text-anchor="end" fill="#57606a">(root)</text>
 <rect x="214" y="49" width="498.0" height="16" rx="2" fill="#4C8DFF"/>
-<text x="718.0" y="60" fill="#24292f">167</text>
+<text x="718.0" y="60" fill="#24292f">164</text>
 <text x="206" y="87" text-anchor="end" fill="#57606a">customagent</text>
-<rect x="214" y="77" width="80.5" height="16" rx="2" fill="#4C8DFF"/>
-<text x="300.5" y="88" fill="#24292f">27</text>
+<rect x="214" y="77" width="82.0" height="16" rx="2" fill="#4C8DFF"/>
+<text x="302.0" y="88" fill="#24292f">27</text>
 <text x="206" y="115" text-anchor="end" fill="#57606a">codebase</text>
-<rect x="214" y="105" width="77.5" height="16" rx="2" fill="#4C8DFF"/>
-<text x="297.5" y="116" fill="#24292f">26</text>
+<rect x="214" y="105" width="79.0" height="16" rx="2" fill="#4C8DFF"/>
+<text x="299.0" y="116" fill="#24292f">26</text>
 <text x="206" y="143" text-anchor="end" fill="#57606a">sdd</text>
-<rect x="214" y="133" width="35.8" height="16" rx="2" fill="#4C8DFF"/>
-<text x="255.8" y="144" fill="#24292f">12</text>
+<rect x="214" y="133" width="36.4" height="16" rx="2" fill="#4C8DFF"/>
+<text x="256.4" y="144" fill="#24292f">12</text>
 <text x="206" y="171" text-anchor="end" fill="#57606a">minor_language_test</text>
-<rect x="214" y="161" width="23.9" height="16" rx="2" fill="#4C8DFF"/>
-<text x="243.9" y="172" fill="#24292f">8</text>
+<rect x="214" y="161" width="24.3" height="16" rx="2" fill="#4C8DFF"/>
+<text x="244.3" y="172" fill="#24292f">8</text>
 </svg>
