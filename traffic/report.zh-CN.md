@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-11-09 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-11-10 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 327 | 56 | 187 | 90 | 73 |
+| 327 | 55 | 177 | 88 | 76 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-11-08 | 5 | 3 | 11 | 8 | 70 |
 | 2026-11-07 | 0 | 0 | 7 | 6 | 70 |
 | 2026-11-06 | 6 | 2 | 16 | 10 | 68 |
 | 2026-11-05 | 11 | 3 | 14 | 7 | 68 |
@@ -75,13 +76,13 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-11-09，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-11-10，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 164 | 71 |
+| （仓库根目录） | 163 | 70 |
 | customagent | 27 | 14 |
 | codebase | 26 | 18 |
 | sdd | 12 | 6 |
@@ -91,9 +92,9 @@
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 93 | 45 |
-| `/tree/main` | 38 | 10 |
-| `/blob/main/README.zh-CN.md` | 33 | 16 |
+| `/` | 89 | 41 |
+| `/tree/main` | 39 | 11 |
+| `/blob/main/README.zh-CN.md` | 35 | 18 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 16 | 7 |
 | `/blob/main/sdd/sdd_readme.zh-CN.md` | 12 | 6 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 11 | 7 |
@@ -104,19 +105,19 @@
 
 ## Release 下载量
 
-截至 2026-11-09 各资产的累计下载次数。
+截至 2026-11-10 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
 | Tag | 资产 | 下载次数 |
 | --- | --- | ---: |
-| v0.1.0 | `codebases_demo.mp4` | 23 |
-| v0.4.0 | `customagent-demo.mp4` | 12 |
+| v0.1.0 | `codebases_demo.mp4` | 25 |
+| v0.4.0 | `customagent-demo.mp4` | 13 |
 | v0.3.0 | `agentteams-demo.mp4` | 12 |
 | v0.7.0 | `frontend-demo.mp4` | 9 |
 | v0.2.0 | `sdd_demo.mp4` | 7 |
 | v0.6.0 | `huaweiskill_demo.mp4` | 5 |
 | v0.5.0 | `cli_serve_demo.mp4` | 5 |
 
-**Total: 73**
+**Total: 76**
 
