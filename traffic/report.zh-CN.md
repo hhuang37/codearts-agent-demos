@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-11-14 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-11-15 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 180 | 44 | 149 | 72 | 82 |
+| 155 | 43 | 155 | 73 | 82 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-11-13 | 8 | 4 | 13 | 8 | 82 |
 | 2026-11-12 | 0 | 0 | 13 | 6 | 79 |
 | 2026-11-11 | 2 | 1 | 3 | 3 | 78 |
 | 2026-11-10 | 11 | 5 | 5 | 4 | 76 |
@@ -80,36 +81,35 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-11-14，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-11-15，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 97 | 58 |
-| customagent | 11 | 6 |
-| codebase | 9 | 7 |
+| （仓库根目录） | 89 | 57 |
+| customagent | 10 | 5 |
+| codebase | 10 | 6 |
 | sdd | 7 | 4 |
-| agentteam | 5 | 2 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 52 | 36 |
-| `/tree/main` | 21 | 6 |
-| `/blob/main/README.zh-CN.md` | 19 | 12 |
+| `/` | 51 | 35 |
+| `/blob/main/README.zh-CN.md` | 20 | 13 |
+| `/tree/main` | 13 | 5 |
 | `/blob/main/sdd/sdd_readme.zh-CN.md` | 7 | 4 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 6 | 3 |
 | `/blob/main/README.md` | 5 | 4 |
-| `/blob/main/codebase/codebase_readme.md` | 5 | 4 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 5 | 3 |
-| `/blob/main/agentteam/agentteam_readme.md` | 5 | 2 |
-| `/tree/main/codebase` | 4 | 3 |
+| `/blob/main/codebase/codebase_readme.zh-CN.md` | 4 | 2 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 4 | 2 |
+| `/blob/main/codebase/codebase_readme.md` | 3 | 2 |
+| `/tree/main/codebase` | 3 | 2 |
 
 ## Release 下载量
 
-截至 2026-11-14 各资产的累计下载次数。
+截至 2026-11-15 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
