@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-11-16 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-11-17 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 147 | 36 | 154 | 72 | 82 |
+| 147 | 36 | 154 | 72 | 86 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -81,7 +81,7 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-11-16，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-11-17，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
@@ -109,19 +109,19 @@
 
 ## Release 下载量
 
-截至 2026-11-16 各资产的累计下载次数。
+截至 2026-11-17 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
 | Tag | 资产 | 下载次数 |
 | --- | --- | ---: |
-| v0.1.0 | `codebases_demo.mp4` | 25 |
+| v0.1.0 | `codebases_demo.mp4` | 27 |
 | v0.3.0 | `agentteams-demo.mp4` | 14 |
 | v0.4.0 | `customagent-demo.mp4` | 13 |
 | v0.7.0 | `frontend-demo.mp4` | 11 |
-| v0.2.0 | `sdd_demo.mp4` | 8 |
+| v0.2.0 | `sdd_demo.mp4` | 10 |
 | v0.6.0 | `huaweiskill_demo.mp4` | 6 |
 | v0.5.0 | `cli_serve_demo.mp4` | 5 |
 
-**Total: 82**
+**Total: 86**
 
