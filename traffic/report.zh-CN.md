@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-11-17 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-11-18 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 147 | 36 | 154 | 72 | 86 |
+| 99 | 27 | 133 | 61 | 87 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,8 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-11-16 | 21 | 7 | 1 | 1 | 82 |
+| 2026-11-15 | 0 | 0 | 10 | 6 | 82 |
 | 2026-11-14 | 0 | 0 | 4 | 3 | 82 |
 | 2026-11-13 | 8 | 4 | 13 | 8 | 82 |
 | 2026-11-12 | 0 | 0 | 13 | 6 | 79 |
@@ -74,48 +76,47 @@
 | 2026-09-20 | 0 | 0 | 0 | 0 | – |
 | 2026-09-19 | 0 | 0 | 0 | 0 | – |
 | 2026-09-18 | 0 | 0 | 0 | 0 | – |
-| 2026-09-17 | 0 | 0 | 0 | 0 | – |
-| 2026-09-16 | 0 | 0 | 0 | 0 | – |
 
 \* 视频下载为当日快照的累计值；– 表示当日无快照。
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-11-17，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-11-18，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 81 | 50 |
-| customagent | 10 | 5 |
-| codebase | 10 | 6 |
-| sdd | 7 | 4 |
+| （仓库根目录） | 55 | 35 |
+| customagent | 7 | 4 |
+| sdd | 6 | 3 |
+| codebase | 4 | 3 |
+| traffic | 2 | 2 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 43 | 28 |
-| `/blob/main/README.zh-CN.md` | 20 | 13 |
-| `/tree/main` | 13 | 5 |
-| `/blob/main/sdd/sdd_readme.zh-CN.md` | 7 | 4 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 6 | 3 |
+| `/` | 29 | 19 |
+| `/blob/main/README.zh-CN.md` | 14 | 9 |
+| `/tree/main` | 7 | 3 |
 | `/blob/main/README.md` | 5 | 4 |
-| `/blob/main/codebase/codebase_readme.zh-CN.md` | 4 | 2 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 4 | 2 |
-| `/blob/main/codebase/codebase_readme.md` | 3 | 2 |
-| `/tree/main/codebase` | 3 | 2 |
+| `/blob/main/codebase/codebase_readme.zh-CN.md` | 4 | 3 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 4 | 2 |
+| `/blob/main/sdd/sdd_readme.zh-CN.md` | 4 | 2 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 3 | 2 |
+| `/tree/main/traffic` | 2 | 2 |
+| `/blob/main/sdd/sdd_readme.en.md` | 2 | 1 |
 
 ## Release 下载量
 
-截至 2026-11-17 各资产的累计下载次数。
+截至 2026-11-18 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
 | Tag | 资产 | 下载次数 |
 | --- | --- | ---: |
-| v0.1.0 | `codebases_demo.mp4` | 27 |
+| v0.1.0 | `codebases_demo.mp4` | 28 |
 | v0.3.0 | `agentteams-demo.mp4` | 14 |
 | v0.4.0 | `customagent-demo.mp4` | 13 |
 | v0.7.0 | `frontend-demo.mp4` | 11 |
@@ -123,5 +124,5 @@
 | v0.6.0 | `huaweiskill_demo.mp4` | 6 |
 | v0.5.0 | `cli_serve_demo.mp4` | 5 |
 
-**Total: 86**
+**Total: 87**
 
