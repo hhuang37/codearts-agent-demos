@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-11-20 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-11-21 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 115 | 28 | 131 | 62 | 87 |
+| 116 | 28 | 135 | 66 | 87 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-11-19 | 12 | 4 | 18 | 11 | 87 |
 | 2026-11-18 | 15 | 5 | 1 | 1 | 87 |
 | 2026-11-17 | 10 | 3 | 17 | 11 | 86 |
 | 2026-11-16 | 21 | 7 | 1 | 1 | 82 |
@@ -75,41 +76,40 @@
 | 2026-09-23 | 23 | 4 | 2 | 2 | – |
 | 2026-09-22 | 12 | 7 | 0 | 0 | – |
 | 2026-09-21 | 47 | 5 | 50 | 31 | – |
-| 2026-09-20 | 0 | 0 | 0 | 0 | – |
 
 \* 视频下载为当日快照的累计值；– 表示当日无快照。
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-11-20，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-11-21，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 62 | 38 |
-| codebase | 14 | 11 |
-| customagent | 7 | 4 |
-| sdd | 3 | 1 |
+| （仓库根目录） | 65 | 42 |
+| codebase | 13 | 11 |
+| customagent | 7 | 5 |
+| agentteam | 2 | 2 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 28 | 18 |
-| `/blob/main/README.zh-CN.md` | 14 | 7 |
-| `/tree/main` | 13 | 7 |
+| `/` | 31 | 19 |
+| `/blob/main/README.zh-CN.md` | 14 | 9 |
+| `/tree/main` | 13 | 8 |
 | `/blob/main/README.md` | 7 | 6 |
-| `/blob/main/codebase/codebase_readme.zh-CN.md` | 6 | 4 |
 | `/blob/main/codebase/codebase_readme.md` | 5 | 5 |
-| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 4 | 2 |
+| `/blob/main/codebase/codebase_readme.zh-CN.md` | 5 | 4 |
+| `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 4 | 3 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 3 | 2 |
 | `/tree/main/codebase` | 3 | 2 |
-| `/blob/main/sdd/sdd_readme.zh-CN.md` | 3 | 1 |
+| `/blob/main/agentteam/agentteam_readme.md` | 2 | 2 |
 
 ## Release 下载量
 
-截至 2026-11-20 各资产的累计下载次数。
+截至 2026-11-21 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
