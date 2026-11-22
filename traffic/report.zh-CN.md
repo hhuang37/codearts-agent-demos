@@ -2,7 +2,7 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-11-21 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-11-22 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
@@ -81,7 +81,7 @@
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-11-21，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-11-22，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
@@ -109,7 +109,7 @@
 
 ## Release 下载量
 
-截至 2026-11-21 各资产的累计下载次数。
+截至 2026-11-22 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 

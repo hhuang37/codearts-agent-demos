@@ -27,7 +27,7 @@ GITHUB_TOKEN=$(gh auth token) python .github/scripts/collect_traffic.py
 | 独立克隆者（近 14 天） | 66 | 克隆人数，24 小时去重 |
 | 视频下载（累计） | 87 | release 附件发布以来的累计下载次数，无 14 天限制 |
 
-数据截至 **2026-11-21**（GitHub 流量数据本身滞后 1~2 天）。每日明细与图表见 [report.zh-CN.md](report.zh-CN.md)。
+数据截至 **2026-11-22**（GitHub 流量数据本身滞后 1~2 天）。每日明细与图表见 [report.zh-CN.md](report.zh-CN.md)。
 <!-- STATS:END -->
 
 📊 **完整表格报告**（每日明细、文件夹热度、release 下载量）：[中文](report.zh-CN.md) ｜ [English](report.md)
