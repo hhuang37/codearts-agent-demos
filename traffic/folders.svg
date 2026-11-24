@@ -2,14 +2,14 @@
 <text x="16" y="20" fill="#24292f" font-size="13" font-weight="600">Views by folder (14-day Top-10 aggregate)</text>
 <text x="206" y="59" text-anchor="end" fill="#57606a">(root)</text>
 <rect x="214" y="49" width="498.0" height="16" rx="2" fill="#4C8DFF"/>
-<text x="718.0" y="60" fill="#24292f">63</text>
+<text x="718.0" y="60" fill="#24292f">55</text>
 <text x="206" y="87" text-anchor="end" fill="#57606a">codebase</text>
-<rect x="214" y="77" width="126.5" height="16" rx="2" fill="#4C8DFF"/>
-<text x="346.5" y="88" fill="#24292f">16</text>
-<text x="206" y="115" text-anchor="end" fill="#57606a">customagent</text>
-<rect x="214" y="105" width="55.3" height="16" rx="2" fill="#4C8DFF"/>
-<text x="275.3" y="116" fill="#24292f">7</text>
-<text x="206" y="143" text-anchor="end" fill="#57606a">agentteam</text>
-<rect x="214" y="133" width="15.8" height="16" rx="2" fill="#4C8DFF"/>
-<text x="235.8" y="144" fill="#24292f">2</text>
+<rect x="214" y="77" width="126.8" height="16" rx="2" fill="#4C8DFF"/>
+<text x="346.8" y="88" fill="#24292f">14</text>
+<text x="206" y="115" text-anchor="end" fill="#57606a">agentteam</text>
+<rect x="214" y="105" width="45.3" height="16" rx="2" fill="#4C8DFF"/>
+<text x="265.3" y="116" fill="#24292f">5</text>
+<text x="206" y="143" text-anchor="end" fill="#57606a">customagent</text>
+<rect x="214" y="133" width="18.1" height="16" rx="2" fill="#4C8DFF"/>
+<text x="238.1" y="144" fill="#24292f">2</text>
 </svg>
