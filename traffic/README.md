@@ -21,13 +21,13 @@ GITHUB_TOKEN=$(gh auth token) python .github/scripts/collect_traffic.py
 
 | Metric | Value | Meaning |
 | --- | ---: | --- |
-| Views (last 14 days) | 93 | page views over the rolling 14-day window ending today |
+| Views (last 14 days) | 101 | page views over the rolling 14-day window ending today |
 | View uniques (last 14 days) | 26 | deduplicated by IP/device over 24 h |
-| Clones (last 14 days) | 100 | full `git clone` only; fetch/pull and Download ZIP excluded |
-| Unique cloners (last 14 days) | 47 | cloner count, 24 h dedup |
-| Video downloads (all-time) | 90 | cumulative release-asset downloads since publishing |
+| Clones (last 14 days) | 103 | full `git clone` only; fetch/pull and Download ZIP excluded |
+| Unique cloners (last 14 days) | 48 | cloner count, 24 h dedup |
+| Video downloads (all-time) | 101 | cumulative release-asset downloads since publishing |
 
-As of **2026-11-25** (GitHub's own traffic data lags 1–2 days). Daily breakdown & charts: [report.md](report.md).
+As of **2026-11-26** (GitHub's own traffic data lags 1–2 days). Daily breakdown & charts: [report.md](report.md).
 <!-- STATS:END -->
 
 📊 **Full report with tables** (daily detail, folder visits, release downloads): [English](report.md) ｜ [简体中文](report.zh-CN.md)
