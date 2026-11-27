@@ -2,13 +2,13 @@
 
 > 语言：**中文** ｜ [English](report.md)
 
-由 `.github/scripts/collect_traffic.py` 于 2026-11-26 自动生成——请勿手改。原始数据：[history.json](history.json)。
+由 `.github/scripts/collect_traffic.py` 于 2026-11-27 自动生成——请勿手改。原始数据：[history.json](history.json)。
 
 ## 近 14 天汇总
 
 | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载 |
 | ---: | ---: | ---: | ---: | ---: |
-| 101 | 26 | 103 | 48 | 101 |
+| 117 | 30 | 104 | 48 | 101 |
 
 ![每日浏览与克隆](chart.svg)
 
@@ -16,6 +16,7 @@
 
 | 日期（UTC） | 浏览 | 浏览访客 | 克隆 | 独立克隆者 | 视频下载* |
 | ---: | ---: | ---: | ---: | ---: | --- |
+| 2026-11-25 | 18 | 6 | 4 | 3 | 90 |
 | 2026-11-24 | 19 | 6 | 8 | 6 | 88 |
 | 2026-11-23 | 4 | 3 | 7 | 4 | 87 |
 | 2026-11-22 | 0 | 0 | 4 | 3 | 87 |
@@ -75,41 +76,40 @@
 | 2026-09-29 | 41 | 5 | 30 | 18 | – |
 | 2026-09-28 | 49 | 3 | 38 | 24 | – |
 | 2026-09-27 | 13 | 2 | 52 | 31 | – |
-| 2026-09-26 | 4 | 1 | 2 | 2 | – |
 
 \* 视频下载为当日快照的累计值；– 表示当日无快照。
 
 ## 热门文件夹与页面
 
-由 GitHub Top10 页面快照（2026-11-26，近 14 天聚合）归并而来，文件夹合计为下限。
+由 GitHub Top10 页面快照（2026-11-27，近 14 天聚合）归并而来，文件夹合计为下限。
 
 ![各文件夹浏览量](folders.svg)
 
 | 文件夹 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| （仓库根目录） | 57 | 31 |
-| codebase | 13 | 11 |
+| （仓库根目录） | 65 | 36 |
+| codebase | 15 | 13 |
 | customagent | 6 | 5 |
-| agentteam | 3 | 3 |
+| agentteam | 4 | 4 |
 
 ### 热门页面 Top10
 
 | 路径 | 浏览 | 访客 |
 | --- | ---: | ---: |
-| `/` | 33 | 18 |
-| `/blob/main/README.zh-CN.md` | 11 | 5 |
+| `/` | 38 | 20 |
+| `/blob/main/README.zh-CN.md` | 14 | 8 |
 | `/tree/main` | 10 | 6 |
+| `/blob/main/codebase/codebase_readme.zh-CN.md` | 6 | 5 |
 | `/blob/main/codebase/codebase_readme.md` | 5 | 5 |
-| `/blob/main/codebase/codebase_readme.zh-CN.md` | 5 | 4 |
-| `/blob/main/agentteam/agentteam_readme.zh-CN.md` | 3 | 3 |
+| `/blob/main/agentteam/agentteam_readme.zh-CN.md` | 4 | 4 |
+| `/tree/main/codebase` | 4 | 3 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.zh-CN.md` | 3 | 3 |
 | `/blob/main/README.md` | 3 | 2 |
 | `/blob/main/customagent/docs/deep-research-custom-agent-demo.md` | 3 | 2 |
-| `/tree/main/codebase` | 3 | 2 |
 
 ## Release 下载量
 
-截至 2026-11-26 各资产的累计下载次数。
+截至 2026-11-27 各资产的累计下载次数。
 
 ![各 release 资产下载量](downloads.svg)
 
